@@ -1,7 +1,9 @@
+@import 'media_queries';
+
 /* Colors */
 $black: #222222;
 $white: white;
-$off-white: rgba(255, 255, 255, 0.65);
+$off-white: #d5d5d5;
 $blue: #00ffff;
 $pink: #ff7bac;
 
@@ -95,7 +97,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: $sans;
-    font-size: 15px;
+    font-size: 16px;
     background-color: $black;
 }
 p {
@@ -146,7 +148,7 @@ img {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 95%;
+    width: 90%;
     max-width: 30rem;
 
     .logo {
@@ -191,6 +193,18 @@ form {
         outline: 0;
         border-radius: 0;
         width: 100%;
+
+    }
+    &.valid {
+        input[type="submit"] {
+            background-color: $pink;
+            border-color: $pink;
+            color: white;
+            cursor: pointer;
+            &:focus {
+                color: $off-white;
+            }
+        }
     }
 
     .email-wrapper {
@@ -199,6 +213,7 @@ form {
         float: left;
         @include border-box;
         padding-right: 0.75rem;
+        position: relative;
     }
 
     .button-wrapper {
@@ -209,3 +224,41 @@ form {
         padding-left: 0.75rem;
     }
 }
+
+.error {
+    padding: 0.5rem 0;
+    display: block;
+    color: $pink;
+    border: 1px solid rgba(0,0,0,0);
+    opacity: 1;
+    @include transition(0.2s);
+    &.hidden {
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width: $tablet-landscape-max) {
+    body, html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-max) {
+    body, html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: $phone-max) {
+    form .email-wrapper, form .button-wrapper {
+        width: 100%;
+        display: block;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    body, html {
+        font-size: 12px;
+    }
+}
+

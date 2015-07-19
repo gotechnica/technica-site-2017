@@ -1,0 +1,210 @@
+/* Colors */
+/* Typography */
+/* Mixins */
+.clearfix:after {
+  content: " ";
+  /* Older browser do not support empty content */
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
+
+/* Animations */
+@-webkit-keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+    -moz-transform: translateY(1rem);
+    -o-transform: translateY(1rem);
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(1rem);
+    -moz-transform: translateY(1rem);
+    -o-transform: translateY(1rem);
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0); } }
+
+.fade-in-up, form {
+  -webkit-animation-name: fade-in-up;
+  animation-name: fade-in-up; }
+
+/* Styles */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  background-color: #222222; }
+
+p {
+  font-size: 1.5rem;
+  line-height: 2rem; }
+
+h1 {
+  font-weight: 300;
+  font-size: 4rem;
+  margin: 0;
+  padding: 0; }
+
+h2 {
+  font-weight: 300;
+  font-size: 3rem;
+  margin: 0;
+  padding: 0; }
+
+h3 {
+  font-weight: 300;
+  line-height: 6rem;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0; }
+
+h4 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0; }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+img {
+  max-width: 100%; }
+
+.hero-content {
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  max-width: 30rem; }
+  .hero-content .logo {
+    margin-bottom: 2rem; }
+
+form {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+  form input[type="email"], form input[type="text"] {
+    border: 1px solid #d5d5d5;
+    -webkit-transition: 0.2s 0s ease all;
+    -moz-transition: 0.2s 0s ease all;
+    -o-transition: 0.2s 0s ease all;
+    transition: 0.2s 0s ease all;
+    outline: 0;
+    background: transparent;
+    color: #d5d5d5;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    form input[type="email"]::-webkit-input-placeholder, form input[type="text"]::-webkit-input-placeholder {
+      font-family: "Helvetica", sans-serif;
+      color: #d5d5d5; }
+    form input[type="email"]:-moz-placeholder, form input[type="text"]:-moz-placeholder {
+      font-family: "Helvetica", sans-serif;
+      color: #d5d5d5; }
+    form input[type="email"]::-moz-placeholder, form input[type="text"]::-moz-placeholder {
+      font-family: "Helvetica", sans-serif;
+      color: #d5d5d5; }
+    form input[type="email"]:-ms-input-placeholder, form input[type="text"]:-ms-input-placeholder {
+      font-family: "Helvetica", sans-serif;
+      color: #d5d5d5; }
+    form input[type="email"]:focus, form input[type="text"]:focus {
+      border: 1px solid white;
+      color: white;
+      outline: 0; }
+      form input[type="email"]:focus::-webkit-input-placeholder, form input[type="text"]:focus::-webkit-input-placeholder {
+        color: #d5d5d5; }
+      form input[type="email"]:focus:-moz-placeholder, form input[type="text"]:focus:-moz-placeholder {
+        color: #d5d5d5; }
+      form input[type="email"]:focus::-moz-placeholder, form input[type="text"]:focus::-moz-placeholder {
+        color: #d5d5d5; }
+      form input[type="email"]:focus:-ms-input-placeholder, form input[type="text"]:focus:-ms-input-placeholder {
+        color: #d5d5d5; }
+  form input[type="submit"] {
+    background-color: #d5d5d5;
+    padding: 1rem 1.5rem;
+    border: 1px solid #d5d5d5;
+    font-size: 1rem;
+    outline: 0;
+    border-radius: 0;
+    width: 100%; }
+  form.valid input[type="submit"] {
+    background-color: #ff7bac;
+    border-color: #ff7bac;
+    color: white;
+    cursor: pointer; }
+    form.valid input[type="submit"]:focus {
+      color: #d5d5d5; }
+  form .email-wrapper {
+    display: inline-block;
+    width: 70%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 0.75rem;
+    position: relative; }
+  form .button-wrapper {
+    display: inline-block;
+    width: 30%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 0.75rem; }
+
+.error {
+  padding: 0.5rem 0;
+  display: block;
+  color: #ff7bac;
+  border: 1px solid transparent;
+  opacity: 1;
+  -webkit-transition: 0.2s 0s ease all;
+  -moz-transition: 0.2s 0s ease all;
+  -o-transition: 0.2s 0s ease all;
+  transition: 0.2s 0s ease all; }
+  .error.hidden {
+    opacity: 0; }
+
+@media screen and (max-width: 1024px) {
+  body, html {
+    font-size: 15px; } }
+
+@media screen and (max-width: 768px) {
+  body, html {
+    font-size: 14px; } }
+
+@media screen and (max-width: 640px) {
+  form .email-wrapper, form .button-wrapper {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin-bottom: 1rem; }
+  body, html {
+    font-size: 12px; } }
