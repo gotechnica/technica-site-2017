@@ -69,19 +69,18 @@
         <li><a href="#sponsors">Sponsors</a></li>
         <li><a href="#schedule">Schedule</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#faq">Faq</a></li>
       </ul>
     </div>
   </nav>
 
   <section id="register">
-    <a name="register"></a>
     <div class="content hero">
       <div class="section-header">
         <h1>The All-Ladies Hackathon</h1>
       </div>
       <h3>November 7-8, 2015. College Park, MD.</h3>
-      <form class="inline">
+      <form class="inline" id="register">
         <input type="text" placeholder="Start with your email address">
         <input type="submit" value="Pre-Register">
       </form>
@@ -89,7 +88,6 @@
   </section>
 
   <section id="about">
-    <a name="about"></a>
     <div class="content">
       <div class="gradient-box for-image">
         <img src="img/stef.jpg">
@@ -97,16 +95,15 @@
           <h2>This is tech culture beyond hello world.</h2>
         </div>
       </div>
-      <p>Technica is the University of Maryland’s first all-ladies hackathon. Over the duration of 24 hours, ladies are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification, and ask sponsors to hack alongside students in order to build stronger connections between students, sponsors, and the tech world.</p>
+      <p id="about">Technica is the University of Maryland’s first all-ladies hackathon. Over the duration of 24 hours, ladies are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification, and ask sponsors to hack alongside students in order to build stronger connections between students, sponsors, and the tech world.</p>
     </div>
   </section>
 
   <hr>
 
-  <section id="sponsors">
-    <a name="sponsors"></a>
+  <section>
     <div class="section-header">
-      <h3>Sponsored by the amazing women and men at <br>these fine companies. They’ll be around, too.</h3>
+      <h3 id="sponsors">Sponsored by the amazing women and men at <br>these fine companies. They’ll be around, too.</h3>
     </div>
     <div class="gradient-box for-text contact centered">
       <p>Interested in sponsoring?</p>
@@ -115,9 +112,8 @@
   </section>
 
   <section id="schedule" class="dark">
-    <a name="schedule"></a>
     <div class="content">
-      <div class="section-header">
+      <div class="section-header" id="schedule">
         <h3>Event Schedule</h3>
       </div>
       <div class="row">
@@ -175,9 +171,8 @@
   </section>
 
   <section id="team">
-    <a name="team"></a>
     <div class="content">
-      <div class="section-header">
+      <div class="section-header" id="team">
         <h3>The Team</h3>
       </div>
       <div class="row">
@@ -197,10 +192,9 @@
 
   <hr>
 
-  <section id="faq">
-    <a name="faq"></a>
+  <section>
     <div class="content">
-      <div class="section-header">
+      <div class="section-header" id="faq">
         <h3>Frequently Asked Questions</h3>
       </div>
       <div class="row with-divider faq">
@@ -255,7 +249,18 @@
       </ul>
     </div>
   </footer>
-  
-  <script type="text/javascript" src="script.js"></script>
+  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+  <script type="text/javascript">
+  var rem = function rem() {
+    var html = document.getElementsByTagName('html')[0];
+
+    return function () {
+      return parseInt(window.getComputedStyle(html)['fontSize']);
+    }
+  }();
+  smoothScroll.init({
+    offset: 5 * rem()
+  });
+  </script>
 </body>
 </html>
