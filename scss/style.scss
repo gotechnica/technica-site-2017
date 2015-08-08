@@ -79,12 +79,8 @@ nav {
 
 .box {
     border: 2px solid $off-white;
-    transition: border-color, .15s;
     & + .box {
         margin-top: 3.75rem !important;
-    }
-    &:hover {
-        border-color: $black;
     }
 }
 

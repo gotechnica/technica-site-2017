@@ -350,12 +350,9 @@ nav ul {
   border-radius: 20px; }
 
 .box {
-  border: 2px solid #d5d5d5;
-  transition: border-color, 0.15s; }
+  border: 2px solid #d5d5d5; }
   .box + .box {
     margin-top: 3.75rem !important; }
-  .box:hover {
-    border-color: #111111; }
 
 .gradient-box, .box {
   border-radius: 4px; }
