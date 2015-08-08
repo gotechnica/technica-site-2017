@@ -168,7 +168,6 @@ hr {
   height: 2px;
   width: 100%;
   border: 0;
-  margin: 5rem 0;
   background-color: #00ffff;
   /* fallback */
   background-image: -webkit-linear-gradient(left, #00ffff, #ff7bac);
@@ -316,8 +315,11 @@ nav ul {
   justify-content: space-around;
   margin-top: -1.25rem;
   padding: 1.25rem 2.5rem; }
-  nav ul li a, nav ul li a:hover {
-    text-decoration: none; }
+  nav ul li a {
+    text-decoration: none;
+    transition: color, 0.15s; }
+    nav ul li a:hover {
+      color: #ff7bac; }
 
 .hero h1 {
   text-align: center;
@@ -328,13 +330,12 @@ nav ul {
   margin-bottom: 2.5rem; }
 
 .hero form {
-  text-align: center;
-  margin-bottom: 6.25rem; }
+  text-align: center; }
 
-.hero .gradient-box {
-  margin-bottom: 5rem; }
+#register {
+  padding-bottom: 0; }
 
-.content {
+.content, hr {
   max-width: 65rem;
   width: 95%;
   margin: 0 auto; }
@@ -350,7 +351,7 @@ nav ul {
 
 .box {
   border: 2px solid #d5d5d5;
-  transition: border-color, 0.2s; }
+  transition: border-color, 0.15s; }
   .box + .box {
     margin-top: 3.75rem !important; }
   .box:hover {
@@ -359,7 +360,8 @@ nav ul {
 .gradient-box, .box {
   border-radius: 4px; }
   .gradient-box.for-image, .box.for-image {
-    padding: 1.25rem; }
+    padding: 1.25rem;
+    margin-bottom: 5rem; }
   .gradient-box.for-text, .box.for-text {
     padding: 2.25rem;
     margin: 0 3.125rem; }
