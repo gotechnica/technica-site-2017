@@ -11,7 +11,7 @@ form {
         max-width: 30rem;
         background: rgba(0,0,0,0);
         color: $black;
-        border: 2px solid $blue;
+        border: 2px solid $dark-blue;
         outline: 0;
         padding: 2rem 3rem;
         @include transition(0.2s);
@@ -29,12 +29,13 @@ form {
         font-size: 1.5rem;
         line-height: 2rem;
         text-transform: uppercase;
-        background-color: $blue;
+        background-color: $dark-blue;
         color: $white;
-        border: 2px solid $blue;
+        border: 2px solid $dark-blue;
         padding: 2rem 3rem;
         outline: 0;
         border-radius: 0;
+        cursor: pointer;
     }
 
     &.inline {

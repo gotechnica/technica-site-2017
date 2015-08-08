@@ -200,7 +200,7 @@ form {
     max-width: 30rem;
     background: transparent;
     color: #111111;
-    border: 2px solid #00ffff;
+    border: 2px solid #3ae1ec;
     outline: 0;
     padding: 2rem 3rem;
     -webkit-transition: 0.2s 0s ease all;
@@ -232,12 +232,13 @@ form {
     font-size: 1.5rem;
     line-height: 2rem;
     text-transform: uppercase;
-    background-color: #00ffff;
+    background-color: #3ae1ec;
     color: #ffffff;
-    border: 2px solid #00ffff;
+    border: 2px solid #3ae1ec;
     padding: 2rem 3rem;
     outline: 0;
-    border-radius: 0; }
+    border-radius: 0;
+    cursor: pointer; }
   form.inline input {
     display: inline-block; }
   form.inline input[type="text"], form.inline input[type="email"] {
