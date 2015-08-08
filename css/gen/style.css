@@ -493,6 +493,9 @@ footer {
       display: inline-block;
       padding: 0.5rem 1.25rem; }
 
+.mobile-only {
+  display: none; }
+
 @media screen and (max-width: 768px) {
   section .section-header > * {
     max-width: 80%; }
@@ -500,6 +503,8 @@ footer {
       left: -2rem; }
     section .section-header > *:after {
       right: -2rem; }
+  .mobile-only {
+    display: block; }
   .box.for-text, .gradient-box.for-text {
     margin: 0 2rem; }
   footer img {

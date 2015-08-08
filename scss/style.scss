@@ -47,6 +47,7 @@ nav {
         }
     }
 }
+
 .hero {
     h1 {
         text-align: center;
@@ -186,6 +187,12 @@ footer {
     }
 }
 
+.mobile-only {
+    display: none;
+}
+
+
+
 @media screen and (max-width: $tablet-portrait-max) {
     section .section-header > * {
         max-width: 80%;
@@ -196,6 +203,13 @@ footer {
             right: -2rem;
         }
     }
+
+.mobile-only {
+    display: block;
+}
+
+
+
     .box, .gradient-box {
         &.for-text {
             margin: 0 2rem;
