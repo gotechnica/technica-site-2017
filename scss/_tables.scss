@@ -1,6 +1,9 @@
 table {
 	vertical-align: middle;
 	width: 100%;
+	&:first-of-type {
+		margin-bottom: 1.25rem;
+	}
 
 	thead td {
 		border-bottom: 2px solid $white;

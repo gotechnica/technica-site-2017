@@ -274,6 +274,8 @@ form {
 table {
   vertical-align: middle;
   width: 100%; }
+  table:first-of-type {
+    margin-bottom: 1.25rem; }
   table thead td {
     border-bottom: 2px solid #ffffff; }
   table thead, table tbody {
@@ -343,7 +345,8 @@ nav ul {
   -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
   border-image: linear-gradient(to right, #00ffff 0%, #ff7bac 100%);
   border-image-slice: 1;
-  position: relative; }
+  position: relative;
+  border-radius: 20px; }
 
 .box {
   border: 2px solid #d5d5d5; }

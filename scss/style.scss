@@ -70,6 +70,7 @@ nav {
 .gradient-box {
     @include border-linear-gradient(2px, $blue, $pink);
     position: relative;
+    border-radius: 20px;
 }
 
 .box {
