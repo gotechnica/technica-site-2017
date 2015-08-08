@@ -1,0 +1,30 @@
+$row-padding: 1.25rem;
+
+.row {
+	display: block;
+	position: relative;
+	@include clearfix;
+	margin: 0 (-$row-padding);
+
+	.half {
+		width: 50%;
+		padding: 0 $row-padding;
+		display: inline-block;
+		position: relative;
+		float: left;
+		@include border-box;
+	}
+
+	&.with-divider:before {
+		display: block;
+		width: 0;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		bottom: 0;
+		width: 2px;
+		content: " ";
+		@include transform(translateX(-50%));
+		@include vertical-linear-gradient($blue, $pink);
+	}
+}

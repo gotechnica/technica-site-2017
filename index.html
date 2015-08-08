@@ -1,46 +1,225 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Technica</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/gen/style.css">
+  <meta charset="utf-8" />
+  <title>Technica</title>
+  <!--
+
+████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
+╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
+   ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
+   ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
+   ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
+   ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
+
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="All-ladies hackathon at University of Maryland." />
+  <meta name="robots" content="NOODP, index, follow" />
+  <meta itemprop="name" content="Technica">
+  <meta itemprop="description" content="All-ladies hackathon at University of Maryland.">
+  <meta itemprop="image" content="/img/logo-black.png">
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@gotechnica">
+  <meta name="twitter:title" content="Technica">
+  <meta name="twitter:description" content="All-ladies hackathon at University of Maryland.">
+  <meta name="twitter:creator" content="@gotechnica">
+  <meta name="twitter:image:src" content="http://gotechnica.org/img/logo-black.png">
+  <meta name="twitter:domain" content="http://gotechnica.org">
+  <!-- Open Graph data (Facebook) -->
+  <meta property="og:title" content="Technica" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://gotechnica.org" />
+  <meta property="og:image" content="http://gotechnica.org/img/logo-black.png" />
+  <meta property="og:description" content="All-ladies hackathon at University of Maryland." />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/gen/style.css">
+  <!-- Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57203187-5', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 <body>
-    <div class="hero-content">
-        <img class="logo" src="img/logo.svg">
-        <form action="http://gotechnica.us11.list-manage.com/subscribe/post?u=e58335728f7c42bc541a9d0b2&amp;id=d4850b20c6"
-              method="post"
-              id="mc-embedded-subscribe-form"
-              name="mc-embedded-subscribe-form"
-              class="validate"
-              target="_blank"
-              novalidate>
-            <div class="email-wrapper">
-                <input type="email"
-                       value=""
-                       placeholder="Enter your email address..."
-                       name="EMAIL"
-                       class="required email"
-                       id="mce-EMAIL">
-                <label class="error hidden">Please enter a valid email address.</label>
-            </div>
-            <div style="position: absolute; left: -5000px;">
-                <input type="text"
-                       name="b_e58335728f7c42bc541a9d0b2_d4850b20c6"
-                       tabindex="-1"
-                       value="">
-            </div>
-            <div class="button-wrapper">
-                <input type="submit"
-                       value="Subscribe"
-                       name="subscribe"
-                       id="mc-embedded-subscribe"
-                       class="button">
-            </div>
-        </form>
+  <header>
+    <div class="content">
+      <a href="/">
+        <img src="img/logo-white.png">
+      </a>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
+  </header>
+  <nav>
+    <div class="content">
+      <ul>
+        <li><a href="#register">Register</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#sponsors">Sponsors</a></li>
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#faq">Faq</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section>
+    <div class="content hero">
+      <div class="section-header">
+        <h1>Ladies, Welcome to Tech.</h1>
+      </div>
+      <h3>All-women hackathon. November 7-8, 2015. College Park, MD.</h3>
+      <form class="inline">
+        <input type="text" placeholder="Start with your email address">
+        <input type="submit" value="Pre-Register">
+      </form>
+      <div class="gradient-box for-image">
+        <img src="img/stef.jpg">
+        <div class="over-image">
+          <h2>This is tech culture beyond hello world.</h2>
+        </div>
+      </div>
+      <p>Technica is the University of Maryland’s first all-ladies hackathon. Over the duration of 24 hours, ladies are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification, and ask sponsors to hack alongside students in order to build stronger connections between students, sponsors, and the tech world.</p>
+      <hr>
+      <div class="section-header">
+        <h3>Sponsored by the amazing women and men at <br>these fine companies. They’ll be around, too.</h3>
+      </div>
+      <div class="gradient-box for-text contact centered">
+        <p>Interested in sponsoring?</p>
+        <p><a href="#">Contact Us</a></p>
+      </div>
+    </div>
+  </section>
+  <section class="dark">
+    <div class="content">
+      <div class="section-header">
+        <h3>Event Schedule</h3>
+      </div>
+      <div class="row">
+        <div class="half">
+          <div class="gradient-box for-text">
+            <p>Technica will take place from Saturday to Sunday, November 7-8, 2015. Check in will take place from 8 am to 10 am Saturday morning, and our closing ceremonies will end around 4 pm on Sunday. Please stay tuned for a more detailed schedule!</p>
+          </div>
+        </div>
+        <div class="half">
+          <table>
+            <thead>
+              <tr>
+                <td colspan="2">Saturday, November 7</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:00 am</td>
+                <td>Check-In</td>
+              </tr>
+              <tr>
+                <td>10:00 am</td>
+                <td>Opening</td>
+              </tr>
+              <tr>
+                <td>11:00 am</td>
+                <td>Hacking Begins</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <td colspan="2">Sunday, November 8</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>11:00 am</td>
+                <td>Hacking Ends</td>
+              </tr>
+              <tr>
+                <td>12:00 pm</td>
+                <td>Demos</td>
+              </tr>
+              <tr>
+                <td>02:00 pm</td>
+                <td>Closing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section>
+    <div class="content">
+      <div class="section-header">
+        <h3>The Team</h3>
+      </div>
+      <div class="row">
+        <div class="half">
+          <div class="gradient-box for-text centered">
+            <p>Our people are awesome. You’re awesome, too. <a href="#">Join us</a>.</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="gradient-box for-text centered">
+            <p>Want to help out the day of the event? <a href="#">Volunteer here</a>.</p>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="section-header">
+        <h3>Frequently Asked Questions</h3>
+      </div>
+      <div class="row with-divider faq">
+        <div class="half">
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+        </div>
+        <div class="half">
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+          <div class="box for-text">
+            <h4>Why make an all-ladies hackathon?</h4>
+            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="content">
+      <img src="img/technica-logo-white-colorstripe.svg">
+      <ul>
+        <li><a href="https://twitter.com/gotechnica">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Email</a></li>
+        <li>© Technica 2015</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

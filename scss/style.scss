@@ -1,271 +1,183 @@
 @import 'media_queries';
+@import 'colors';
+@import 'typography';
+@import 'utils';
+@import 'animations';
+@import 'grid';
+@import 'base';
+@import 'forms';
+@import 'tables';
 
-/* Colors */
-$black: #222222;
-$white: white;
-$off-white: #d5d5d5;
-$blue: #00ffff;
-$pink: #ff7bac;
+$content-width: 65rem;
 
-/* Typography */
-$sans: 'Helvetica', sans-serif;
+section, footer {
+    padding: 5rem 0;
 
-/* Mixins */
-@mixin clearfix {
-    content: " "; /* Older browser do not support empty content */
-    visibility: hidden;
-    display: block;
-    height: 0;
-    clear: both;
-}
-.clearfix:after {
-    @include clearfix;
-}
-
-@mixin placeholder {
-    &::-webkit-input-placeholder {
-        @content;
-    }
-    &:-moz-placeholder {
-        @content;
-    }
-    &::-moz-placeholder {
-        @content;
-    }
-    &:-ms-input-placeholder {
-        @content;
+    &.dark {
+        background-color: $black;
+        color: $white;
     }
 }
 
-@mixin transform($rule) {
-    -webkit-transform: $rule;
-       -moz-transform: $rule;
-         -o-transform: $rule;
-            transform: $rule;
-}
+header {
+    @include background-linear-gradient($blue, $pink);
+    padding-top: 2rem;
 
-@mixin transition($speed, $delay: 0s, $function: ease, $props: all) {
-    -webkit-transition: $speed $delay $function $props;
-       -moz-transition: $speed $delay $function $props;
-         -o-transition: $speed $delay $function $props;
-            transition: $speed $delay $function $props;
-}
-
-@mixin border-box {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-/* Animations */
-@mixin animated($duration) {
-    -webkit-animation-duration: $duration;
-    animation-duration: $duration;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-@mixin -fade-in-up {
-    0% {
-        opacity: 0;
-        @include transform(translateY(1rem));
-    }
-    100% {
-        opacity: 1;
-        @include transform(translateY(0));
+    img {
+        display: block;
+        width: 100%;
     }
 }
 
-@-webkit-keyframes fade-in-up {
-    @include -fade-in-up();
-}
-
-@keyframes fade-in-up {
-    @include -fade-in-up();
-}
-
-.fade-in-up {
-
-    -webkit-animation-name: fade-in-up;
-    animation-name: fade-in-up;
-}
-
-/* Styles */
-body, html {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: $sans;
-    font-size: 16px;
-    background-color: $black;
-
-    ::selection {
-      background: $blue;
-    }
-    ::-moz-selection {
-      background: $blue;
+nav {
+    ul {
+        margin-top: -1.25rem;
+        padding: 0 2.5rem;
+        li {
+            padding: 1.25rem 2.5rem;
+            @extend .h4;
+            display: inline-block;
+            a, a:hover {
+                text-decoration: none;
+            }
+        }
     }
 }
-p {
-    font-size: 1.5rem;
-    line-height: 2rem;
-}
-h1 {
-    font-weight: 300;
-    font-size: 4rem;
-    margin: 0;
-    padding: 0;
-}
-
-h2 {
-    font-weight: 300;
-    font-size: 3rem;
-    margin: 0;
-    padding: 0;
-}
-
-h3 {
-    font-weight: 300;
-    line-height: 6rem;
-    font-size: 2.5rem;
-    margin: 0;
-    padding: 0;
+.hero {
+    h1 {
+        text-align: center;
+        margin-bottom: 1.25rem;
+    }
+    h3 {
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    form {
+        text-align: center;
+        margin-bottom: 6.25rem;
+    }
+    .gradient-box {
+        margin-bottom: 5rem;
+    }
 }
 
-h4 {
-    font-weight: 300;
-    font-size: 1rem;
-    margin: 0;
-    padding: 0;
+.content {
+    max-width: $content-width;
+    width: 95%;
+    margin: 0 auto;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.gradient-box {
+    @include border-linear-gradient(2px, $blue, $pink);
+    position: relative;
 }
 
-img {
-    max-width: 100%;
+.box {
+    border: 2px solid $off-white;
+
+    & + .box {
+        margin-top: 3.75rem !important;
+    }
 }
 
-.hero-content {
-    @include transform(translate(-50%, -50%));
+.gradient-box, .box {
+    &.for-image {
+        padding: 1.25rem;
+    }
+    &.for-text {
+        padding: 2.25rem;
+        margin: 0 3.125rem;
+    }
+    &.centered {
+        text-align: center;
+    }
+}
+
+.over-image {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 90%;
-    max-width: 30rem;
-
-    .logo {
-        margin-bottom: 2rem;
-    }
+    text-align: center;
+    width: 60%;
+    @include transform(translate(-50%, -50%));
+    color: $white;
+    text-shadow: 0 0 2.25rem $black;
 }
 
-form {
-    @include animated(1s);
-    @extend .fade-in-up;
-    input[type="email"], input[type="text"] {
-        border: 1px solid $off-white;
-        @include transition(0.2s);
-        outline: 0;
-        background: rgba(0,0,0,0);
-        color: $off-white;
-        padding: 1rem 1.5rem;
-        font-size: 1rem;
-        width: 100%;
-        @include border-box;
-
-        @include placeholder {
-            font-family: $sans;
-            color: $off-white;
-        }
-
-        &:focus {
-            border: 1px solid $white;
-            color: $white;
-            outline: 0;
-            @include placeholder {
-                color: $off-white;
-            }
-        }
-    }
-
-    input[type="submit"] {
-        background-color: $off-white;
-        padding: 1rem 1.5rem;
-        border: 1px solid $off-white;
-        font-size: 1rem;
-        outline: 0;
-        border-radius: 0;
-        width: 100%;
-
-    }
-    &.valid {
-        input[type="submit"] {
-            background-color: $pink;
-            border-color: $pink;
-            color: white;
-            cursor: pointer;
-            &:focus {
-                color: $off-white;
-            }
-        }
-    }
-
-    .email-wrapper {
-        display: inline-block;
-        width: 70%;
-        float: left;
-        @include border-box;
-        padding-right: 0.75rem;
-        position: relative;
-    }
-
-    .button-wrapper {
-        display: inline-block;
-        width: 30%;
-        float: left;
-        @include border-box;
-        padding-left: 0.75rem;
-    }
+.contact {
+    width: 20rem;
+    margin: 0 auto !important;
 }
 
-.error {
-    padding: 0.5rem 0;
-    display: block;
-    color: $pink;
-    border: 1px solid rgba(0,0,0,0);
-    opacity: 1;
-    @include transition(0.2s);
-    &.hidden {
-        opacity: 0;
-    }
-}
-
-@media screen and (max-width: $tablet-landscape-max) {
-    body, html {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: $tablet-portrait-max) {
-    body, html {
-        font-size: 14px;
-    }
-}
-
-@media screen and (max-width: $phone-max) {
-    form .email-wrapper, form .button-wrapper {
-        width: 100%;
-        display: block;
-        padding: 0;
+.faq {
+    h4 {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $black;
         margin-bottom: 1rem;
     }
+}
 
-    body, html {
-        font-size: 12px;
+.section-header {
+    text-align: center;
+    position: relative;
+    @include clearfix;
+
+    & > * {
+        margin-bottom: 5rem;
+        display: inline-block;
+        position: relative;
+        &:before {
+            content: " ";
+            width: 0.5rem;
+            height: 0.5rem;
+            position: absolute;
+            top: 50%;
+            left: -3.5rem;
+            @include transition(translateY(-50%));
+            background-color: $pink;
+        }
+        &:after {
+            content: " ";
+            width: 0.25rem;
+            height: 0;
+            border-right: 0.25rem transparent solid;
+            border-bottom: 0.5rem $pink solid;
+            position: absolute;
+            top: 50%;
+            right: -3.5rem;
+            @include transition(translateY(-50%));
+        }
     }
+}
+
+.dark .section-header > * {
+    &:before {
+        background-color: $blue;
+    }
+    &:after {
+        border-bottom-color: $blue;
+    }
+}
+
+footer {
+    background-color: $black;
+    color: $white;
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    img {
+        max-width: 15rem;
+    }
+
+    ul {
+        float: right;
+        li {
+            @extend .p;
+            display: inline-block;
+            padding: 0.5rem 1.25rem;
+        }
+    }
+
 }
 

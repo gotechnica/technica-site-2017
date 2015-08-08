@@ -1,0 +1,22 @@
+$bold: 700;
+$medium: 500;
+$regular: 400;
+
+@font-face {
+	font-family: 'DINPro';
+	font-weight: $bold;
+	src: url("../../font/DINPro-Bold.otf") format("opentype");
+}
+@font-face {
+	font-family: 'DINPro';
+	font-weight: $medium;
+	src: url("../../font/DINPro-Medium.otf") format("opentype");
+}
+@font-face {
+	font-family: 'DINPro';
+	font-weight: $regular;
+	src: url("../../font/DINPro-Regular.otf") format("opentype");
+}
+
+$sans: 'DINPro', 'Helvetica', sans-serif;
+

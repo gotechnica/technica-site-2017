@@ -10,6 +10,10 @@ $(function() {
         }
     });
 
+    $('.logo').click(function() {
+        $('body').toggleClass('flip');
+    })
+
     $('form').submit(function() {
         /* If they click the gray button, show an error message. */
         if (!$(this).hasClass('valid')) {
