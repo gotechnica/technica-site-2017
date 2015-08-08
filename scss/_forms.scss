@@ -8,7 +8,7 @@ form {
         font-size: 1.5rem;
         line-height: 2rem;
         width: 100%;
-        max-width: 30rem;
+        max-width: 25rem;
         background: rgba(0,0,0,0);
         color: $black;
         border: 2px solid $dark-blue;
@@ -80,5 +80,27 @@ form {
         float: left;
         @include border-box;
         padding-left: 0.75rem;
+    }
+}
+
+@media screen and (max-width: $tablet-portrait-max) {
+    form.inline {
+        input {
+            display: block;
+            @include border-box;
+            max-width: none;
+            width: 80%;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="email"] {
+            border-top-left-radius: 0.25rem;
+            border-top-right-radius: 0.25rem;
+            border-bottom-left-radius: 0;
+        }
+        input[type="submit"] {
+            border-top-right-radius: 0rem;
+            border-bottom-left-radius: 0.25rem;
+            border-bottom-right-radius: 0.25rem;
+        }
     }
 }

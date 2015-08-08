@@ -28,3 +28,21 @@ $row-padding: 1.25rem;
 		@include vertical-linear-gradient($blue, $pink);
 	}
 }
+
+@media screen and (max-width: $tablet-portrait-max) {
+	.row {
+		margin: 0;
+		.half {
+			padding: 0;
+			display: block;
+			width: 100%;
+
+			&:last-child {
+				margin-top: 3.125rem;
+			}
+		}
+		&.with-divider:before {
+			display: none;
+		}
+	}
+}

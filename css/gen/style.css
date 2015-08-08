@@ -52,6 +52,14 @@ h4, .h4, nav ul li {
   margin: 0;
   padding: 0; }
 
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 3.5rem;
+    line-height: 4rem; }
+  h2 {
+    font-size: 2rem;
+    line-height: 3rem; } }
+
 /*************************************************
  * utils.scss - Dan Schlosser <dan@schlosser.io> *
  *                                               *
@@ -140,13 +148,25 @@ h4, .h4, nav ul li {
     background-image: -webkit-linear-gradient(top, #00ffff, #ff7bac);
     background-image: linear-gradient(to bottom, #00ffff, #ff7bac); }
 
+@media screen and (max-width: 768px) {
+  .row {
+    margin: 0; }
+    .row .half {
+      padding: 0;
+      display: block;
+      width: 100%; }
+      .row .half:last-child {
+        margin-top: 3.125rem; }
+    .row.with-divider:before {
+      display: none; } }
+
 body, html {
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
   font-family: "DINPro", "Helvetica", sans-serif;
-  font-size: 16px; }
+  font-size: 13px; }
   body ::selection, html ::selection {
     background: #00ffff; }
   body ::-moz-selection, html ::-moz-selection {
@@ -173,17 +193,21 @@ hr {
   background-image: -webkit-linear-gradient(left, #00ffff, #ff7bac);
   background-image: linear-gradient(to right, #00ffff, #ff7bac); }
 
+@media screen and (min-width: 1441px) {
+  body, html {
+    font-size: 16px; } }
+
 @media screen and (max-width: 1024px) {
   body, html {
-    font-size: 15px; } }
+    font-size: 12px; } }
 
 @media screen and (max-width: 768px) {
   body, html {
-    font-size: 14px; } }
+    font-size: 11px; } }
 
 @media screen and (max-width: 640px) {
   body, html {
-    font-size: 12px; } }
+    font-size: 10px; } }
 
 form {
   -webkit-animation-duration: 1s;
@@ -196,7 +220,7 @@ form {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 100%;
-    max-width: 30rem;
+    max-width: 25rem;
     background: transparent;
     color: #111111;
     border: 2px solid #3ae1ec;
@@ -271,6 +295,24 @@ form {
     box-sizing: border-box;
     padding-left: 0.75rem; }
 
+@media screen and (max-width: 768px) {
+  form.inline input {
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    max-width: none;
+    width: 80%;
+    margin: 0 auto; }
+  form.inline input[type="text"], form.inline input[type="email"] {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0; }
+  form.inline input[type="submit"] {
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0.25rem; } }
+
 table {
   vertical-align: middle;
   width: 100%; }
@@ -293,6 +335,10 @@ table {
     padding-top: 1.25rem; }
   table thead tr:first-child td {
     padding-top: 0; }
+
+@media screen and (max-width: 768px) {
+  table {
+    padding: 0 2rem; } }
 
 section, footer {
   padding: 5rem 0; }
@@ -445,3 +491,25 @@ footer {
     footer ul li {
       display: inline-block;
       padding: 0.5rem 1.25rem; }
+
+@media screen and (max-width: 768px) {
+  section .section-header > * {
+    max-width: 80%; }
+    section .section-header > *:before {
+      left: -2rem; }
+    section .section-header > *:after {
+      right: -2rem; }
+  .box.for-text, .gradient-box.for-text {
+    margin: 0 2rem; }
+  footer img {
+    width: 80%;
+    display: block;
+    margin: 0 auto 2rem;
+    max-width: none; }
+  footer ul {
+    text-align: center;
+    display: block;
+    float: none;
+    width: 100%; }
+  nav {
+    margin-bottom: -1.25rem; } }

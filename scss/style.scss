@@ -184,6 +184,41 @@ footer {
             padding: 0.5rem 1.25rem;
         }
     }
+}
 
+@media screen and (max-width: $tablet-portrait-max) {
+    section .section-header > * {
+        max-width: 80%;
+        &:before {
+            left: -2rem;
+        }
+        &:after {
+            right: -2rem;
+        }
+    }
+    .box, .gradient-box {
+        &.for-text {
+            margin: 0 2rem;
+        }
+    }
+
+    footer {
+        img {
+            width: 80%;
+            display: block;
+            margin: 0 auto 2rem;
+            max-width: none;
+        }
+        ul {
+            text-align: center;
+            display: block;
+            float: none;
+            width: 100%;
+        }
+    }
+
+    nav {
+        margin-bottom: -1.25rem;
+    }
 }
 

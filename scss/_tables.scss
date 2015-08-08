@@ -36,3 +36,9 @@ table {
 		}
 	}
 }
+
+@media screen and(max-width: $tablet-portrait-max) {
+	table {
+		padding: 0 2rem;
+	}
+}
