@@ -312,13 +312,12 @@ header {
     width: 100%; }
 
 nav ul {
+  display: flex;
+  justify-content: space-around;
   margin-top: -1.25rem;
-  padding: 0 2.5rem; }
-  nav ul li {
-    padding: 1.25rem 2.5rem;
-    display: inline-block; }
-    nav ul li a, nav ul li a:hover {
-      text-decoration: none; }
+  padding: 1.25rem 2.5rem; }
+  nav ul li a, nav ul li a:hover {
+    text-decoration: none; }
 
 .hero h1 {
   text-align: center;

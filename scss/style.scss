@@ -31,12 +31,14 @@ header {
 
 nav {
     ul {
+        display: flex;
+        justify-content: space-around;
         margin-top: -1.25rem;
-        padding: 0 2.5rem;
+        padding: 1.25rem 2.5rem;
         li {
-            padding: 1.25rem 2.5rem;
+            // padding: 1.25rem 2.5rem;
             @extend .h4;
-            display: inline-block;
+            // display: inline-block;
             a, a:hover {
                 text-decoration: none;
             }
