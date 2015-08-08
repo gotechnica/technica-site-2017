@@ -13,52 +13,41 @@
   font-weight: 400;
   src: url("../../font/DINPro-Regular.otf") format("opentype"); }
 
-p, .p, footer ul li {
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+body {
+  font-family: "DINPro", "Helvetica", sans-serif;
+  font-size: 13px;
+  line-height: 1.5; }
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, nav ul li, p, .p, footer ul li {
   margin: 0;
   padding: 0; }
+
+p, .p, footer ul li {
+  font-size: 1.5rem; }
 
 h1, .h1 {
-  font-family: "DINPro", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 4rem;
-  line-height: 5.75rem;
-  margin: 0 0 1.25rem;
-  padding: 0; }
+  margin: 0 0 1.25rem; }
 
 h2, .h2 {
-  font-family: "DINPro", "Helvetica", sans-serif;
   font-weight: 700;
   font-size: 3rem;
-  line-height: 3.875rem;
-  text-transform: uppercase;
-  margin: 0;
-  padding: 0; }
+  text-transform: uppercase; }
 
 h3, .h3 {
-  font-family: "DINPro", "Helvetica", sans-serif;
   font-weight: 400;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  margin: 0;
-  padding: 0; }
+  font-size: 2rem; }
 
 h4, .h4, nav ul li {
-  font-family: "DINPro", "Helvetica", sans-serif;
   font-weight: 500;
-  line-height: 1.875rem;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0; }
+  font-size: 1.5rem; }
 
 @media screen and (max-width: 640px) {
   h1 {
-    font-size: 3.5rem;
-    line-height: 4rem; }
+    font-size: 3.5rem; }
   h2 {
-    font-size: 2rem;
-    line-height: 3rem; } }
+    font-size: 2rem; } }
 
 /*************************************************
  * utils.scss - Dan Schlosser <dan@schlosser.io> *
@@ -164,9 +153,7 @@ body, html {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;
-  font-family: "DINPro", "Helvetica", sans-serif;
-  font-size: 13px; }
+  padding: 0; }
   body ::selection, html ::selection {
     background: #00ffff; }
   body ::-moz-selection, html ::-moz-selection {
