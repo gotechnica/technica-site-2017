@@ -209,6 +209,25 @@ hr {
   body, html {
     font-size: 10px; } }
 
+.ratio {
+  position: relative;
+  width: 100%;
+  overflow: hidden; }
+  .ratio:before {
+    content: "";
+    display: block;
+    padding-top: 100%; }
+
+.ratio > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0; }
+
+.ratio-1_2:before {
+  padding-top: 33.33%; }
+
 form {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -303,7 +322,8 @@ form {
     box-sizing: border-box;
     max-width: none;
     width: 80%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    text-align: center; }
   form.inline input[type="text"], form.inline input[type="email"] {
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem;
