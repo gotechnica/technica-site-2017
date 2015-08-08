@@ -449,7 +449,7 @@ nav ul {
       background-color: #ff7bac; }
     .section-header > *:after {
       content: " ";
-      width: 0.25rem;
+      width: 0.375rem;
       height: 0;
       border-right: 0.25rem transparent solid;
       border-bottom: 0.5rem #ff7bac solid;
