@@ -64,12 +64,12 @@
   <nav>
     <div class="content">
       <ul>
-        <li><a href="#register">Register</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="#faq">Faq</a></li>
+        <li><a data-scroll href="#register">Register</a></li>
+        <li><a data-scroll href="#about">About</a></li>
+        <li><a data-scroll href="#sponsors">Sponsors</a></li>
+        <li><a data-scroll href="#schedule">Schedule</a></li>
+        <li><a data-scroll href="#team">Team</a></li>
+        <li><a data-scroll href="#faq">Faq</a></li>
       </ul>
     </div>
   </nav>
@@ -101,9 +101,9 @@
 
   <hr>
 
-  <section>
+  <section id="sponsors">
     <div class="section-header">
-      <h3 id="sponsors">Sponsored by the amazing women and men at <br>these fine companies. They’ll be around, too.</h3>
+      <h3>Sponsored by the amazing women and men at <br>these fine companies. They’ll be around, too.</h3>
     </div>
     <div class="gradient-box for-text contact centered">
       <p>Interested in sponsoring?</p>
@@ -113,7 +113,7 @@
 
   <section id="schedule" class="dark">
     <div class="content">
-      <div class="section-header" id="schedule">
+      <div class="section-header">
         <h3>Event Schedule</h3>
       </div>
       <div class="row">
@@ -192,9 +192,9 @@
 
   <hr>
 
-  <section>
+  <section id="faq">
     <div class="content">
-      <div class="section-header" id="faq">
+      <div class="section-header">
         <h3>Frequently Asked Questions</h3>
       </div>
       <div class="row with-divider faq">
@@ -251,16 +251,7 @@
   </footer>
   <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
   <script type="text/javascript">
-  var rem = function rem() {
-    var html = document.getElementsByTagName('html')[0];
-
-    return function () {
-      return parseInt(window.getComputedStyle(html)['fontSize']);
-    }
-  }();
-  smoothScroll.init({
-    offset: 5 * rem()
-  });
+  smoothScroll.init();
   </script>
 </body>
 </html>
