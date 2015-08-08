@@ -353,15 +353,15 @@ nav ul {
   .box + .box {
     margin-top: 3.75rem !important; }
 
-.gradient-box.for-image, .box.for-image {
-  padding: 1.25rem; }
-
-.gradient-box.for-text, .box.for-text {
-  padding: 2.25rem;
-  margin: 0 3.125rem; }
-
-.gradient-box.centered, .box.centered {
-  text-align: center; }
+.gradient-box, .box {
+  border-radius: 4px; }
+  .gradient-box.for-image, .box.for-image {
+    padding: 1.25rem; }
+  .gradient-box.for-text, .box.for-text {
+    padding: 2.25rem;
+    margin: 0 3.125rem; }
+  .gradient-box.centered, .box.centered {
+    text-align: center; }
 
 .over-image {
   position: absolute;

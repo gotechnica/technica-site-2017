@@ -77,13 +77,13 @@ nav {
 
 .box {
     border: 2px solid $off-white;
-
     & + .box {
         margin-top: 3.75rem !important;
     }
 }
 
 .gradient-box, .box {
+    border-radius: 4px;
     &.for-image {
         padding: 1.25rem;
     }
