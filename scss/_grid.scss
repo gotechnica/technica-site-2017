@@ -6,13 +6,20 @@ $row-padding: 1.25rem;
 	@include clearfix;
 	margin: 0 (-$row-padding);
 
-	.half {
-		width: 50%;
+	.half, .third {
 		padding: 0 $row-padding;
 		display: inline-block;
 		position: relative;
 		float: left;
 		@include border-box;
+	}
+
+	.half {
+		width: 50%;
+	}
+
+	.third {
+		width: 33.333333333%;
 	}
 
 	&.with-divider:before {
@@ -32,12 +39,12 @@ $row-padding: 1.25rem;
 @media screen and (max-width: $tablet-portrait-max) {
 	.row {
 		margin: 0;
-		.half {
+		.half, .third {
 			padding: 0;
 			display: block;
 			width: 100%;
 
-			&:last-child {
+			&:not(:first-child) {
 				margin-top: 3.125rem;
 			}
 		}

@@ -55,6 +55,7 @@ nav {
     }
     h3 {
         text-align: center;
+        margin-bottom: 2.5rem;
     }
     form {
         text-align: center;
@@ -166,6 +167,70 @@ nav {
     }
 }
 
+.sponsors {
+    margin-bottom: 5rem;
+    img {
+        display: block;
+        margin: 0 auto;
+        height: 4rem;
+    }
+}
+
+$team-padding: 1.25rem;
+
+.team {
+    display: block;
+    position: relative;
+    margin-left: (-$team-padding);
+    @include clearfix;
+    margin: (-$team-padding) 0 2.5rem;
+
+    .person-wrapper {
+        width: 16.666666667%;
+        padding-bottom: 16.666666667%;
+        display: inline-block;
+        position: relative;
+        float: left;
+        @include border-box;
+        z-index: 1;
+
+        .person {
+            padding: $team-padding;
+            position: absolute;
+            background-color: $white;
+            border: 2px solid rgba(0,0,0,0);
+            width: 100%;
+            top: 0;
+            overflow: hidden;
+            @include border-box;
+            text-align: center;
+            z-index: 1;
+
+            .name, .title {
+                display: none;
+            }
+
+            img {
+                border-radius: 50%;
+                z-index: 1;
+                position: relative;
+            }
+        }
+
+        &:hover {
+            overflow: visible;
+            z-index: 2;
+            .person {
+                box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
+                @include border-linear-gradient(2px, $blue, $pink);
+                .name, .title {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
 footer {
     background-color: $black;
     color: $white;
@@ -187,12 +252,6 @@ footer {
     }
 }
 
-.mobile-only {
-    display: none;
-}
-
-
-
 @media screen and (max-width: $tablet-portrait-max) {
     section .section-header > * {
         max-width: 80%;
@@ -203,12 +262,6 @@ footer {
             right: -2rem;
         }
     }
-
-.mobile-only {
-    display: block;
-}
-
-
 
     .box, .gradient-box {
         &.for-text {
@@ -231,8 +284,21 @@ footer {
         }
     }
 
+    .team .person-wrapper {
+        width: 25%;
+        padding-bottom: 25%;
+    }
+
     nav {
         margin-bottom: -1.25rem;
     }
 }
+
+@media screen and (max-width: $phone-max) {
+    .team .person-wrapper {
+        width: 33.333333333%;
+        padding-bottom: 33.333333333%;
+    }
+}
+
 
