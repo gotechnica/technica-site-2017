@@ -34,8 +34,8 @@ nav {
         @include flex;
         @include justify-content(space-around);
         @include transition(0.2s);
-        margin-top: -1.25rem;
-        padding: 1.25rem 2.5rem;
+        margin-top: -1.875rem;
+        padding: 2rem 2.5rem;
         opacity: 0.35;
 
         &:hover {
