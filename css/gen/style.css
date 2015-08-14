@@ -440,13 +440,35 @@ nav ul {
   margin: 0 auto; }
 
 .gradient-box {
-  border: 2px solid transparent;
   -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
   -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
   border-image: linear-gradient(to right, #00ffff 0%, #ff7bac 100%);
   border-image-slice: 1;
+  border-top: 2px solid transparent;
+  border-bottom: 2px solid transparent;
+  border-left: 0;
+  border-right: 0;
   position: relative;
   border-radius: 20px; }
+  .gradient-box:after, .gradient-box:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    width: 4px;
+    top: -2px;
+    bottom: -2px; }
+  .gradient-box:after {
+    right: -4px;
+    border: 2px solid #ff7bac;
+    border-left: 0;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px; }
+  .gradient-box:before {
+    left: -4px;
+    border: 2px solid #00ffff;
+    border-right: 0;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px; }
 
 .box {
   border: 2px solid rgba(0, 0, 0, 0.35); }
@@ -566,14 +588,43 @@ nav ul {
       position: absolute;
       background-color: #ffffff;
       border: 2px solid transparent;
-      width: 100%;
+      left: 4px;
+      right: 4px;
       top: 0;
-      overflow: hidden;
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box;
       text-align: center;
-      z-index: 1; }
+      z-index: 1;
+      -moz-border-image: -moz-linear-gradient(left, #ffffff 0%, #ffffff 100%);
+      -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 100%);
+      border-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      border-image-slice: 1;
+      border-top: 2px solid transparent;
+      border-bottom: 2px solid transparent;
+      border-left: 0;
+      border-right: 0; }
+      .team .person-wrapper .person:after, .team .person-wrapper .person:before {
+        display: block;
+        content: ' ';
+        position: absolute;
+        width: 4px;
+        top: -2px;
+        bottom: -2px; }
+      .team .person-wrapper .person:after {
+        right: -4px;
+        border: 2px solid #ffffff;
+        border-left: 0;
+        border-top-right-radius: 4px;
+        border-bottom-right-radius: 4px; }
+      .team .person-wrapper .person:before {
+        left: -4px;
+        border: 2px solid #ffffff;
+        border-right: 0;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px; }
+      .team .person-wrapper .person:after, .team .person-wrapper .person:before {
+        background-color: #ffffff; }
       .team .person-wrapper .person .name, .team .person-wrapper .person .title {
         display: none; }
       .team .person-wrapper .person img {
@@ -584,12 +635,35 @@ nav ul {
       overflow: visible;
       z-index: 2; }
       .team .person-wrapper:hover .person {
+        border-radius: 4px;
         box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
-        border: 2px solid transparent;
         -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
         -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
         border-image: linear-gradient(to right, #00ffff 0%, #ff7bac 100%);
-        border-image-slice: 1; }
+        border-image-slice: 1;
+        border-top: 2px solid transparent;
+        border-bottom: 2px solid transparent;
+        border-left: 0;
+        border-right: 0; }
+        .team .person-wrapper:hover .person:after, .team .person-wrapper:hover .person:before {
+          display: block;
+          content: ' ';
+          position: absolute;
+          width: 4px;
+          top: -2px;
+          bottom: -2px; }
+        .team .person-wrapper:hover .person:after {
+          right: -4px;
+          border: 2px solid #ff7bac;
+          border-left: 0;
+          border-top-right-radius: 4px;
+          border-bottom-right-radius: 4px; }
+        .team .person-wrapper:hover .person:before {
+          left: -4px;
+          border: 2px solid #00ffff;
+          border-right: 0;
+          border-top-left-radius: 4px;
+          border-bottom-left-radius: 4px; }
         .team .person-wrapper:hover .person .name, .team .person-wrapper:hover .person .title {
           display: block; }
 
@@ -614,6 +688,7 @@ footer {
     section .section-header > *:after {
       right: -2rem; }
   .box.for-text, .gradient-box.for-text {
+    width: 80%;
     margin: 0 2rem; }
   footer img {
     width: 80%;

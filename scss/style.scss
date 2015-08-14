@@ -71,7 +71,7 @@ nav {
 }
 
 .gradient-box {
-    @include border-linear-gradient(2px, $blue, $pink);
+    @include border-linear-gradient(2px, $blue, $pink, 4px);
     position: relative;
     border-radius: 20px;
 }
@@ -196,12 +196,17 @@ $team-padding: 1.25rem;
             position: absolute;
             background-color: $white;
             border: 2px solid rgba(0,0,0,0);
-            width: 100%;
+            left: 4px;
+            right: 4px;
             top: 0;
-            overflow: hidden;
             @include border-box;
             text-align: center;
             z-index: 1;
+            @include border-linear-gradient(2px, $white, $white, 4px);
+
+            &:after, &:before {
+                background-color: $white;
+            }
 
             .name, .title {
                 display: none;
@@ -218,8 +223,9 @@ $team-padding: 1.25rem;
             overflow: visible;
             z-index: 2;
             .person {
+                border-radius: 4px;
                 box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
-                @include border-linear-gradient(2px, $blue, $pink);
+                @include border-linear-gradient(2px, $blue, $pink, 4px);
                 .name, .title {
                     display: block;
                 }
@@ -262,6 +268,7 @@ footer {
 
     .box, .gradient-box {
         &.for-text {
+            width: 80%;
             margin: 0 2rem;
         }
     }
