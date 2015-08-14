@@ -178,7 +178,10 @@ img {
 
 a {
   color: inherit;
-  color: inherit; }
+  color: inherit;
+  transition: color, 0.15s; }
+  a:hover {
+    color: #ff7bac; }
 
 hr {
   height: 2px;
