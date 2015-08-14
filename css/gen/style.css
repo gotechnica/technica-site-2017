@@ -474,7 +474,7 @@ nav ul {
     border-bottom-left-radius: 4px; }
 
 .box {
-  border: 2px solid rgba(0, 0, 0, 0.35); }
+  border: 2px solid rgba(0, 0, 0, 0.1); }
   .box + .box {
     margin-top: 3.75rem !important; }
 
