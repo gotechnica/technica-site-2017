@@ -4,12 +4,12 @@ form {
     font-size: 0;
     position: relative;
 
-    input[type="email"], input[type="text"] {
+    input[type="email"] {
         font-family: $sans;
         font-size: 1.5rem;
         line-height: 2rem;
         width: 100%;
-        max-width: 30rem;
+        max-width: 47rem;
         background: rgba(0,0,0,0);
         color: $black;
         border: 2px solid $dark-blue;
@@ -23,6 +23,10 @@ form {
             font-size: 1.5rem;
             line-height: 2rem;
             color: $gray;
+        }
+
+        &:focus {
+            @include box-shadow;
         }
     }
 
@@ -61,8 +65,8 @@ form {
             display: inline-block;
         }
         input[type="email"] {
-            border-top-left-radius: 0.25rem;
-            border-bottom-left-radius: 0.25rem;
+            border-radius: 0.25rem;
+            padding-right: 20rem;
         }
         button[type="submit"] {
             border-top-right-radius: 0.25rem;
@@ -149,9 +153,9 @@ form {
             @include border-box;
         }
         input[type="email"] {
-            border-top-left-radius: 0.25rem;
-            border-top-right-radius: 0.25rem;
-            border-bottom-left-radius: 0;
+            height: 100%;
+            padding-right: 3rem;
+            padding-bottom: 8.6rem;
         }
         .submit-wrapper {
             top: 50%;

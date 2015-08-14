@@ -105,6 +105,11 @@
     box-sizing: border-box;
 }
 
+@mixin box-shadow {
+    -webkit-box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
+    box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
+}
+
 @mixin justify-content($justify) {
     -webkit-justify-content: $justify;
     justify-content: $justify;

@@ -220,7 +220,7 @@ $team-padding: 1.25rem;
             z-index: 2;
             .person {
                 border-radius: 4px;
-                box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
+                @include box-shadow;
                 @include border-linear-gradient(2px, $blue, $pink, 4px);
                 .name, .title {
                     display: block;

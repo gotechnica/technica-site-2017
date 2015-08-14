@@ -215,12 +215,12 @@ form {
   animation-fill-mode: both;
   font-size: 0;
   position: relative; }
-  form input[type="email"], form input[type="text"] {
+  form input[type="email"] {
     font-family: "DINPro", "Helvetica", sans-serif;
     font-size: 1.5rem;
     line-height: 2rem;
     width: 100%;
-    max-width: 30rem;
+    max-width: 47rem;
     background: transparent;
     color: #111111;
     border: 2px solid #3ae1ec;
@@ -233,26 +233,29 @@ form {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
-    form input[type="email"]::-webkit-input-placeholder, form input[type="text"]::-webkit-input-placeholder {
+    form input[type="email"]::-webkit-input-placeholder {
       font-family: "DINPro", "Helvetica", sans-serif;
       font-size: 1.5rem;
       line-height: 2rem;
       color: rgba(0, 0, 0, 0.35); }
-    form input[type="email"]:-moz-placeholder, form input[type="text"]:-moz-placeholder {
+    form input[type="email"]:-moz-placeholder {
       font-family: "DINPro", "Helvetica", sans-serif;
       font-size: 1.5rem;
       line-height: 2rem;
       color: rgba(0, 0, 0, 0.35); }
-    form input[type="email"]::-moz-placeholder, form input[type="text"]::-moz-placeholder {
+    form input[type="email"]::-moz-placeholder {
       font-family: "DINPro", "Helvetica", sans-serif;
       font-size: 1.5rem;
       line-height: 2rem;
       color: rgba(0, 0, 0, 0.35); }
-    form input[type="email"]:-ms-input-placeholder, form input[type="text"]:-ms-input-placeholder {
+    form input[type="email"]:-ms-input-placeholder {
       font-family: "DINPro", "Helvetica", sans-serif;
       font-size: 1.5rem;
       line-height: 2rem;
       color: rgba(0, 0, 0, 0.35); }
+    form input[type="email"]:focus {
+      -webkit-box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
+      box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2); }
   form button[type="submit"] {
     font-family: "DINPro", "Helvetica", sans-serif;
     font-size: 1.5rem;
@@ -289,8 +292,8 @@ form {
     form.inline input {
       display: inline-block; }
     form.inline input[type="email"] {
-      border-top-left-radius: 0.25rem;
-      border-bottom-left-radius: 0.25rem; }
+      border-radius: 0.25rem;
+      padding-right: 20rem; }
     form.inline button[type="submit"] {
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
@@ -354,9 +357,9 @@ form {
       -moz-box-sizing: border-box;
       box-sizing: border-box; }
     form.inline input[type="email"] {
-      border-top-left-radius: 0.25rem;
-      border-top-right-radius: 0.25rem;
-      border-bottom-left-radius: 0; }
+      height: 100%;
+      padding-right: 3rem;
+      padding-bottom: 8.6rem; }
     form.inline .submit-wrapper {
       top: 50%;
       left: 0;
@@ -636,6 +639,7 @@ nav ul {
       z-index: 2; }
       .team .person-wrapper:hover .person {
         border-radius: 4px;
+        -webkit-box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
         box-shadow: 0 2px 10px 0 rgba(17, 17, 17, 0.2);
         -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
         -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
