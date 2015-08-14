@@ -2,19 +2,21 @@ form {
     @include animated(1s);
     @extend .fade-in-up;
     font-size: 0;
+    position: relative;
 
     input[type="email"], input[type="text"] {
         font-family: $sans;
         font-size: 1.5rem;
         line-height: 2rem;
         width: 100%;
-        max-width: 25rem;
+        max-width: 30rem;
         background: rgba(0,0,0,0);
         color: $black;
         border: 2px solid $dark-blue;
         outline: 0;
         padding: 2rem 3rem;
         @include transition(0.2s);
+        @include border-box;
 
         @include placeholder {
             font-family: $sans;
@@ -24,7 +26,7 @@ form {
         }
     }
 
-    input[type="submit"] {
+    button[type="submit"] {
         font-family: $sans;
         font-size: 1.5rem;
         line-height: 2rem;
@@ -33,91 +35,140 @@ form {
         color: $white;
         border: 2px solid $dark-blue;
         padding: 2rem 3rem;
+        text-align: center;
+        height: 100%;
         outline: 0;
         border-radius: 0;
         cursor: pointer;
+        width: 100%;
+        @include transition(0.3s);
+    }
+
+    .submit-wrapper {
+        position: absolute;
+        left: 30rem;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        @include transition(0.3s);
     }
 
     &.inline {
+        width: 100%;
+        max-width: 47rem;
+        margin: 0 auto;
         input {
             display: inline-block;
         }
-        input[type="text"], input[type="email"] {
+        input[type="email"] {
             border-top-left-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem;
         }
-        input[type="submit"] {
+        button[type="submit"] {
             border-top-right-radius: 0.25rem;
             border-bottom-right-radius: 0.25rem;
-        }
-    }
 
-
-    &.valid {
-        input[type="submit"] {
-            background-color: $pink;
-            border-color: $pink;
-            color: white;
-            cursor: pointer;
-            &:focus {
-                color: $off-white;
+            & > span {
+                @include transition(0.3s);
+                position: absolute;
+                width: 100%;
+                top: 50%;
+                @include transform(translate(-50%, -50%));
+            }
+            .btn-success, .btn-hello {
+                opacity: 0;
+                z-index: 1;
+                text-transform: none;
+            }
+            .btn-pre-reg {
+                opacity: 1;
+                z-index: 2;
             }
         }
     }
 
-    .email-wrapper {
-        display: inline-block;
-        width: 70%;
-        float: left;
-        @include border-box;
-        padding-right: 0.75rem;
-        position: relative;
-    }
 
-    .message {
-        display: block;
-        font-size: 1.4rem;
-        padding-top: 0.5rem;
-        height: 2rem;
-        margin-bottom: -2rem;
-        color: $pink;
-        opacity: 1;
-        @include transition(0.3s);
-        @include border-box;
-
-        &.message-hidden {
-            opacity: 0;
+    &.invalid {
+        button[type="submit"] {
+            background-color: $red;
+            border-color: $red;
+        }
+        input[type="email"] {
+            border-color: $red;
         }
     }
 
-    .button-wrapper {
-        display: inline-block;
-        width: 30%;
-        float: left;
-        @include border-box;
-        padding-left: 0.75rem;
+    &.success {
+        .submit-wrapper {
+            left: 0;
+        }
+        button[type="submit"] {
+            border-radius: 0.25rem !important;
+            background-color: $pink;
+            border-color: $pink;
+
+            .btn-success {
+                opacity: 1;
+                z-index: 2;
+            }
+            .btn-pre-reg {
+                opacity: 0;
+                z-index: 1;
+            }
+            .btn-hello {
+                color: $off-white;
+            }
+
+            &:hover {
+                .btn-success {
+                    opacity: 0;
+                    z-index: 1;
+                }
+                .btn-hello {
+                    opacity: 1;
+                    z-index: 2;
+                }
+            }
+        }
+        input[type="email"] {
+            border-color: $pink;
+        }
+
     }
 }
 
 @media screen and (max-width: $tablet-portrait-max) {
     form.inline {
+        height: 12.8rem;
+        width: 80%;
+        margin: 0 auto;
         input {
             display: block;
-            @include border-box;
             max-width: none;
-            width: 80%;
-            margin: 0 auto;
             text-align: center;
+            @include border-box;
         }
-        input[type="text"], input[type="email"] {
+        input[type="email"] {
             border-top-left-radius: 0.25rem;
             border-top-right-radius: 0.25rem;
             border-bottom-left-radius: 0;
         }
-        input[type="submit"] {
+        .submit-wrapper {
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        button[type="submit"] {
             border-top-right-radius: 0rem;
             border-bottom-left-radius: 0.25rem;
             border-bottom-right-radius: 0.25rem;
         }
+        &.success {
+            .submit-wrapper {
+                top: 0;
+            }
+        }
+
     }
 }
