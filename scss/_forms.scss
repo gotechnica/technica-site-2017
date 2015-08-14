@@ -41,7 +41,7 @@ form {
         border-radius: 0;
         cursor: pointer;
         width: 100%;
-        @include transition(0.3s);
+        @include transition(0.2s);
     }
 
     .submit-wrapper {
@@ -50,7 +50,7 @@ form {
         right: 0;
         top: 0;
         bottom: 0;
-        @include transition(0.3s);
+        @include transition(0.2s);
     }
 
     &.inline {
@@ -69,7 +69,7 @@ form {
             border-bottom-right-radius: 0.25rem;
 
             & > span {
-                @include transition(0.3s);
+                @include transition(0.2s);
                 position: absolute;
                 width: 100%;
                 top: 50%;

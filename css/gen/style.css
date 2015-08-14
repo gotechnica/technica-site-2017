@@ -268,20 +268,20 @@ form {
     border-radius: 0;
     cursor: pointer;
     width: 100%;
-    -webkit-transition: 0.3s 0s ease all;
-    -moz-transition: 0.3s 0s ease all;
-    -o-transition: 0.3s 0s ease all;
-    transition: 0.3s 0s ease all; }
+    -webkit-transition: 0.2s 0s ease all;
+    -moz-transition: 0.2s 0s ease all;
+    -o-transition: 0.2s 0s ease all;
+    transition: 0.2s 0s ease all; }
   form .submit-wrapper {
     position: absolute;
     left: 30rem;
     right: 0;
     top: 0;
     bottom: 0;
-    -webkit-transition: 0.3s 0s ease all;
-    -moz-transition: 0.3s 0s ease all;
-    -o-transition: 0.3s 0s ease all;
-    transition: 0.3s 0s ease all; }
+    -webkit-transition: 0.2s 0s ease all;
+    -moz-transition: 0.2s 0s ease all;
+    -o-transition: 0.2s 0s ease all;
+    transition: 0.2s 0s ease all; }
   form.inline {
     width: 100%;
     max-width: 47rem;
@@ -295,10 +295,10 @@ form {
       border-top-right-radius: 0.25rem;
       border-bottom-right-radius: 0.25rem; }
       form.inline button[type="submit"] > span {
-        -webkit-transition: 0.3s 0s ease all;
-        -moz-transition: 0.3s 0s ease all;
-        -o-transition: 0.3s 0s ease all;
-        transition: 0.3s 0s ease all;
+        -webkit-transition: 0.2s 0s ease all;
+        -moz-transition: 0.2s 0s ease all;
+        -o-transition: 0.2s 0s ease all;
+        transition: 0.2s 0s ease all;
         position: absolute;
         width: 100%;
         top: 50%;
