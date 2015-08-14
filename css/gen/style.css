@@ -420,10 +420,7 @@ nav ul {
   margin-top: -1.25rem;
   padding: 1.25rem 2.5rem; }
   nav ul li a {
-    text-decoration: none;
-    transition: color, 0.15s; }
-    nav ul li a:hover {
-      color: #ff7bac; }
+    text-decoration: none; }
 
 .hero h1 {
   text-align: center;
@@ -676,7 +673,8 @@ footer {
   footer a, footer a:hover {
     text-decoration: none; }
   footer img {
-    max-width: 15rem; }
+    max-width: 15rem;
+    float: left; }
   footer ul {
     float: right; }
     footer ul li {
@@ -700,7 +698,8 @@ footer {
     width: 80%;
     display: block;
     margin: 0 auto 2rem;
-    max-width: none; }
+    max-width: none;
+    float: none; }
   footer ul {
     text-align: center;
     display: block;

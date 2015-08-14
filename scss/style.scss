@@ -39,10 +39,6 @@ nav {
             @extend .h4;
             a {
                 text-decoration: none;
-                transition: color, .15s;
-                &:hover {
-                    color: $pink;
-                }
             }
         }
     }
@@ -243,6 +239,7 @@ footer {
 
     img {
         max-width: 15rem;
+        float: left;
     }
 
     ul {
@@ -284,6 +281,7 @@ footer {
             display: block;
             margin: 0 auto 2rem;
             max-width: none;
+            float: none;
         }
         ul {
             text-align: center;
