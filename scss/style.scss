@@ -33,8 +33,15 @@ nav {
     ul {
         @include flex;
         @include justify-content(space-around);
+        @include transition(0.2s);
         margin-top: -1.25rem;
         padding: 1.25rem 2.5rem;
+        opacity: 0.35;
+
+        &:hover {
+            opacity: 1;
+        }
+
         li {
             @extend .h4;
             a {

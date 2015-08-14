@@ -223,7 +223,7 @@ form {
     max-width: 47rem;
     background: transparent;
     color: #111111;
-    border: 2px solid #3ae1ec;
+    border: 2px solid #00F2F2;
     outline: 0;
     padding: 2rem 3rem;
     -webkit-transition: 0.2s 0s ease all;
@@ -261,9 +261,9 @@ form {
     font-size: 1.5rem;
     line-height: 2rem;
     text-transform: uppercase;
-    background-color: #3ae1ec;
+    background-color: #00F2F2;
     color: #ffffff;
-    border: 2px solid #3ae1ec;
+    border: 2px solid #00F2F2;
     padding: 2rem 3rem;
     text-align: center;
     height: 100%;
@@ -420,8 +420,15 @@ nav ul {
   display: flex;
   -webkit-justify-content: space-around;
   justify-content: space-around;
+  -webkit-transition: 0.2s 0s ease all;
+  -moz-transition: 0.2s 0s ease all;
+  -o-transition: 0.2s 0s ease all;
+  transition: 0.2s 0s ease all;
   margin-top: -1.25rem;
-  padding: 1.25rem 2.5rem; }
+  padding: 1.25rem 2.5rem;
+  opacity: 0.35; }
+  nav ul:hover {
+    opacity: 1; }
   nav ul li a {
     text-decoration: none; }
 
