@@ -77,6 +77,16 @@
     box-sizing: border-box;
 }
 
+@mixin justify-content($justify) {
+    -webkit-justify-content: $justify;
+    justify-content: $justify;
+}
+
+@mixin flex {
+    display: -webkit-flex;
+    display: flex;
+}
+
 .only-mobile { display: none; }
 @media only screen and (max-width: $phone-max) {
     .only-mobile { display: initial; }

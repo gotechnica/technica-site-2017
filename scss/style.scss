@@ -31,8 +31,8 @@ header {
 
 nav {
     ul {
-        display: flex;
-        justify-content: space-around;
+        @include flex;
+        @include justify-content(space-around);
         margin-top: -1.25rem;
         padding: 1.25rem 2.5rem;
         li {
