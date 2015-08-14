@@ -683,6 +683,13 @@ footer {
   color: #ffffff; }
   footer a, footer a:hover {
     text-decoration: none; }
+  footer .content:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
   footer img {
     max-width: 15rem;
     float: left; }
