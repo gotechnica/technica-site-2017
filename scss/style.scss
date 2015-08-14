@@ -266,9 +266,14 @@ footer {
         }
     }
 
+    p {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
     .box, .gradient-box {
         &.for-text {
-            width: 80%;
+            max-width: 80%;
             margin: 0 2rem;
         }
     }

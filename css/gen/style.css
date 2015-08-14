@@ -687,8 +687,11 @@ footer {
       left: -2rem; }
     section .section-header > *:after {
       right: -2rem; }
+  p {
+    max-width: 90%;
+    margin: 0 auto; }
   .box.for-text, .gradient-box.for-text {
-    width: 80%;
+    max-width: 80%;
     margin: 0 2rem; }
   footer img {
     width: 80%;
