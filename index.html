@@ -80,10 +80,19 @@
         <h1>The All-Ladies Hackathon</h1>
       </div>
       <h3>November 7-8, 2015. <br class="only-mobile"> College Park, MD.</h3>
-      <form class="inline">
-        <input type="text" placeholder="Start with your email address">
+      <!-- Submit to Google Forms in AJAX, then redirect to /?submitted=true -->
+      <form action="https://docs.google.com/forms/d/1WbHRIAhsnFkINpBncaHqBswDA0Ih45hNhaEODOtY98A/formResponse?embedded=true" method="POST" class="inline" onsubmit="submitted=true;" target="hidden_iframe" id="signup-form">
+        <input type="email" name="entry.118037203" id="entry_118037203" required="" placeholder="Start with your email address">
+        <input type="hidden" name="draftResponse" value="[,,&quot;-3546404646361883917&quot;]">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fvv" value="0">
+        <input type="hidden" name="fbzx" value="-3546404646361883917">
         <input type="submit" value="Pre-Register">
+        <span id="error" class="message message-hidden">That doesn't look like an email to us... sorry!</span>
+        <span id="success" class="message message-hidden">You're all signed up!</span>
       </form>
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe id="hidden_iframe" name="hidden_iframe" onload="if(submitted){window.location='/?success';}" style="display: none;"></iframe>
     </div>
   </section>
 
@@ -442,6 +451,31 @@
   <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
   <script type="text/javascript">
     smoothScroll.init();
+    function validateEmail(email) {
+      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+      return re.test(email);
+    }
+    function submitWasSuccessful() {
+      var re = /.*\?success$/i;
+      return re.test(location.href);
+    }
+    document.getElementById('signup-form').onsubmit = function() {
+      submitted = true;
+      if (validateEmail(document.getElementById('entry_118037203').value)) {
+        this.submit();
+        return true;
+      } else {
+        var error = document.getElementById('error');
+        var success = document.getElementById('success');
+        error.className = error.className.replace(' message-hidden', '');
+        success.className += ' message-hidden';
+        return false;
+      }
+    };
+    if (submitWasSuccessful()) {
+      var success = document.getElementById('success');
+      success.className = success.className.replace(' message-hidden', '');
+    }
   </script>
 </body>
 </html>

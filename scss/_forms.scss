@@ -74,6 +74,22 @@ form {
         position: relative;
     }
 
+    .message {
+        display: block;
+        font-size: 1.4rem;
+        padding-top: 0.5rem;
+        height: 2rem;
+        margin-bottom: -2rem;
+        color: $pink;
+        opacity: 1;
+        @include transition(0.3s);
+        @include border-box;
+
+        &.message-hidden {
+            opacity: 0;
+        }
+    }
+
     .button-wrapper {
         display: inline-block;
         width: 30%;

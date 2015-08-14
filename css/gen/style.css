@@ -282,6 +282,23 @@ form {
     box-sizing: border-box;
     padding-right: 0.75rem;
     position: relative; }
+  form .message {
+    display: block;
+    font-size: 1.4rem;
+    padding-top: 0.5rem;
+    height: 2rem;
+    margin-bottom: -2rem;
+    color: #ff7bac;
+    opacity: 1;
+    -webkit-transition: 0.3s 0s ease all;
+    -moz-transition: 0.3s 0s ease all;
+    -o-transition: 0.3s 0s ease all;
+    transition: 0.3s 0s ease all;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    form .message.message-hidden {
+      opacity: 0; }
   form .button-wrapper {
     display: inline-block;
     width: 30%;
