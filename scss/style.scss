@@ -12,7 +12,6 @@ $content-width: 72rem;
 
 section, footer {
     padding: 5rem 0;
-
     &.dark {
         background-color: $black;
         color: $white;
@@ -33,7 +32,7 @@ nav {
     ul {
         @include flex;
         @include justify-content(space-around);
-        @include transition(0.2s);
+        @include transition(0.15s);
         margin-top: -1.875rem;
         padding: 2rem 2.5rem;
 
