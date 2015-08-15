@@ -187,9 +187,8 @@ $team-padding: 1.5rem;
         float: left;
         @include border-box;
         z-index: 1;
-        transform: scale(.95);
-        @include transition(0.15s);
-
+        @include transform(scale(.9));
+        @include transition(.15s, 0s, ease, transform);
         .person {
             padding: $team-padding;
             position: absolute;
@@ -212,11 +211,9 @@ $team-padding: 1.5rem;
             }
 
             img {
-                @include transition(0.15s);
                 border-radius: 50%;
                 z-index: 1;
                 position: relative;
-                transform: scale(.9);
             }
         }
 
@@ -230,9 +227,6 @@ $team-padding: 1.5rem;
                 @include border-linear-gradient(2px, $blue, $pink, 4px);
                 .name, .title {
                     display: block;
-                }
-                img {
-                    transform: scale(1);
                 }
             }
         }

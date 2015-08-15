@@ -592,11 +592,14 @@ nav ul {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     z-index: 1;
-    transform: scale(0.95);
-    -webkit-transition: 0.15s 0s ease all;
-    -moz-transition: 0.15s 0s ease all;
-    -o-transition: 0.15s 0s ease all;
-    transition: 0.15s 0s ease all; }
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.15s 0s ease transform;
+    -moz-transition: 0.15s 0s ease transform;
+    -o-transition: 0.15s 0s ease transform;
+    transition: 0.15s 0s ease transform; }
     .team .person-wrapper .person {
       padding: 1.5rem;
       position: absolute;
@@ -642,14 +645,9 @@ nav ul {
       .team .person-wrapper .person .name, .team .person-wrapper .person .title {
         display: none; }
       .team .person-wrapper .person img {
-        -webkit-transition: 0.15s 0s ease all;
-        -moz-transition: 0.15s 0s ease all;
-        -o-transition: 0.15s 0s ease all;
-        transition: 0.15s 0s ease all;
         border-radius: 50%;
         z-index: 1;
-        position: relative;
-        transform: scale(0.9); }
+        position: relative; }
     .team .person-wrapper:hover {
       transform: scale(1);
       overflow: visible;
@@ -687,8 +685,6 @@ nav ul {
           border-bottom-left-radius: 4px; }
         .team .person-wrapper:hover .person .name, .team .person-wrapper:hover .person .title {
           display: block; }
-        .team .person-wrapper:hover .person img {
-          transform: scale(1); }
 
 footer {
   background-color: #111111;
