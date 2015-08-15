@@ -33,7 +33,7 @@ nav {
         @include flex;
         @include justify-content(space-around);
         @include transition(0.15s);
-        margin-top: -1.875rem;
+        margin-top: -2rem;
         padding: 2rem 2.5rem;
 
         li {
