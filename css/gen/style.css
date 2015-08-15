@@ -442,7 +442,7 @@ nav ul {
   padding-top: 2.5rem; }
 
 .content, hr {
-  max-width: 65rem;
+  max-width: 960px;
   width: 95%;
   margin: 0 auto; }
 
