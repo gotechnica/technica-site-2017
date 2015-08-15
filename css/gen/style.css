@@ -424,11 +424,8 @@ nav ul {
   -moz-transition: 0.2s 0s ease all;
   -o-transition: 0.2s 0s ease all;
   transition: 0.2s 0s ease all;
-  margin-top: -1.25rem;
-  padding: 1.25rem 2.5rem;
-  opacity: 0.35; }
-  nav ul:hover {
-    opacity: 1; }
+  margin-top: -1.875rem;
+  padding: 2rem 2.5rem; }
   nav ul li a {
     text-decoration: none; }
 
