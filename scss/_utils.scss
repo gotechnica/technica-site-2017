@@ -106,8 +106,8 @@
 }
 
 @mixin box-shadow {
-    -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125);
-    box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125);
+    -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15);
+    box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15);
 }
 
 @mixin justify-content($justify) {

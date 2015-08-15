@@ -254,8 +254,8 @@ form {
       line-height: 2rem;
       color: rgba(0, 0, 0, 0.35); }
     form input[type="email"]:focus {
-      -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125);
-      box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125); }
+      -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15);
+      box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15); }
   form button[type="submit"] {
     font-family: "DINPro", "Helvetica", sans-serif;
     font-size: 1.5rem;
@@ -643,8 +643,8 @@ nav ul {
       z-index: 2; }
       .team .person-wrapper:hover .person {
         border-radius: 4px;
-        -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125);
-        box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.125);
+        -webkit-box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15);
+        box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.15);
         -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
         -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
         border-image: linear-gradient(to right, #00ffff 0%, #ff7bac 100%);
