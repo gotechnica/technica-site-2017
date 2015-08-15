@@ -70,7 +70,6 @@ nav {
 .gradient-box {
     @include border-linear-gradient(2px, $blue, $pink, 4px);
     position: relative;
-    border-radius: 20px;
 }
 
 .box {
@@ -81,7 +80,6 @@ nav {
 }
 
 .gradient-box, .box {
-    border-radius: 4px;
     &.for-image {
         padding: 1.25rem;
         margin-bottom: 5rem;
@@ -222,7 +220,6 @@ $team-padding: 1.5rem;
             overflow: visible;
             z-index: 2;
             .person {
-                border-radius: 4px;
                 @include box-shadow;
                 @include border-linear-gradient(2px, $blue, $pink, 4px);
                 .name, .title {

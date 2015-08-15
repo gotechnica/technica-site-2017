@@ -28,39 +28,11 @@
 }
 
 @mixin border-linear-gradient($width, $from, $to, $radius) {
+    border: $width solid transparent;
     -moz-border-image: -moz-linear-gradient(left, $from 0%, $to 100%);
     -webkit-border-image: -webkit-linear-gradient(left, $from 0%, $to 100%);
     border-image: linear-gradient(to right, $from 0%, $to 100%);
     border-image-slice: 1;
-    border-top: $width solid transparent;
-    border-bottom: $width solid transparent;
-    border-left: 0;
-    border-right: 0;
-
-    &:after, &:before {
-        display: block;
-        content: ' ';
-        position: absolute;
-        width: $radius;
-        top: -$width;
-        bottom: -$width;
-    }
-
-    &:after {
-        right: -$radius;
-        border: $width solid $to;
-        border-left: 0;
-        border-top-right-radius: $radius;
-        border-bottom-right-radius: $radius;
-    }
-
-    &:before {
-        left: -$radius;
-        border: $width solid $from;
-        border-right: 0;
-        border-top-left-radius: $radius;
-        border-bottom-left-radius: $radius;
-    }
 }
 
 @mixin vertical-linear-gradient($from, $to) {

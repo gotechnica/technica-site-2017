@@ -65,13 +65,9 @@ form {
             display: inline-block;
         }
         input[type="email"] {
-            border-radius: 0.25rem;
             padding-right: 20rem;
         }
         button[type="submit"] {
-            border-top-right-radius: 0.25rem;
-            border-bottom-right-radius: 0.25rem;
-
             & > span {
                 @include transition(0.2s);
                 position: absolute;
@@ -107,7 +103,6 @@ form {
             left: 0;
         }
         button[type="submit"] {
-            border-radius: 0.25rem !important;
             background-color: $pink;
             border-color: $pink;
 
@@ -162,11 +157,6 @@ form {
             left: 0;
             right: 0;
             bottom: 0;
-        }
-        button[type="submit"] {
-            border-top-right-radius: 0rem;
-            border-bottom-left-radius: 0.25rem;
-            border-bottom-right-radius: 0.25rem;
         }
         &.success {
             .submit-wrapper {
