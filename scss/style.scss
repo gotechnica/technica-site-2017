@@ -170,7 +170,7 @@ nav {
     }
 }
 
-$team-padding: 1.25rem;
+$team-padding: 1.5rem;
 
 .team {
     display: block;
@@ -187,6 +187,8 @@ $team-padding: 1.25rem;
         float: left;
         @include border-box;
         z-index: 1;
+        transform: scale(.95);
+        @include transition(0.15s);
 
         .person {
             padding: $team-padding;
@@ -210,13 +212,16 @@ $team-padding: 1.25rem;
             }
 
             img {
+                @include transition(0.15s);
                 border-radius: 50%;
                 z-index: 1;
                 position: relative;
+                transform: scale(.9);
             }
         }
 
         &:hover {
+            transform: scale(1);
             overflow: visible;
             z-index: 2;
             .person {
@@ -225,6 +230,9 @@ $team-padding: 1.25rem;
                 @include border-linear-gradient(2px, $blue, $pink, 4px);
                 .name, .title {
                     display: block;
+                }
+                img {
+                    transform: scale(1);
                 }
             }
         }

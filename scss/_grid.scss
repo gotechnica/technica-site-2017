@@ -6,7 +6,7 @@ $row-padding: 1.25rem;
 	@include clearfix;
 	margin: 0 (-$row-padding);
 
-	.half, .third {
+	.half, .third, .quarter {
 		padding: 0 $row-padding;
 		display: inline-block;
 		position: relative;
@@ -20,6 +20,10 @@ $row-padding: 1.25rem;
 
 	.third {
 		width: 33.333333333%;
+	}
+
+	.quarter {
+		width: 25%;
 	}
 
 	&.with-divider:before {

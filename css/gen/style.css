@@ -115,7 +115,7 @@ h6, .h6 {
     display: block;
     height: 0;
     clear: both; }
-  .row .half, .row .third {
+  .row .half, .row .third, .row .quarter {
     padding: 0 1.25rem;
     display: inline-block;
     position: relative;
@@ -127,6 +127,8 @@ h6, .h6 {
     width: 50%; }
   .row .third {
     width: 33.333333333%; }
+  .row .quarter {
+    width: 25%; }
   .row.with-divider:before {
     display: block;
     width: 0;
@@ -571,8 +573,8 @@ nav ul {
 .team {
   display: block;
   position: relative;
-  margin-left: -1.25rem;
-  margin: -1.25rem 0 2.5rem; }
+  margin-left: -1.5rem;
+  margin: -1.5rem 0 2.5rem; }
   .team:after {
     content: " ";
     /* Older browser do not support empty content */
@@ -589,9 +591,14 @@ nav ul {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    z-index: 1; }
+    z-index: 1;
+    transform: scale(0.95);
+    -webkit-transition: 0.15s 0s ease all;
+    -moz-transition: 0.15s 0s ease all;
+    -o-transition: 0.15s 0s ease all;
+    transition: 0.15s 0s ease all; }
     .team .person-wrapper .person {
-      padding: 1.25rem;
+      padding: 1.5rem;
       position: absolute;
       background-color: #ffffff;
       border: 2px solid transparent;
@@ -635,10 +642,16 @@ nav ul {
       .team .person-wrapper .person .name, .team .person-wrapper .person .title {
         display: none; }
       .team .person-wrapper .person img {
+        -webkit-transition: 0.15s 0s ease all;
+        -moz-transition: 0.15s 0s ease all;
+        -o-transition: 0.15s 0s ease all;
+        transition: 0.15s 0s ease all;
         border-radius: 50%;
         z-index: 1;
-        position: relative; }
+        position: relative;
+        transform: scale(0.9); }
     .team .person-wrapper:hover {
+      transform: scale(1);
       overflow: visible;
       z-index: 2; }
       .team .person-wrapper:hover .person {
@@ -674,6 +687,8 @@ nav ul {
           border-bottom-left-radius: 4px; }
         .team .person-wrapper:hover .person .name, .team .person-wrapper:hover .person .title {
           display: block; }
+        .team .person-wrapper:hover .person img {
+          transform: scale(1); }
 
 footer {
   background-color: #111111;
