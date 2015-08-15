@@ -43,22 +43,4 @@
 		<polygon id="XMLID_681_" class="st1" points="120.5,326 116.9,316 -226,316 -226,326 		"/>
 	</g>
 </g>
-<g id="nyt_x5F_exporter_x5F_info" class="st2">
-	<text transform="matrix(1 0 0 1 -226 264)" class="st3 st4 st5">&lt;nyt_prefs&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 278.4)" class="st3 st4 st5">  &lt;nyt_prefix&gt;&lt;/nyt_prefix&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 292.8)" class="st3 st4 st5">  &lt;nyt_suffix&gt;&lt;/nyt_suffix&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 307.2)" class="st3 st4 st5">  &lt;nyt_base_path&gt;~/Desktop&lt;/nyt_base_path&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 321.6)" class="st3 st4 st5">  &lt;nyt_scaling&gt;100&lt;/nyt_scaling&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 336)" class="st3 st4 st5">  &lt;nyt_transparency&gt;true&lt;/nyt_transparency&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 350.4)" class="st3 st4 st5">  &lt;nyt_embedImage&gt;true&lt;/nyt_embedImage&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 364.8)" class="st3 st4 st5">  &lt;nyt_embedFont&gt;true&lt;/nyt_embedFont&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 379.2)" class="st3 st4 st5">  &lt;nyt_trimEdges&gt;true&lt;/nyt_trimEdges&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 393.6)" class="st3 st4 st5">  &lt;nyt_innerPadding&gt;false&lt;/nyt_innerPadding&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 408)" class="st3 st4 st5">  &lt;nyt_format&gt;SVG&lt;/nyt_format&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 422.4)" class="st3 st4 st5">  &lt;nyt_artboards&gt;all&lt;/nyt_artboards&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 436.8)" class="st3 st4 st5">  &lt;nyt_layers&gt;all&lt;/nyt_layers&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 451.2)" class="st3 st4 st5">  &lt;nyt_exportArtboards&gt;false&lt;/nyt_exportArtboards&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 465.6)" class="st3 st4 st5">  &lt;nyt_ignoreWarnings&gt;false&lt;/nyt_ignoreWarnings&gt;</text>
-	<text transform="matrix(1 0 0 1 -226 480)" class="st3 st4 st5">&lt;/nyt_prefs&gt;</text>
-</g>
 </svg>
