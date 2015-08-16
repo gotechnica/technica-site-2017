@@ -46,7 +46,7 @@ h4, .h4, nav ul li {
 
 h6, .h6 {
   font-weight: 400;
-  font-size: 0.875rem; }
+  font-size: 1rem; }
 
 @media screen and (max-width: 640px) {
   h1 {
@@ -156,6 +156,10 @@ h6, .h6 {
       width: 100%; }
       .row .half:not(:first-child), .row .third:not(:first-child) {
         margin-top: 3.125rem; }
+    .row .quarter {
+      width: 50%; }
+      .row .quarter:nth-child(n+3) {
+        margin-top: 2rem; }
     .row.with-divider:before {
       display: none; } }
 
@@ -200,15 +204,11 @@ hr {
 
 @media screen and (max-width: 1024px) {
   body, html {
-    font-size: 12px; } }
-
-@media screen and (max-width: 768px) {
-  body, html {
-    font-size: 11px; } }
+    font-size: 14px; } }
 
 @media screen and (max-width: 640px) {
   body, html {
-    font-size: 10px; } }
+    font-size: 12px; } }
 
 form {
   -webkit-animation-duration: 1s;
@@ -393,11 +393,25 @@ table {
   table {
     padding: 0 2rem; } }
 
+img {
+  display: block; }
+
 section, footer {
   padding: 5rem 0; }
   section.dark, footer.dark {
     background-color: #111111;
     color: #ffffff; }
+
+.content, hr {
+  max-width: 60rem;
+  width: 90%;
+  margin: 0 auto; }
+
+@media screen and (min-width: 1441px) {
+  max-width: 72rem; }
+
+@media screen and (max-width: 1441px) {
+  max-width: 72rem; }
 
 header {
   background-color: #00ffff;
@@ -406,7 +420,6 @@ header {
   background-image: linear-gradient(to right, #00ffff, #ff7bac);
   padding-top: 2rem; }
   header img {
-    display: block;
     width: 100%; }
 
 nav ul {
@@ -435,11 +448,6 @@ nav ul {
   padding-bottom: 0;
   padding-top: 2.5rem; }
 
-.content, hr {
-  max-width: 72rem;
-  width: 95%;
-  margin: 0 auto; }
-
 .gradient-box {
   border: 2px solid transparent;
   -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
@@ -460,6 +468,8 @@ nav ul {
 .gradient-box.for-text, .box.for-text {
   padding: 2.25rem;
   margin: 0 3.125rem; }
+  .gradient-box.for-text p:not(:first-child), .box.for-text p:not(:first-child) {
+    margin-top: 2rem; }
 
 .gradient-box.centered, .box.centered {
   text-align: center; }
@@ -535,7 +545,6 @@ nav ul {
 .sponsors {
   margin-bottom: 5rem; }
   .sponsors img {
-    display: inline-block;
     margin: 0 auto;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -650,9 +659,6 @@ footer {
       left: -2rem; }
     section .section-header > *:after {
       right: -2rem; }
-  p {
-    max-width: 90%;
-    margin: 0 auto; }
   .box.for-text, .gradient-box.for-text {
     max-width: 80%;
     margin: 0 2rem; }

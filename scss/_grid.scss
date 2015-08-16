@@ -52,6 +52,12 @@ $row-padding: 1.25rem;
 				margin-top: 3.125rem;
 			}
 		}
+		.quarter {
+			width: 50%;
+			&:nth-child(n+3) {
+				margin-top: 2rem;
+			}
+		}
 		&.with-divider:before {
 			display: none;
 		}
