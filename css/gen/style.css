@@ -54,11 +54,6 @@ h6, .h6 {
   h2 {
     font-size: 2rem; } }
 
-/*************************************************
- * utils.scss - Dan Schlosser <dan@schlosser.io> *
- *                                               *
- * Useful mixins and classes for use everywhere. *
- *************************************************/
 .hidden {
   display: none !important; }
 

@@ -8,10 +8,10 @@ body, html {
 
     ::selection {
       background: $blue;
-    }
-    ::-moz-selection {
+  }
+  ::-moz-selection {
       background: $blue;
-    }
+  }
 }
 
 ul, ol {
