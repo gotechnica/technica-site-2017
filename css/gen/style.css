@@ -535,7 +535,20 @@ nav ul {
   margin-bottom: 5rem; }
   .sponsors img {
     display: inline-block;
-    margin: 0 auto; }
+    margin: 0 auto;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.15s 0s ease all;
+    -moz-transition: 0.15s 0s ease all;
+    -o-transition: 0.15s 0s ease all;
+    transition: 0.15s 0s ease all; }
+    .sponsors img:hover {
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1); }
 
 .team {
   display: block;

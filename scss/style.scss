@@ -164,8 +164,11 @@ nav {
     img {
         display: inline-block;
         margin: 0 auto;
-        // height: 8rem;
-        // width: 100%;
+        @include transform(scale(.9));
+        @include transition(.15s);
+        &:hover {
+            @include transform(scale(1));
+        }
     }
 }
 
