@@ -50,77 +50,77 @@
     ga('send', 'pageview');
 
   </script>
-  </head>
-  <body>
+</head>
+<body>
 
-    <header>
-      <div class="content">
-        <a href="/">
-          <img src="img/technica-logo-white.svg">
-        </a>
+  <header>
+    <div class="content">
+      <a href="/">
+        <img src="img/technica-logo-white.svg">
+      </a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="content">
+      <ul>
+        <li class="no-mobile"><a data-scroll href="#register">Register</a></li>
+        <!-- <li class="no-mobile"><a data-scroll href="#about">About</a></li> -->
+        <li><a data-scroll href="#sponsors">Sponsors</a></li>
+        <li><a data-scroll href="#schedule">Schedule</a></li>
+        <li><a data-scroll href="#team">Team</a></li>
+        <li><a data-scroll href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="register">
+    <div class="content hero">
+      <div class="section-header">
+        <h1 class="no-mobile">Ladies, welcome to tech.</h1>
       </div>
-    </header>
-
-    <nav>
-      <div class="content">
-        <ul>
-          <li class="no-mobile"><a data-scroll href="#register">Register</a></li>
-          <!-- <li class="no-mobile"><a data-scroll href="#about">About</a></li> -->
-          <li><a data-scroll href="#sponsors">Sponsors</a></li>
-          <li><a data-scroll href="#schedule">Schedule</a></li>
-          <li><a data-scroll href="#team">Team</a></li>
-          <li><a data-scroll href="#faq">FAQ</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <section id="register">
-      <div class="content hero">
-        <div class="section-header">
-          <h1 class="no-mobile">Ladies, welcome to tech.</h1>
+      <h3>All-women hackathon. <br class="only-mobile"> November 7-8, 2015. <br class="only-mobile"> College Park, MD.</h3>
+      <!-- Submit to Google Forms in AJAX, then redirect to /?submitted=true -->
+      <form novalidate action="https://docs.google.com/forms/d/1WbHRIAhsnFkINpBncaHqBswDA0Ih45hNhaEODOtY98A/formResponse?embedded=true" method="POST" class="inline" target="hidden_iframe" id="signup-form">
+        <input type="hidden" name="draftResponse" value="[,,&quot;-3546404646361883917&quot;]">
+        <input type="hidden" name="pageHistory" value="0">
+        <input type="hidden" name="fvv" value="0">
+        <input type="hidden" name="fbzx" value="-3546404646361883917">
+        <input type="email" name="entry.118037203" id="entry_118037203" required="" placeholder="Start with your email address">
+        <div class="submit-wrapper">
+          <button type="submit">
+            <span class="btn-pre-reg">Pre-Register</span>
+            <span class="btn-success">Thanks! Stay tuned for updates.</span>
+            <span class="btn-hello">Hello there, <span id="their-email">friend</span>!</span>
+          </button>
         </div>
-        <h3>All-women hackathon. <br class="only-mobile"> November 7-8, 2015. <br class="only-mobile"> College Park, MD.</h3>
-        <!-- Submit to Google Forms in AJAX, then redirect to /?submitted=true -->
-        <form novalidate action="https://docs.google.com/forms/d/1WbHRIAhsnFkINpBncaHqBswDA0Ih45hNhaEODOtY98A/formResponse?embedded=true" method="POST" class="inline" target="hidden_iframe" id="signup-form">
-          <input type="hidden" name="draftResponse" value="[,,&quot;-3546404646361883917&quot;]">
-          <input type="hidden" name="pageHistory" value="0">
-          <input type="hidden" name="fvv" value="0">
-          <input type="hidden" name="fbzx" value="-3546404646361883917">
-          <input type="email" name="entry.118037203" id="entry_118037203" required="" placeholder="Start with your email address">
-          <div class="submit-wrapper">
-            <button type="submit">
-              <span class="btn-pre-reg">Pre-Register</span>
-              <span class="btn-success">Thanks! Stay tuned for updates.</span>
-              <span class="btn-hello">Hello there, <span id="their-email">friend</span>!</span>
-            </button>
-          </div>
-        </form>
-        <script type="text/javascript">var submitted=false;</script>
-        <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
-      </div>
-    </section>
+      </form>
+      <script type="text/javascript">var submitted=false;</script>
+      <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
+    </div>
+  </section>
 
-    <section id="about">
-      <div class="content">
-        <div class="gradient-box for-image">
-          <div class="ratio">
-            <img src="img/stef.jpg">
-          </div>
-          <div class="over-image">
-            <h2>This is tech culture beyond hello world.</h2>
-          </div>
+  <section id="about">
+    <div class="content">
+      <div class="gradient-box for-image">
+        <div class="ratio">
+          <img src="img/stef.jpg">
         </div>
-        <p>Technica is an all-ladies hackathon at the University of Maryland. For 24 hours, you will be immersed in everything tech so that you can explore, learn, and develop awesome things! Mentors and sponsors will be hacking alongside students to build stronger connections between the amazing ladies of our tech world.</p>
-      </div>
-    </section>
-
-    <hr>
-
-    <section id="sponsors">
-      <div class="content">
-        <div class="section-header">
-          <h3>Sponsored by the amazing women and men at <br class="no-mobile">these awesome organizations. They’ll be around, too.</h3>
+        <div class="over-image">
+          <h2>This is tech culture beyond hello world.</h2>
         </div>
+      </div>
+      <p>Technica is an all-ladies hackathon at the University of Maryland. For 24 hours, you will be immersed in everything tech so that you can explore, learn, and develop awesome things! Mentors and sponsors will be hacking alongside students to build stronger connections between the amazing ladies of our tech world.</p>
+    </div>
+  </section>
+
+  <hr>
+
+  <section id="sponsors">
+    <div class="content">
+      <div class="section-header">
+        <h3>Sponsored by the amazing women and men at these organizations.</h3>
+      </div>
 
   <!--       <div class="row sponsors">
           <div class="third">
@@ -133,220 +133,220 @@
             <a target="_blank" href="http://www.kpcb.com/"><img src="img/kpcb.png" name="KPCB"></a>
           </div>
         </div>
-   -->      
+      -->      
 
-          <div class="row sponsors">
-          <div class="quarter">
-            <a target="_blank" href="http://bitca.mp/"><img src="img/orgs/Bitcamp.png" name="Bitcamp"></a>
-          </div>
-          <div class="quarter">
-            <a target="_blank" href="https://awc-umcp.squarespace.com/"><img src="img/orgs/AWC.jpg" name="AWC"></a>
-          </div>
-          <div class="quarter">
-            <a target="_blank" href="https://mlh.io/"><img src="img/orgs/MLH.jpg" name="MLH"></a>
-          </div>
-          <div class="quarter">
-            <a target="_blank" href="http://startupshell.org/"><img src="img/orgs/StartupShell.png" name="Startup Shell"></a>
-          </div>
+      <div class="row sponsors">
+        <div class="quarter">
+          <a target="_blank" href="http://bitca.mp/"><img src="img/orgs/bitcamp-logo.svg" name="Bitcamp"></a>
         </div>
-        <div class="gradient-box for-text contact centered">
-          <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact us</a>.</p>
+        <div class="quarter">
+        <a target="_blank" href="https://awc-umcp.squarespace.com/"><img src="img/orgs/awc-logo.svg" name="AWC"></a>
+        </div>
+        <div class="quarter">
+          <a target="_blank" href="http://startupshell.org/"><img src="img/orgs/startupshell-logo.svg" name="Startup Shell"></a>
+        </div>
+        <div class="quarter">
+          <a target="_blank" href="https://mlh.io/"><img src="img/orgs/mlh-logo.svg" name="MLH"></a>
         </div>
       </div>
-    </section>
+      <div class="gradient-box for-text contact centered">
+        <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact us</a>.</p>
+      </div>
+    </div>
+  </section>
 
-    <section id="schedule" class="dark">
-      <div class="content">
-        <div class="section-header">
-          <h3>Event Schedule</h3>
+  <section id="schedule" class="dark">
+    <div class="content">
+      <div class="section-header">
+        <h3>Event Schedule</h3>
+      </div>
+      <div class="row">
+        <div class="half">
+          <div class="gradient-box for-text">
+            <p>Technica will take place from Saturday to Sunday, November 7-8, 2015 at Ritchie Coliseum on the gorgeous University of Maryland campus! <a href="https://www.google.com/maps/place/Ritchie+Coliseum/@38.9850203,-76.9364404,17z/" target="_blank">See a map</a>.</p>
+          </div>
         </div>
-        <div class="row">
-          <div class="half">
-            <div class="gradient-box for-text">
-              <p>Technica will take place from Saturday to Sunday, November 7-8, 2015 at Ritchie Coliseum on the gorgeous University of Maryland campus! <a href="https://www.google.com/maps/place/Ritchie+Coliseum/@38.9850203,-76.9364404,17z/" target="_blank">See a map</a>.</p>
-            </div>
-          </div>
-          <div class="half">
-            <table>
-              <thead>
-                <tr>
-                  <td colspan="2">Saturday, November 7</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>08:00 am</td>
-                  <td>Check-In</td>
-                </tr>
-                <tr>
-                  <td>10:00 am</td>
-                  <td>Opening</td>
-                </tr>
-                <tr>
-                  <td>12:00 pm</td>
-                  <td>Hacking Begins</td>
-                </tr>
-              </tbody>
-            </table>
-            <table>
-              <thead>
-                <tr>
-                  <td colspan="2">Sunday, November 8</td>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>12:00 pm</td>
-                  <td>Hacking Ends</td>
-                </tr>
-                <tr>
-                  <td>01:00 pm</td>
-                  <td>Demos</td>
-                </tr>
-                <tr>
-                  <td>03:00 pm</td>
-                  <td>Closing</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <div class="half">
+          <table>
+            <thead>
+              <tr>
+                <td colspan="2">Saturday, November 7</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>08:00 am</td>
+                <td>Check-In</td>
+              </tr>
+              <tr>
+                <td>10:00 am</td>
+                <td>Opening</td>
+              </tr>
+              <tr>
+                <td>12:00 pm</td>
+                <td>Hacking Begins</td>
+              </tr>
+            </tbody>
+          </table>
+          <table>
+            <thead>
+              <tr>
+                <td colspan="2">Sunday, November 8</td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>12:00 pm</td>
+                <td>Hacking Ends</td>
+              </tr>
+              <tr>
+                <td>01:00 pm</td>
+                <td>Demos</td>
+              </tr>
+              <tr>
+                <td>03:00 pm</td>
+                <td>Closing</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="team">
-      <div class="content">
-        <div class="section-header">
-          <h3>The Team</h3>
-        </div>
-        <ul class="team">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Amritha.jpg">
-              <h4 class="name">Amritha</h4>
-              <h6 class="title">Director</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Izzy.jpg">
-              <h4 class="name">Izzy</h4>
-              <h6 class="title">Events Lead</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Jenny.jpg">
-              <h4 class="name">Jenny</h4>
-              <h6 class="title">Activities</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Emma.jpg">
-              <h4 class="name">Emma</h4>
-              <h6 class="title">Activities</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Seean.jpg">
-              <h4 class="name">Seean</h4>
-              <h6 class="title">Activities</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Nick.jpg">
-              <h4 class="name">Nick</h4>
-              <h6 class="title">Workshops</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Jeremy.jpg">
-              <h4 class="name">Jeremy</h4>
-              <h6 class="title">Facilities</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/LilyS.jpg">
-              <h4 class="name">Lily</h4>
-              <h6 class="title">Sponsorship</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Mackenzie.jpg">
-              <h4 class="name">Mackenzie</h4>
-              <h6 class="title">Sponsorship</h6>
-            </div>
-          </li>
+  <section id="team">
+    <div class="content">
+      <div class="section-header">
+        <h3>The Team</h3>
+      </div>
+      <ul class="team">
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Amritha.jpg">
+            <h4 class="name">Amritha</h4>
+            <h6 class="title">Director</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Izzy.jpg">
+            <h4 class="name">Izzy</h4>
+            <h6 class="title">Events Lead</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Jenny.jpg">
+            <h4 class="name">Jenny</h4>
+            <h6 class="title">Activities</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Emma.jpg">
+            <h4 class="name">Emma</h4>
+            <h6 class="title">Activities</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Seean.jpg">
+            <h4 class="name">Seean</h4>
+            <h6 class="title">Activities</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Nick.jpg">
+            <h4 class="name">Nick</h4>
+            <h6 class="title">Workshops</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Jeremy.jpg">
+            <h4 class="name">Jeremy</h4>
+            <h6 class="title">Facilities</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/LilyS.jpg">
+            <h4 class="name">Lily</h4>
+            <h6 class="title">Sponsorship</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Mackenzie.jpg">
+            <h4 class="name">Mackenzie</h4>
+            <h6 class="title">Sponsorship</h6>
+          </div>
+        </li>
 
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Meredith.jpg">
-              <h4 class="name">Meredith</h4>
-              <h6 class="title">Outreach</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Vishnu.jpg">
-              <h4 class="name">Vishnu</h4>
-              <h6 class="title">Outreach</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Jacqueline.jpg">
-              <h4 class="name">Jacqueline</h4>
-              <h6 class="title">High School Activities</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Neelima.jpg">
-              <h4 class="name">Neelima</h4>
-              <h6 class="title">High School Outreach</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Elise.jpg">
-              <h4 class="name">Elise</h4>
-              <h6 class="title">High School Outreach</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Jeff.jpg">
-              <h4 class="name">Jeff</h4>
-              <h6 class="title">Design Lead</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Dan.jpg">
-              <h4 class="name">Dan</h4>
-              <h6 class="title">Web</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Judy.jpg">
-              <h4 class="name">Judy</h4>
-              <h6 class="title">Design</h6>
-            </div>
-          </li>
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Amber.jpg">
-              <h4 class="name">Amber</h4>
-              <h6 class="title">Marketing Lead</h6>
-            </div>
-          </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Meredith.jpg">
+            <h4 class="name">Meredith</h4>
+            <h6 class="title">Outreach</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Vishnu.jpg">
+            <h4 class="name">Vishnu</h4>
+            <h6 class="title">Outreach</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Jacqueline.jpg">
+            <h4 class="name">Jacqueline</h4>
+            <h6 class="title">High School Activities</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Neelima.jpg">
+            <h4 class="name">Neelima</h4>
+            <h6 class="title">High School Outreach</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Elise.jpg">
+            <h4 class="name">Elise</h4>
+            <h6 class="title">High School Outreach</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Jeff.jpg">
+            <h4 class="name">Jeff</h4>
+            <h6 class="title">Design Lead</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Dan.jpg">
+            <h4 class="name">Dan</h4>
+            <h6 class="title">Web</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Judy.jpg">
+            <h4 class="name">Judy</h4>
+            <h6 class="title">Design</h6>
+          </div>
+        </li>
+        <li class="person-wrapper">
+          <div class="person">
+            <img src="img/team/Amber.jpg">
+            <h4 class="name">Amber</h4>
+            <h6 class="title">Marketing Lead</h6>
+          </div>
+        </li>
 
   <!--         <li class="person-wrapper">
             <div class="person">
@@ -362,7 +362,7 @@
               <h6 class="title">Volunteers Coordinator</h6>
             </div>
           </li>
-   -->      </ul>
+        -->      </ul>
         <div class="row">
           <div class="half">
             <div class="gradient-box for-text centered">

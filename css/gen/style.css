@@ -534,9 +534,8 @@ nav ul {
 .sponsors {
   margin-bottom: 5rem; }
   .sponsors img {
-    display: block;
-    margin: 0 auto;
-    height: 4rem; }
+    display: inline-block;
+    margin: 0 auto; }
 
 .team {
   display: block;

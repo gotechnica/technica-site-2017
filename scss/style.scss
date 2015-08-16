@@ -162,9 +162,10 @@ nav {
 .sponsors {
     margin-bottom: 5rem;
     img {
-        display: block;
+        display: inline-block;
         margin: 0 auto;
-        height: 4rem;
+        // height: 8rem;
+        // width: 100%;
     }
 }
 
