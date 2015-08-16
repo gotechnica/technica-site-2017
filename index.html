@@ -1,469 +1,472 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <title>Technica</title>
-  <!--
+  <!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Technica</title>
+    <!--
 
-████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
-╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
-   ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
-   ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
-   ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
-   ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
+  ████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
+  ╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
+     ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
+     ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
+     ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
+     ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
 
- -->
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="description" content="All-ladies hackathon at University of Maryland." />
- <meta name="robots" content="NOODP, index, follow" />
- <meta itemprop="name" content="Technica">
- <meta itemprop="description" content="All-ladies hackathon at University of Maryland.">
- <meta itemprop="image" content="/img/logo-black.png">
- <!-- Twitter Card data -->
- <meta name="twitter:card" content="summary">
- <meta name="twitter:site" content="@gotechnica">
- <meta name="twitter:title" content="Technica">
- <meta name="twitter:description" content="All-ladies hackathon at University of Maryland.">
- <meta name="twitter:creator" content="@gotechnica">
- <meta name="twitter:image:src" content="http://gotechnica.org/img/logo-black.png">
- <meta name="twitter:domain" content="http://gotechnica.org">
- <!-- Open Graph data (Facebook) -->
- <meta property="og:title" content="Technica" />
- <meta property="og:type" content="website" />
- <meta property="og:url" content="http://gotechnica.org" />
- <meta property="og:image" content="http://gotechnica.org/img/logo-black.png" />
- <meta property="og:description" content="All-ladies hackathon at University of Maryland." />
- <!-- Favicon -->
- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
- <link rel="icon" href="favicon.ico" type="image/x-icon">
- <!-- CSS -->
- <link rel="stylesheet" href="css/reset.css">
- <link rel="stylesheet" href="css/gen/style.css">
- <!-- Google Analytics -->
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+   -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="All-ladies hackathon at University of Maryland." />
+   <meta name="robots" content="NOODP, index, follow" />
+   <meta itemprop="name" content="Technica">
+   <meta itemprop="description" content="All-ladies hackathon at University of Maryland.">
+   <meta itemprop="image" content="/img/logo-black.png">
+   <!-- Twitter Card data -->
+   <meta name="twitter:card" content="summary">
+   <meta name="twitter:site" content="@gotechnica">
+   <meta name="twitter:title" content="Technica">
+   <meta name="twitter:description" content="All-ladies hackathon at University of Maryland.">
+   <meta name="twitter:creator" content="@gotechnica">
+   <meta name="twitter:image:src" content="http://gotechnica.org/img/logo-black.png">
+   <meta name="twitter:domain" content="http://gotechnica.org">
+   <!-- Open Graph data (Facebook) -->
+   <meta property="og:title" content="Technica" />
+   <meta property="og:type" content="website" />
+   <meta property="og:url" content="http://gotechnica.org" />
+   <meta property="og:image" content="http://gotechnica.org/img/logo-black.png" />
+   <meta property="og:description" content="All-ladies hackathon at University of Maryland." />
+   <!-- Favicon -->
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <link rel="icon" href="favicon.ico" type="image/x-icon">
+   <!-- CSS -->
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/gen/style.css">
+   <!-- Google Analytics -->
+   <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-57203187-5', 'auto');
-  ga('send', 'pageview');
+    ga('create', 'UA-57203187-5', 'auto');
+    ga('send', 'pageview');
 
-</script>
-</head>
-<body>
-
-  <header>
-    <div class="content">
-      <a href="/">
-        <img src="img/technica-logo-white.svg">
-      </a>
-    </div>
-  </header>
-
-  <nav>
-    <div class="content">
-      <ul>
-        <li class="no-mobile"><a data-scroll href="#register">Register</a></li>
-        <li class="no-mobile"><a data-scroll href="#about">About</a></li>
-        <li><a data-scroll href="#sponsors">Sponsors</a></li>
-        <li><a data-scroll href="#schedule">Schedule</a></li>
-        <li><a data-scroll href="#team">Team</a></li>
-        <li><a data-scroll href="#faq">FAQ</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <section id="register">
-    <div class="content hero">
-      <div class="section-header">
-        <h1>The All-Ladies Hackathon</h1>
-      </div>
-      <h3>November 7-8, 2015. <br class="only-mobile"> College Park, MD.</h3>
-      <!-- Submit to Google Forms in AJAX, then redirect to /?submitted=true -->
-      <form novalidate action="https://docs.google.com/forms/d/1WbHRIAhsnFkINpBncaHqBswDA0Ih45hNhaEODOtY98A/formResponse?embedded=true" method="POST" class="inline" target="hidden_iframe" id="signup-form">
-        <input type="hidden" name="draftResponse" value="[,,&quot;-3546404646361883917&quot;]">
-        <input type="hidden" name="pageHistory" value="0">
-        <input type="hidden" name="fvv" value="0">
-        <input type="hidden" name="fbzx" value="-3546404646361883917">
-        <input type="email" name="entry.118037203" id="entry_118037203" required="" placeholder="Start with your email address">
-        <div class="submit-wrapper">
-          <button type="submit">
-            <span class="btn-pre-reg">Pre-Register</span>
-            <span class="btn-success">Thanks! Stay tuned for updates.</span>
-            <span class="btn-hello">Hello there, <span id="their-email">friend</span>!</span>
-          </button>
-        </div>
-      </form>
-      <script type="text/javascript">var submitted=false;</script>
-      <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
-    </div>
-  </section>
-
-  <section id="about">
-    <div class="content">
-      <div class="gradient-box for-image">
-        <div class="ratio">
-          <img src="img/stef.jpg">
-        </div>
-        <div class="over-image">
-          <h2>This is tech culture beyond hello world.</h2>
-        </div>
-      </div>
-      <p>Technica is the University of Maryland’s first all-ladies hackathon. Over the duration of 24 hours, ladies are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification, and ask sponsors to hack alongside students in order to build stronger connections between students, sponsors, and the tech world.</p>
-    </div>
-  </section>
-
-  <hr>
-
-  <section id="sponsors">
-    <div class="content">
-      <div class="section-header">
-        <h3>Sponsored by the amazing women and men at <br class="no-mobile">these fine companies. They’ll be around, too.</h3>
-      </div>
-
-<!--       <div class="row sponsors">
-        <div class="third">
-          <a target="_blank" href="https://github.com/"><img src="img/github.png" name="GitHub"></a>
-        </div>
-        <div class="third">
-          <a target="_blank" href="http://a16z.com/"><img src="img/a16z.png" name="Andreessen Horowitz"></a>
-        </div>
-        <div class="third">
-          <a target="_blank" href="http://www.kpcb.com/"><img src="img/kpcb.png" name="KPCB"></a>
-        </div>
-      </div>
- -->      <div class="row sponsors">
-        <div class="quarter">
-          <a target="_blank" href="http://bitca.mp/"><img src="img/orgs/Bitcamp.png" name="Bitcamp"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="https://awc-umcp.squarespace.com/"><img src="img/orgs/AWC.jpg" name="AWC"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="https://mlh.io/"><img src="img/orgs/MLH.jpg" name="MLH"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="http://startupshell.org/"><img src="img/orgs/StartupShell.png" name="Startup Shell"></a>
-        </div>
-      </div>
-      <div class="gradient-box for-text contact centered">
-        <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact Us</a></p>
-      </div>
-    </div>
-  </section>
-
-  <section id="schedule" class="dark">
-    <div class="content">
-      <div class="section-header">
-        <h3>Event Schedule</h3>
-      </div>
-      <div class="row">
-        <div class="half">
-          <div class="gradient-box for-text">
-            <p>Technica will take place from Saturday to Sunday, November 7-8, 2015. Check in will take place from 8 am to 10 am Saturday morning, and our closing ceremonies will end around 4 pm on Sunday. Please stay tuned for a more detailed schedule!</p>
-          </div>
-        </div>
-        <div class="half">
-          <table>
-            <thead>
-              <tr>
-                <td colspan="2">Saturday, November 7</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>08:00 am</td>
-                <td>Check-In</td>
-              </tr>
-              <tr>
-                <td>10:00 am</td>
-                <td>Opening</td>
-              </tr>
-              <tr>
-                <td>11:00 am</td>
-                <td>Hacking Begins</td>
-              </tr>
-            </tbody>
-          </table>
-          <table>
-            <thead>
-              <tr>
-                <td colspan="2">Sunday, November 8</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>11:00 am</td>
-                <td>Hacking Ends</td>
-              </tr>
-              <tr>
-                <td>12:00 pm</td>
-                <td>Demos</td>
-              </tr>
-              <tr>
-                <td>02:00 pm</td>
-                <td>Closing</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="team">
-    <div class="content">
-      <div class="section-header">
-        <h3>The Team</h3>
-      </div>
-      <ul class="team">
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Amritha.jpg">
-            <h4 class="name">Amritha</h4>
-            <h6 class="title">Executive Director</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Izzy.jpg">
-            <h4 class="name">Izzy</h4>
-            <h6 class="title">Event Details Team Lead</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/LilyS.jpg">
-            <h4 class="name">Lily</h4>
-            <h6 class="title">Outreach Coordinator</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Seean.jpg">
-            <h4 class="name">Seean</h4>
-            <h6 class="title">Activities Organizer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Emma.jpg">
-            <h4 class="name">Emma</h4>
-            <h6 class="title">Activities Organizer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Nick.jpg">
-            <h4 class="name">Nick</h4>
-            <h6 class="title">Workshops Organizer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Jenny.jpg">
-            <h4 class="name">Jenny</h4>
-            <h6 class="title">Activities Organizer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Neelima.jpg">
-            <h4 class="name">Neelima</h4>
-            <h6 class="title">H.S. Outreach Coordinator</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Meredith.jpg">
-            <h4 class="name">Meredith</h4>
-            <h6 class="title">Campus Outreach Rep</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Vishnu.jpg">
-            <h4 class="name">Vishnu</h4>
-            <h6 class="title">Outreach Representative</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Jacqueline.jpg">
-            <h4 class="name">Jacqueline</h4>
-            <h6 class="title">H.S. Activities Organizer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Elise.jpg">
-            <h4 class="name">Elise</h4>
-            <h6 class="title">H.S. Outreach Coordinator</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Mackenzie.jpg">
-            <h4 class="name">Mackenzie</h4>
-            <h6 class="title">Sponsorship Coordinator</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Jeff.jpg">
-            <h4 class="name">Jeff</h4>
-            <h6 class="title">Design Lead</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Dan.jpg">
-            <h4 class="name">Dan</h4>
-            <h6 class="title">Web Developer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Amber.jpg">
-            <h4 class="name">Amber</h4>
-            <h6 class="title">Marketing Head</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Judy.jpg">
-            <h4 class="name">Judy</h4>
-            <h6 class="title">Graphic Designer</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Jeremy.jpg">
-            <h4 class="name">Jeremy</h4>
-            <h6 class="title">Planning Consultant</h6>
-          </div>
-        </li>
-
-<!--         <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Michael.jpg">
-            <h4 class="name">Michael</h4>
-            <h6 class="title">Facilities Coordinator</h6>
-          </div>
-        </li>
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Anthony.jpg">
-            <h4 class="name">Anthony</h4>
-            <h6 class="title">Volunteers Coordinator</h6>
-          </div>
-        </li>
- -->      </ul>
-      <div class="row">
-        <div class="half">
-          <div class="gradient-box for-text centered">
-            <p>Our people are awesome. You’re awesome, too. <a target="_blank" href="http://goo.gl/forms/YpZMIJFPRv">Join us</a>.</p>
-          </div>
-        </div>
-        <div class="half">
-          <div class="gradient-box for-text centered">
-            <p>Want to help out the day of the event? <a target="_blank" href="http://goo.gl/forms/0BJy2UoqHJ">Volunteer here</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <hr>
-
-  <section id="faq">
-    <div class="content">
-      <div class="section-header">
-        <h3>Frequently Asked Questions</h3>
-      </div>
-      <div class="row with-divider faq">
-        <div class="half">
-          <div class="box for-text">
-            <h4>Why make an all-ladies hackathon?</h4>
-            <p>Diversification of the tech world in general is vital to its continuing success. By creating a more welcoming atmosphere, we hope to foster a greater connection between ladies and the tech world.</p>
-          </div>
-          <div class="box for-text">
-            <h4>Do I need to know how to code to participate?</h4>
-            <p>No, of course not! In fact, we encourage students that do not know coding to attend. The event is made to introduce you to tech culture. You can learn everything you need right here.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do I register?</h4>
-            <p>Registration opens August 15th at 11:59 pm EST and closes September 19th at 11:59 pm EST. Until registration opens, please stay tuned via email by signing up for our mailing list.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How will I get to College Park?</h4>
-            <p>Technica will send buses to three major hubs based on popular registration areas. Furthermore, if you are traveling more than 30 miles to College Park, you will be reimbursed for your travel costs (up to a cap) contingent on you uploading your travel receipts prior to the weekend of the event. Note that we will only reimburse the least expensive travel route. Special bus arrangements will be made for high school students attending.</p>
-          </div>
-        </div>
-        <div class="half">
-          <div class="box for-text">
-            <h4>Do I have to pay to attend?</h4>
-            <p>No! The event includes free admission, free food, free overnight stay, and a lot of free gear!</p>
-          </div>
-          <div class="box for-text">
-            <h4>What should I bring?</h4>
-            <p>You should bring a valid student ID for admission, and your laptop for hacking. We encourage attendees to bring a sleeping bag, a pillow, and personal toiletries. Everything else - food, drinks, air mattresses, and more - will be provided! Note that in order to borrow hardware during the hackathon, a government issued photo ID is required.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do teams work?</h4>
-            <p>Teams can be between 2 to 4 people. You can register your team on our website at any point before the 24 hour hack starts. Note this is not the same as personal registration - please register yourself individually first.</p>
-          </div>
-          <div class="box for-text">
-            <h4>Can I come without having a preset team?</h4>
-            <p>Of course! If you don’t already have a team, don’t worry about it. We will designate time for team formation and project brainstorming before the official hacking begins.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do I become a mentor?</h4>
-            <p>We'd love to have you!  Apply to be a mentor <a target="_blank" href="http://goo.gl/forms/kw5w4X4dfE">here</a>.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="content">
-      <img src="img/technica-logo-white-colorstripe.svg">
-      <ul>
-        <li><a href="https://twitter.com/gotechnica" target="_blank">Twitter</a></li>
-        <li><a href="https://www.facebook.com/gotechnica" target="_blank">Facebook</a></li>
-        <li><a href="mailto:hello@gotechnica.org">Email</a></li>
-        <li>&copy; Technica 2015</a></li>
-      </ul>
-    </div>
-  </footer>
-  <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
-  <script type="text/javascript">
-    smoothScroll.init();
-
-    function validateEmail(email) {
-      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-      return re.test(email);
-    }
-    var form = document.getElementById('signup-form');
-
-    form.onsubmit = function() {
-      var email = document.getElementById('entry_118037203').value;
-      if (validateEmail(email)) {
-        if (form.className.indexOf("success") == -1) {
-          this.submit();
-          document.getElementById('their-email').innerHTML = email;
-          form.className = form.className.replace(' invalid', '')
-          form.className += ' success';
-          return true;
-        }
-        // submitting a duplicate form
-      } else {
-        form.className += ' invalid';
-      }
-      return false;
-    };
   </script>
-</body>
-</html>
+  </head>
+  <body>
+
+    <header>
+      <div class="content">
+        <a href="/">
+          <img src="img/technica-logo-white.svg">
+        </a>
+      </div>
+    </header>
+
+    <nav>
+      <div class="content">
+        <ul>
+          <li class="no-mobile"><a data-scroll href="#register">Register</a></li>
+          <li class="no-mobile"><a data-scroll href="#about">About</a></li>
+          <li><a data-scroll href="#sponsors">Sponsors</a></li>
+          <li><a data-scroll href="#schedule">Schedule</a></li>
+          <li><a data-scroll href="#team">Team</a></li>
+          <li><a data-scroll href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="register">
+      <div class="content hero">
+        <div class="section-header">
+          <h1>Ladies, welcome to tech.</h1>
+        </div>
+        <h3>All-women hackathon. <br class="only-mobile"> November 7-8, 2015. <br class="only-mobile"> College Park, MD.</h3>
+        <!-- Submit to Google Forms in AJAX, then redirect to /?submitted=true -->
+        <form novalidate action="https://docs.google.com/forms/d/1WbHRIAhsnFkINpBncaHqBswDA0Ih45hNhaEODOtY98A/formResponse?embedded=true" method="POST" class="inline" target="hidden_iframe" id="signup-form">
+          <input type="hidden" name="draftResponse" value="[,,&quot;-3546404646361883917&quot;]">
+          <input type="hidden" name="pageHistory" value="0">
+          <input type="hidden" name="fvv" value="0">
+          <input type="hidden" name="fbzx" value="-3546404646361883917">
+          <input type="email" name="entry.118037203" id="entry_118037203" required="" placeholder="Start with your email address">
+          <div class="submit-wrapper">
+            <button type="submit">
+              <span class="btn-pre-reg">Pre-Register</span>
+              <span class="btn-success">Thanks! Stay tuned for updates.</span>
+              <span class="btn-hello">Hello there, <span id="their-email">friend</span>!</span>
+            </button>
+          </div>
+        </form>
+        <script type="text/javascript">var submitted=false;</script>
+        <iframe id="hidden_iframe" name="hidden_iframe" style="display: none;"></iframe>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="content">
+        <div class="gradient-box for-image">
+          <div class="ratio">
+            <img src="img/stef.jpg">
+          </div>
+          <div class="over-image">
+            <h2>This is tech culture beyond hello world.</h2>
+          </div>
+        </div>
+        <p>Technica is an all-ladies hackathon at the University of Maryland. For 24 hours, you will be immersed in everything tech so that you can explore, learn, and develop awesome things! Mentors and sponsors will be hacking alongside students to build stronger connections between the amazing ladies of our tech world.</p>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="sponsors">
+      <div class="content">
+        <div class="section-header">
+          <h3>Sponsored by the amazing women and men at <br class="no-mobile">these awesome organizations. They’ll be around, too.</h3>
+        </div>
+
+  <!--       <div class="row sponsors">
+          <div class="third">
+            <a target="_blank" href="https://github.com/"><img src="img/github.png" name="GitHub"></a>
+          </div>
+          <div class="third">
+            <a target="_blank" href="http://a16z.com/"><img src="img/a16z.png" name="Andreessen Horowitz"></a>
+          </div>
+          <div class="third">
+            <a target="_blank" href="http://www.kpcb.com/"><img src="img/kpcb.png" name="KPCB"></a>
+          </div>
+        </div>
+   -->      
+
+          <div class="row sponsors">
+          <div class="quarter">
+            <a target="_blank" href="http://bitca.mp/"><img src="img/orgs/Bitcamp.png" name="Bitcamp"></a>
+          </div>
+          <div class="quarter">
+            <a target="_blank" href="https://awc-umcp.squarespace.com/"><img src="img/orgs/AWC.jpg" name="AWC"></a>
+          </div>
+          <div class="quarter">
+            <a target="_blank" href="https://mlh.io/"><img src="img/orgs/MLH.jpg" name="MLH"></a>
+          </div>
+          <div class="quarter">
+            <a target="_blank" href="http://startupshell.org/"><img src="img/orgs/StartupShell.png" name="Startup Shell"></a>
+          </div>
+        </div>
+        <div class="gradient-box for-text contact centered">
+          <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact us</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="dark">
+      <div class="content">
+        <div class="section-header">
+          <h3>Event Schedule</h3>
+        </div>
+        <div class="row">
+          <div class="half">
+            <div class="gradient-box for-text">
+              <p>Technica will take place from Saturday to Sunday, November 7-8, 2015 at Ritchie Coliseum on the gorgeous University of Maryland campus! <a href="https://www.google.com/maps/place/Ritchie+Coliseum/@38.9850203,-76.9364404,17z/" target="_blank">See a map</a>.</p>
+            </div>
+          </div>
+          <div class="half">
+            <table>
+              <thead>
+                <tr>
+                  <td colspan="2">Saturday, November 7</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>08:00 am</td>
+                  <td>Check-In</td>
+                </tr>
+                <tr>
+                  <td>10:00 am</td>
+                  <td>Opening</td>
+                </tr>
+                <tr>
+                  <td>12:00 pm</td>
+                  <td>Hacking Begins</td>
+                </tr>
+              </tbody>
+            </table>
+            <table>
+              <thead>
+                <tr>
+                  <td colspan="2">Sunday, November 8</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>12:00 pm</td>
+                  <td>Hacking Ends</td>
+                </tr>
+                <tr>
+                  <td>01:00 pm</td>
+                  <td>Demos</td>
+                </tr>
+                <tr>
+                  <td>03:00 pm</td>
+                  <td>Closing</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="content">
+        <div class="section-header">
+          <h3>The Team</h3>
+        </div>
+        <ul class="team">
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Amritha.jpg">
+              <h4 class="name">Amritha</h4>
+              <h6 class="title">Director</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Izzy.jpg">
+              <h4 class="name">Izzy</h4>
+              <h6 class="title">Events Lead</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Jenny.jpg">
+              <h4 class="name">Jenny</h4>
+              <h6 class="title">Activities</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Emma.jpg">
+              <h4 class="name">Emma</h4>
+              <h6 class="title">Activities</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Seean.jpg">
+              <h4 class="name">Seean</h4>
+              <h6 class="title">Activities</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Nick.jpg">
+              <h4 class="name">Nick</h4>
+              <h6 class="title">Workshops</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Jeremy.jpg">
+              <h4 class="name">Jeremy</h4>
+              <h6 class="title">Facilities</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/LilyS.jpg">
+              <h4 class="name">Lily</h4>
+              <h6 class="title">Sponsorship</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Mackenzie.jpg">
+              <h4 class="name">Mackenzie</h4>
+              <h6 class="title">Sponsorship</h6>
+            </div>
+          </li>
+
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Meredith.jpg">
+              <h4 class="name">Meredith</h4>
+              <h6 class="title">Outreach</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Vishnu.jpg">
+              <h4 class="name">Vishnu</h4>
+              <h6 class="title">Outreach</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Jacqueline.jpg">
+              <h4 class="name">Jacqueline</h4>
+              <h6 class="title">High School Activities</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Neelima.jpg">
+              <h4 class="name">Neelima</h4>
+              <h6 class="title">High School Outreach</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Elise.jpg">
+              <h4 class="name">Elise</h4>
+              <h6 class="title">High School Outreach</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Jeff.jpg">
+              <h4 class="name">Jeff</h4>
+              <h6 class="title">Design Lead</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Dan.jpg">
+              <h4 class="name">Dan</h4>
+              <h6 class="title">Web</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Judy.jpg">
+              <h4 class="name">Judy</h4>
+              <h6 class="title">Design</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Amber.jpg">
+              <h4 class="name">Amber</h4>
+              <h6 class="title">Marketing Lead</h6>
+            </div>
+          </li>
+
+  <!--         <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Michael.jpg">
+              <h4 class="name">Michael</h4>
+              <h6 class="title">Facilities Coordinator</h6>
+            </div>
+          </li>
+          <li class="person-wrapper">
+            <div class="person">
+              <img src="img/team/Anthony.jpg">
+              <h4 class="name">Anthony</h4>
+              <h6 class="title">Volunteers Coordinator</h6>
+            </div>
+          </li>
+   -->      </ul>
+        <div class="row">
+          <div class="half">
+            <div class="gradient-box for-text centered">
+              <p>Our people are awesome. You’re awesome, too. <a target="_blank" href="http://goo.gl/forms/YpZMIJFPRv">Join the team</a>.</p>
+            </div>
+          </div>
+          <div class="half">
+            <div class="gradient-box for-text centered">
+              <p>Available to help out the day of the main event? <a target="_blank" href="http://goo.gl/forms/0BJy2UoqHJ">Become a volunteer</a>.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
+
+    <section id="faq">
+      <div class="content">
+        <div class="section-header">
+          <h3>Frequently Asked Questions</h3>
+        </div>
+        <div class="row with-divider faq">
+          <div class="half">
+            <div class="box for-text">
+              <h4>Why make an all-ladies hackathon?</h4>
+              <p>Women are underrepresented in the tech world, but it’s up to us ladies to change that! We are creating a welcoming environment to show that there is a place in tech for every lady out there while building cool projects and sharing stories at Technica.</p>
+            </div>
+            <div class="box for-text">
+              <h4>How do I register?</h4>
+              <p>You can pre-register with your email at the top of this website. Official registration will open August 31st at 11:59pm EST where we’ll collect more details. Technica admission will be granted on a first-come-first-serve basis, so sign up early to reserve your spot.</p>
+            </div>
+            <div class="box for-text">
+              <h4>Is the event free to attend?</h4>
+              <p>Technica is free for all participants thanks to our amazing sponsors! The event includes admission, food, overnight stay, and a lot of free gear and swag!</p>
+            </div>
+            <div class="box for-text">
+              <h4>Will food be served?</h4>
+              <p>We will provide free meals throughout the event including breakfast, lunch, and dinner on Saturday, breakfast and lunch on Sunday, and tons of healthy snacks in between. Accommodations will be made for vegetarian, vegan, gluten-free, kosher, and other dietary restrictions.</p>
+            </div>
+            <div class="box for-text">
+              <h4>How do I become a mentor?</h4>
+              <p>We'd love to have you! Mentors make the hackathon experience impactful by guiding participants through technical challenges and sharing stories along the way. <a target="_blank" href="http://goo.gl/forms/kw5w4X4dfE">Sign up to be a mentor here</a>.</p>
+            </div>
+          </div>
+          <div class="half">
+            <div class="box for-text">
+              <h4>Do I need to know how to code?</h4>
+              <p>Students of all skill levels are encouraged to attend, even if you’ve never written a line of code. We’re prepared to teach you everything you need to learn right here while also supporting the most experienced hackers.</p>
+            </div>
+            <div class="box for-text">
+              <h4>How do I get to the event?</h4>
+              <p>College Park, Maryland is a short drive or bus ride away from several cities in the eastern seaboard. Buses may be sent to major hubs based on popular registration areas, but your best bet is planning your own travel arrangements. Special bus arrangements will be made for high school students attending. If you need assistance getting to Technica, please reach out to hello@gotechnica.org. Free parking will be available.</p>
+            </div>
+            <div class="box for-text">
+              <h4>What should I bring?</h4>
+              <p>You must bring a valid student ID card for admission. Bring your laptop and charging cables and any other specific materials you’ll need for your hacking project. You may also bring a sleeping bag and pillow if that makes you more comfortable, though air mattresses will be provided. Everything else will be provided!</p>
+            </div>
+            <div class="box for-text">
+              <h4>How do teams work? Can I go solo?</h4>
+              <p>This is totally up to you! You can work on a team or work solo. If you do wish to work on a team, teams can be constructed prior to arrival with friends or they can be formed during the time allocated for team formation before the official hacking begins.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="content">
+        <img src="img/technica-logo-white-colorstripe.svg">
+        <ul>
+          <li><a href="https://twitter.com/gotechnica" target="_blank">Twitter</a></li>
+          <li><a href="https://www.facebook.com/gotechnica" target="_blank">Facebook</a></li>
+          <li><a href="mailto:hello@gotechnica.org">Email</a></li>
+          <li>&copy; Technica 2015</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
+    <script type="text/javascript">
+      smoothScroll.init();
+
+      function validateEmail(email) {
+        var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+        return re.test(email);
+      }
+      var form = document.getElementById('signup-form');
+
+      form.onsubmit = function() {
+        var email = document.getElementById('entry_118037203').value;
+        if (validateEmail(email)) {
+          if (form.className.indexOf("success") == -1) {
+            this.submit();
+            document.getElementById('their-email').innerHTML = email;
+            form.className = form.className.replace(' invalid', '')
+            form.className += ' success';
+            return true;
+          }
+          // submitting a duplicate form
+        } else {
+          form.className += ' invalid';
+        }
+        return false;
+      };
+    </script>
+  </body>
+  </html>
