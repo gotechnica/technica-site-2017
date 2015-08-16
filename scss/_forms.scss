@@ -45,6 +45,7 @@ form {
         border-radius: 0;
         cursor: pointer;
         width: 100%;
+        font-weight: $medium;
         @include transition(0.2s);
     }
 

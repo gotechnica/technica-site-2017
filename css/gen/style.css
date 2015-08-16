@@ -273,6 +273,7 @@ form {
     border-radius: 0;
     cursor: pointer;
     width: 100%;
+    font-weight: 500;
     -webkit-transition: 0.2s 0s ease all;
     -moz-transition: 0.2s 0s ease all;
     -o-transition: 0.2s 0s ease all;
