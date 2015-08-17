@@ -24,14 +24,12 @@ section, footer {
     max-width: 60rem;
     width: 90%;
     margin: 0 auto;
-}
-
-@media screen and (min-width: $xl-desktop-min) {
-    max-width: 72rem;
-}
-
-@media screen and (max-width: $xl-desktop-min) {
-    max-width: 72rem;
+    @media screen and (min-width: $desktop-min) {
+        max-width: 64rem;
+    }
+    @media screen and (max-width: $xl-desktop-min) {
+        max-width: 72rem;
+    }
 }
 
 header {

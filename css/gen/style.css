@@ -405,12 +405,12 @@ section, footer {
   max-width: 60rem;
   width: 90%;
   margin: 0 auto; }
-
-@media screen and (min-width: 1441px) {
-  max-width: 72rem; }
-
-@media screen and (max-width: 1441px) {
-  max-width: 72rem; }
+  @media screen and (min-width: 1025px) {
+    .content, hr {
+      max-width: 64rem; } }
+  @media screen and (max-width: 1441px) {
+    .content, hr {
+      max-width: 72rem; } }
 
 header {
   background-color: #00ffff;
