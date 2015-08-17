@@ -193,6 +193,10 @@ $team-padding: 1.5rem;
     @include clearfix;
     margin: (-$team-padding) 0 2.5rem;
 
+    a {
+        color: $black;
+    }
+
     .person-wrapper {
         width: 16.666666667%;
         padding-bottom: 16.666666667%;

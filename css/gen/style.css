@@ -572,6 +572,8 @@ nav ul {
     display: block;
     height: 0;
     clear: both; }
+  .team a {
+    color: #111111; }
   .team .person-wrapper {
     width: 16.666666667%;
     padding-bottom: 16.666666667%;
