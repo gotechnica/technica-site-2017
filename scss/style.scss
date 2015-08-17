@@ -120,14 +120,6 @@ nav {
     margin: 0 auto !important;
 }
 
-.faq {
-    h4 {
-        padding-bottom: 1rem;
-        border-bottom: 2px solid $black;
-        margin-bottom: 1rem;
-    }
-}
-
 .section-header {
     text-align: center;
     position: relative;
@@ -143,7 +135,7 @@ nav {
             height: 0.5rem;
             position: absolute;
             top: 50%;
-            left: -3.5rem;
+            left: -2rem;
             @include transition(translateY(-50%));
             background-color: $pink;
         }
@@ -155,7 +147,7 @@ nav {
             border-bottom: 0.5rem $pink solid;
             position: absolute;
             top: 50%;
-            right: -3.5rem;
+            right: -2rem;
             @include transition(translateY(-50%));
         }
     }
@@ -179,6 +171,17 @@ nav {
         &:hover {
             @include transform(scale(1));
         }
+    }
+}
+
+.faq {
+    h4 {
+        padding-bottom: 1rem;
+        border-bottom: 2px solid $off-white;
+        margin-bottom: 1rem;
+    }
+    p {
+        margin-top: 1rem !important;
     }
 }
 

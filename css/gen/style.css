@@ -491,11 +491,6 @@ nav ul {
   width: 20rem;
   margin: 0 auto !important; }
 
-.faq h4 {
-  padding-bottom: 1rem;
-  border-bottom: 2px solid #111111;
-  margin-bottom: 1rem; }
-
 .section-header {
   text-align: center;
   position: relative; }
@@ -516,7 +511,7 @@ nav ul {
       height: 0.5rem;
       position: absolute;
       top: 50%;
-      left: -3.5rem;
+      left: -2rem;
       -webkit-transition: translateY(-50%) 0s ease all;
       -moz-transition: translateY(-50%) 0s ease all;
       -o-transition: translateY(-50%) 0s ease all;
@@ -530,7 +525,7 @@ nav ul {
       border-bottom: 0.5rem #ff7bac solid;
       position: absolute;
       top: 50%;
-      right: -3.5rem;
+      right: -2rem;
       -webkit-transition: translateY(-50%) 0s ease all;
       -moz-transition: translateY(-50%) 0s ease all;
       -o-transition: translateY(-50%) 0s ease all;
@@ -559,6 +554,14 @@ nav ul {
       -moz-transform: scale(1);
       -o-transform: scale(1);
       transform: scale(1); }
+
+.faq h4 {
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 1rem; }
+
+.faq p {
+  margin-top: 1rem !important; }
 
 .team {
   display: block;
