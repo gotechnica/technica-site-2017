@@ -46,7 +46,7 @@ h4, .h4, nav ul li {
 
 h6, .h6 {
   font-weight: 400;
-  font-size: 1rem; }
+  font-size: .875rem; }
 
 @media screen and (max-width: 640px) {
   h1 {
@@ -617,7 +617,8 @@ nav ul {
       .team .person-wrapper .person img {
         border-radius: 50%;
         z-index: 1;
-        position: relative; }
+        position: relative;
+        margin-bottom: .375rem; }
     .team .person-wrapper:hover {
       transform: scale(1);
       overflow: visible;
