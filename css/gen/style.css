@@ -419,7 +419,8 @@ header {
   background-image: linear-gradient(to right, #00ffff, #ff7bac);
   padding-top: 2rem; }
   header img {
-    width: 100%; }
+    width: 100%;
+    transform: translateY(1px); }
 
 nav ul {
   display: -webkit-flex;
