@@ -308,12 +308,14 @@ form {
       z-index: 1;
       text-transform: none;
       font-weight: 400;
-      -webkit-transform: translate(-50%, -50%) translateY(-5rem);
-      -moz-transform: translate(-50%, -50%) translateY(-5rem);
-      -o-transform: translate(-50%, -50%) translateY(-5rem);
-      transform: translate(-50%, -50%) translateY(-5rem); }
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      opacity: 0; }
     form.inline button[type="submit"] .btn-pre-reg {
       z-index: 2;
+      opacity: 1;
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
@@ -330,17 +332,24 @@ form {
     border-color: #ff7bac; }
     form.success button[type="submit"] .btn-success {
       z-index: 2;
+      opacity: 1;
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
     form.success button[type="submit"] .btn-pre-reg {
       z-index: 1;
-      -webkit-transform: translate(-50%, -50%) translateY(5rem);
-      -moz-transform: translate(-50%, -50%) translateY(5rem);
-      -o-transform: translate(-50%, -50%) translateY(5rem);
-      transform: translate(-50%, -50%) translateY(5rem); }
+      opacity: 0;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
     form.success button[type="submit"] .btn-hello {
+      -webkit-transform: translate(-50%, -50%) translateY(-5rem);
+      -moz-transform: translate(-50%, -50%) translateY(-5rem);
+      -o-transform: translate(-50%, -50%) translateY(-5rem);
+      transform: translate(-50%, -50%) translateY(-5rem);
+      opacity: 1;
       color: rgba(0, 0, 0, 0.35); }
     form.success button[type="submit"]:hover .btn-success {
       z-index: 1;

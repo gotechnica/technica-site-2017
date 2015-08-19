@@ -80,10 +80,12 @@ form {
                 z-index: 1;
                 text-transform: none;
                 font-weight: $regular;
-                @include transform(translate(-50%, -50%) translateY(-5rem));
+                @include transform(translate(-50%, -50%));
+                opacity: 0;
             }
             .btn-pre-reg {
                 z-index: 2;
+                opacity: 1;
                 @include transform(translate(-50%, -50%));
             }
         }
@@ -110,13 +112,17 @@ form {
 
             .btn-success {
                 z-index: 2;
+                opacity: 1;
                 @include transform(translate(-50%, -50%));
             }
             .btn-pre-reg {
                 z-index: 1;
-                @include transform(translate(-50%, -50%) translateY(5rem));
+                opacity: 0;
+                @include transform(translate(-50%, -50%));
             }
             .btn-hello {
+                @include transform(translate(-50%, -50%) translateY(-5rem));
+                opacity: 1;
                 color: $gray;
             }
 

@@ -489,8 +489,7 @@
       var email = document.getElementById('entry_118037203').value;
       if (validateEmail(email)) {
         if (form.className.indexOf("success") == -1) {
-          console.log('submit');
-          // this.submit();
+          this.submit();
           document.getElementById('their-email').innerHTML = email;
           form.className = form.className.replace(' invalid', '')
           form.className += ' success';
