@@ -19,7 +19,7 @@
    <meta itemprop="name" content="Technica">
    <meta itemprop="description" content="All-ladies hackathon at University of Maryland.">
    <meta itemprop="image" content="/img/logo-black.png">
-   
+
    <!-- Twitter Card data -->
    <meta name="twitter:card" content="summary_large_image">
    <meta name="twitter:site" content="@gotechnica">
@@ -489,7 +489,8 @@
       var email = document.getElementById('entry_118037203').value;
       if (validateEmail(email)) {
         if (form.className.indexOf("success") == -1) {
-          this.submit();
+          console.log('submit');
+          // this.submit();
           document.getElementById('their-email').innerHTML = email;
           form.className = form.className.replace(' invalid', '')
           form.className += ' success';

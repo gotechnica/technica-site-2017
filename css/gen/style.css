@@ -290,7 +290,8 @@ form {
   form.inline {
     width: 100%;
     max-width: 47rem;
-    margin: 0 auto; }
+    margin: 0 auto;
+    overflow: hidden; }
     form.inline input {
       display: inline-block; }
     form.inline input[type="email"] {
@@ -302,19 +303,21 @@ form {
       transition: 0.2s 0s ease all;
       position: absolute;
       width: 100%;
-      top: 50%;
+      top: 50%; }
+    form.inline button[type="submit"] .btn-success, form.inline button[type="submit"] .btn-hello {
+      z-index: 1;
+      text-transform: none;
+      font-weight: 400;
+      -webkit-transform: translate(-50%, -50%) translateY(-5rem);
+      -moz-transform: translate(-50%, -50%) translateY(-5rem);
+      -o-transform: translate(-50%, -50%) translateY(-5rem);
+      transform: translate(-50%, -50%) translateY(-5rem); }
+    form.inline button[type="submit"] .btn-pre-reg {
+      z-index: 2;
       -webkit-transform: translate(-50%, -50%);
       -moz-transform: translate(-50%, -50%);
       -o-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-    form.inline button[type="submit"] .btn-success, form.inline button[type="submit"] .btn-hello {
-      opacity: 0;
-      z-index: 1;
-      text-transform: none;
-      font-weight: 400; }
-    form.inline button[type="submit"] .btn-pre-reg {
-      opacity: 1;
-      z-index: 2; }
   form.invalid button[type="submit"] {
     background-color: #ff4040;
     border-color: #ff4040; }
@@ -326,19 +329,31 @@ form {
     background-color: #ff7bac;
     border-color: #ff7bac; }
     form.success button[type="submit"] .btn-success {
-      opacity: 1;
-      z-index: 2; }
+      z-index: 2;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
     form.success button[type="submit"] .btn-pre-reg {
-      opacity: 0;
-      z-index: 1; }
+      z-index: 1;
+      -webkit-transform: translate(-50%, -50%) translateY(5rem);
+      -moz-transform: translate(-50%, -50%) translateY(5rem);
+      -o-transform: translate(-50%, -50%) translateY(5rem);
+      transform: translate(-50%, -50%) translateY(5rem); }
     form.success button[type="submit"] .btn-hello {
       color: rgba(0, 0, 0, 0.35); }
     form.success button[type="submit"]:hover .btn-success {
-      opacity: 0;
-      z-index: 1; }
+      z-index: 1;
+      -webkit-transform: translate(-50%, -50%) translateY(5rem);
+      -moz-transform: translate(-50%, -50%) translateY(5rem);
+      -o-transform: translate(-50%, -50%) translateY(5rem);
+      transform: translate(-50%, -50%) translateY(5rem); }
     form.success button[type="submit"]:hover .btn-hello {
-      opacity: 1;
-      z-index: 2; }
+      z-index: 2;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
   form.success input[type="email"] {
     border-color: #ff7bac; }
 
