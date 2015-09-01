@@ -366,6 +366,32 @@ form {
   form.success input[type="email"] {
     border-color: #ff7bac; }
 
+.register-button {
+  max-width: 30rem;
+  font-family: "DINPro", "Helvetica", sans-serif;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  background-color: #00F2F2;
+  color: #ffffff;
+  border: 2px solid #00F2F2;
+  padding: 2rem 3rem;
+  text-align: center;
+  height: 100%;
+  outline: 0;
+  border-radius: 0;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: 0.2s 0s ease all;
+  -moz-transition: 0.2s 0s ease all;
+  -o-transition: 0.2s 0s ease all;
+  transition: 0.2s 0s ease all;
+  display: block;
+  margin: 0 auto; }
+  .register-button:hover {
+    color: #e6e6e6; }
+
 @media screen and (max-width: 768px) {
   form.inline {
     height: 12.8rem;

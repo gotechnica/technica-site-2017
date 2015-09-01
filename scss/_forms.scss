@@ -144,6 +144,31 @@ form {
     }
 }
 
+.register-button {
+    max-width: 30rem;
+    font-family: $sans;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    background-color: $dark-blue;
+    color: $white;
+    border: 2px solid $dark-blue;
+    padding: 2rem 3rem;
+    text-align: center;
+    height: 100%;
+    outline: 0;
+    border-radius: 0;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: $medium;
+    @include transition(0.2s);
+    display: block;
+    margin: 0 auto;
+    &:hover {
+        color: darken($white, 10%);
+    }
+}
+
 @media screen and (max-width: $tablet-portrait-max) {
     form.inline {
         height: 12.8rem;
