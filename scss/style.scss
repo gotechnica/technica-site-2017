@@ -172,6 +172,9 @@ nav {
             @include transform(scale(1));
         }
     }
+    & + .sponsors {
+        margin-top: -5rem;
+    }
 }
 
 .faq {
