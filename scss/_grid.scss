@@ -6,11 +6,11 @@ $row-padding: 1.25rem;
 	@include clearfix;
 	margin: 0 (-$row-padding);
 
-	.half, .third, .quarter {
+	.half, .third, .quarter, .sixth {
 		padding: 0 $row-padding;
 		display: inline-block;
-		position: relative;
 		float: left;
+		position: relative;
 		@include border-box;
 	}
 
@@ -26,6 +26,10 @@ $row-padding: 1.25rem;
 		width: 25%;
 	}
 
+	.sixth {
+		width: 16.666666666%;
+	}
+
 	&.with-divider:before {
 		display: block;
 		width: 0;
@@ -38,12 +42,21 @@ $row-padding: 1.25rem;
 		@include transform(translateX(-50%));
 		@include vertical-linear-gradient($blue, $pink);
 	}
+
+	&.centered {
+		text-align: center;
+		font-size: 0;
+
+		.half, .third, .quarter, .sixth {
+			float: none;
+		}
+	}
 }
 
 @media screen and (max-width: $tablet-portrait-max) {
 	.row {
 		margin: 0;
-		.half, .third {
+		.half, .third, {
 			padding: 0;
 			display: block;
 			width: 100%;
@@ -52,7 +65,7 @@ $row-padding: 1.25rem;
 				margin-top: 3.125rem;
 			}
 		}
-		.quarter {
+		.quarter, .sixth {
 			width: 50%;
 			&:nth-child(n+3) {
 				margin-top: 2rem;

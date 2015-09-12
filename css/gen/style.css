@@ -110,11 +110,11 @@ h6, .h6 {
     display: block;
     height: 0;
     clear: both; }
-  .row .half, .row .third, .row .quarter {
+  .row .half, .row .third, .row .quarter, .row .sixth {
     padding: 0 1.25rem;
     display: inline-block;
-    position: relative;
     float: left;
+    position: relative;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; }
@@ -124,6 +124,8 @@ h6, .h6 {
     width: 33.333333333%; }
   .row .quarter {
     width: 25%; }
+  .row .sixth {
+    width: 16.666666666%; }
   .row.with-divider:before {
     display: block;
     width: 0;
@@ -141,6 +143,11 @@ h6, .h6 {
     /* fallback */
     background-image: -webkit-linear-gradient(top, #00ffff, #ff7bac);
     background-image: linear-gradient(to bottom, #00ffff, #ff7bac); }
+  .row.centered {
+    text-align: center;
+    font-size: 0; }
+    .row.centered .half, .row.centered .third, .row.centered .quarter, .row.centered .sixth {
+      float: none; }
 
 @media screen and (max-width: 768px) {
   .row {
@@ -151,9 +158,9 @@ h6, .h6 {
       width: 100%; }
       .row .half:not(:first-child), .row .third:not(:first-child) {
         margin-top: 3.125rem; }
-    .row .quarter {
+    .row .quarter, .row .sixth {
       width: 50%; }
-      .row .quarter:nth-child(n+3) {
+      .row .quarter:nth-child(n+3), .row .sixth:nth-child(n+3) {
         margin-top: 2rem; }
     .row.with-divider:before {
       display: none; } }
@@ -605,6 +612,8 @@ nav ul {
       -moz-transform: scale(1);
       -o-transform: scale(1);
       transform: scale(1); }
+  .sponsors + .sponsors {
+    margin-top: -5rem; }
 
 .faq h4 {
   padding-bottom: 1rem;
