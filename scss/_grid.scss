@@ -12,6 +12,7 @@ $row-padding: 1.25rem;
 		float: left;
 		position: relative;
 		@include border-box;
+		vertical-align: top;
 	}
 
 	.half {
