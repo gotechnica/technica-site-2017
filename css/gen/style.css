@@ -600,6 +600,7 @@ nav ul {
   margin-bottom: 5rem; }
   .sponsors img {
     margin: 0 auto;
+    max-width: 60%;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -o-transform: scale(0.9);
@@ -609,7 +610,7 @@ nav ul {
     -o-transition: 0.15s 0s ease all;
     transition: 0.15s 0s ease all; }
       .sponsors .minimill { /* Not vertically centered */
-        margin-top: 70px;
+        margin-top: 45px;
       }
     .sponsors img:hover {
       -webkit-transform: scale(1);
