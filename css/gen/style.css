@@ -125,8 +125,8 @@ h6, .h6 {
     width: 33.333333333%; }
   .row .quarter {
     width: 25%; }
-  .row .sixth {
-    width: 16.666666666%; }
+  .row .sixth { /* temp increase */
+    width: 20%; }
   .row.with-divider:before {
     display: block;
     width: 0;
@@ -600,7 +600,7 @@ nav ul {
   margin-bottom: 5rem; }
   .sponsors img {
     margin: 0 auto;
-    max-width: 60%;
+    max-width: 80%;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -o-transform: scale(0.9);
