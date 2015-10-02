@@ -110,7 +110,7 @@ h6, .h6 {
     display: block;
     height: 0;
     clear: both; }
-  .row .half, .row .forty, .row .third, .row .quarter, .row .sixth {
+  .row .half, .row .third, .row .quarter, .row .sixth {
     padding: 0 1.25rem;
     display: inline-block;
     float: left;
@@ -121,14 +121,12 @@ h6, .h6 {
     vertical-align: top; }
   .row .half {
     width: 50%; }
-  .row .forty {
-    width: 40%; }
   .row .third {
     width: 33.333333333%; }
   .row .quarter {
     width: 25%; }
-  .row .sixth { /* temp increase */
-    width: 20%; }
+  .row .sixth {
+    width: 16.666666666%; }
   .row.with-divider:before {
     display: block;
     width: 0;
@@ -149,17 +147,17 @@ h6, .h6 {
   .row.centered {
     text-align: center;
     font-size: 0; }
-    .row.centered .half, .row.centered .forty, .row.centered .third, .row.centered .quarter, .row.centered .sixth {
+    .row.centered .half, .row.centered .third, .row.centered .quarter, .row.centered .sixth {
       float: none; }
 
 @media screen and (max-width: 768px) {
   .row {
     margin: 0; }
-    .row .half, .row .forty, .row .third {
+    .row .half, .row .third {
       padding: 0;
       display: block;
       width: 100%; }
-      .row .half:not(:first-child), .row .forty:not(:first-child), .row .third:not(:first-child) {
+      .row .half:not(:first-child), .row .third:not(:first-child) {
         margin-top: 3.125rem; }
     .row .quarter, .row .sixth {
       width: 50%; }
@@ -202,6 +200,32 @@ hr {
   /* fallback */
   background-image: -webkit-linear-gradient(left, #00ffff, #ff7bac);
   background-image: linear-gradient(to right, #00ffff, #ff7bac); }
+
+.button, form button[type="submit"], button {
+  font-family: "DINPro", "Helvetica", sans-serif;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #3ae1ec;
+  color: #ffffff;
+  border: 2px solid #3ae1ec;
+  padding: 2rem 3rem;
+  text-align: center;
+  height: 100%;
+  outline: 0;
+  border-radius: 0;
+  cursor: pointer;
+  width: 100%;
+  font-weight: 500;
+  -webkit-transition: 0.2s 0s ease all;
+  -moz-transition: 0.2s 0s ease all;
+  -o-transition: 0.2s 0s ease all;
+  transition: 0.2s 0s ease all; }
+  .button:hover, form button[type="submit"]:hover, button:hover {
+    background-color: #ff7bac;
+    border: 2px solid #ff7bac;
+    color: white; }
 
 @media screen and (min-width: 1441px) {
   body, html {
@@ -267,26 +291,6 @@ form {
     form input[type="email"]:focus {
       -webkit-box-shadow: 0 0 0.5rem 0 rgba(17, 17, 17, 0.2);
       box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.2); }
-  form button[type="submit"] {
-    font-family: "DINPro", "Helvetica", sans-serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    text-transform: uppercase;
-    background-color: #00F2F2;
-    color: #ffffff;
-    border: 2px solid #00F2F2;
-    padding: 2rem 3rem;
-    text-align: center;
-    height: 100%;
-    outline: 0;
-    border-radius: 0;
-    cursor: pointer;
-    width: 100%;
-    font-weight: 500;
-    -webkit-transition: 0.2s 0s ease all;
-    -moz-transition: 0.2s 0s ease all;
-    -o-transition: 0.2s 0s ease all;
-    transition: 0.2s 0s ease all; }
   form .submit-wrapper {
     position: absolute;
     left: 30rem;
@@ -378,29 +382,8 @@ form {
 
 .register-button {
   max-width: 30rem;
-  font-family: "DINPro", "Helvetica", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-transform: uppercase;
-  background-color: #00F2F2;
-  color: #ffffff;
-  border: 2px solid #00F2F2;
-  padding: 2rem 3rem;
-  text-align: center;
-  height: 100%;
-  outline: 0;
-  border-radius: 0;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 500;
-  -webkit-transition: 0.2s 0s ease all;
-  -moz-transition: 0.2s 0s ease all;
-  -o-transition: 0.2s 0s ease all;
-  transition: 0.2s 0s ease all;
   display: block;
   margin: 0 auto; }
-  .register-button:hover {
-    color: #e6e6e6; }
 
 @media screen and (max-width: 768px) {
   form.inline {
@@ -602,7 +585,6 @@ nav ul {
   margin-bottom: 5rem; }
   .sponsors img {
     margin: 0 auto;
-    max-width: 80%;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
     -o-transform: scale(0.9);
@@ -611,9 +593,6 @@ nav ul {
     -moz-transition: 0.15s 0s ease all;
     -o-transition: 0.15s 0s ease all;
     transition: 0.15s 0s ease all; }
-      .sponsors .minimill { /* Not vertically centered */
-        margin-top: 45px;
-      }
     .sponsors img:hover {
       -webkit-transform: scale(1);
       -moz-transform: scale(1);

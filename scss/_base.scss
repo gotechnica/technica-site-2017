@@ -40,6 +40,31 @@ hr {
     @include background-linear-gradient($blue, $pink);
 }
 
+.button, button {
+    font-family: $sans;
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $darker-blue;
+    color: $white;
+    border: 2px solid $darker-blue;
+    padding: 2rem 3rem;
+    text-align: center;
+    height: 100%;
+    outline: 0;
+    border-radius: 0;
+    cursor: pointer;
+    width: 100%;
+    font-weight: $medium;
+    @include transition(0.2s);
+    &:hover {
+        background-color: $pink;
+        border: 2px solid $pink;
+        color: white;
+    }
+}
+
 @media screen and (min-width: $xl-desktop-min) {
     body, html {
         font-size: 16px;
