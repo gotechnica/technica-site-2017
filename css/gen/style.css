@@ -110,7 +110,7 @@ h6, .h6 {
     display: block;
     height: 0;
     clear: both; }
-  .row .half, .row .third, .row .quarter, .row .sixth {
+  .row .half, .row .forty, .row .third, .row .quarter, .row .sixth {
     padding: 0 1.25rem;
     display: inline-block;
     float: left;
@@ -121,6 +121,8 @@ h6, .h6 {
     vertical-align: top; }
   .row .half {
     width: 50%; }
+  .row .forty {
+    width: 40%; }
   .row .third {
     width: 33.333333333%; }
   .row .quarter {
@@ -147,17 +149,17 @@ h6, .h6 {
   .row.centered {
     text-align: center;
     font-size: 0; }
-    .row.centered .half, .row.centered .third, .row.centered .quarter, .row.centered .sixth {
+    .row.centered .half, .row.centered .forty, .row.centered .third, .row.centered .quarter, .row.centered .sixth {
       float: none; }
 
 @media screen and (max-width: 768px) {
   .row {
     margin: 0; }
-    .row .half, .row .third {
+    .row .half, .row .forty, .row .third {
       padding: 0;
       display: block;
       width: 100%; }
-      .row .half:not(:first-child), .row .third:not(:first-child) {
+      .row .half:not(:first-child), .row .forty:not(:first-child), .row .third:not(:first-child) {
         margin-top: 3.125rem; }
     .row .quarter, .row .sixth {
       width: 50%; }
