@@ -128,7 +128,8 @@ h6, .h6 {
   .row .quarter {
     width: 25%; }
   .row .sixth {
-    width: 16.666666666%; }
+    width: 20%;
+    /* temp increase */ }
   .row.with-divider:before {
     display: block;
     width: 0;
@@ -602,6 +603,8 @@ nav ul {
       transform: scale(1); }
   .sponsors + .sponsors {
     margin-top: -5rem; }
+  .sponsors .minimill {
+    margin-top: 35%; }
 
 .faq h4 {
   padding-bottom: 1rem;
