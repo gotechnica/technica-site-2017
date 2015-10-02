@@ -6,7 +6,7 @@ $row-padding: 1.25rem;
 	@include clearfix;
 	margin: 0 (-$row-padding);
 
-	.half, .third, .quarter, .sixth {
+	.half, .forty, .third, .quarter, .sixth {
 		padding: 0 $row-padding;
 		display: inline-block;
 		float: left;
@@ -17,6 +17,10 @@ $row-padding: 1.25rem;
 
 	.half {
 		width: 50%;
+	}
+
+	.forty {
+		width: 40%;
 	}
 
 	.third {
@@ -48,7 +52,7 @@ $row-padding: 1.25rem;
 		text-align: center;
 		font-size: 0;
 
-		.half, .third, .quarter, .sixth {
+		.half, .third, .forty, .quarter, .sixth {
 			float: none;
 		}
 	}
@@ -57,7 +61,7 @@ $row-padding: 1.25rem;
 @media screen and (max-width: $tablet-portrait-max) {
 	.row {
 		margin: 0;
-		.half, .third, {
+		.half, .third, .forty {
 			padding: 0;
 			display: block;
 			width: 100%;
