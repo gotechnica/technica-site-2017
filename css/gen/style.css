@@ -122,13 +122,17 @@ h6, .h6 {
   .row .half {
     width: 50%; }
   .row .forty {
-    width: 40%; }
+    width: 40%;
+    padding: 0px 75px 0px 75px; }
   .row .third {
-    width: 33.333333333%; }
+    width: 33.333333333%;
+    padding: 0px 50px 0px 50px; }
   .row .quarter {
-    width: 25%; }
+    width: 25%;
+    padding: 0px 25px 0px 25px; }
   .row .sixth {
     width: 20%;
+    padding: 0px 25px 0px 25px;
     /* temp increase */ }
   .row.with-divider:before {
     display: block;

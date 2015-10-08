@@ -21,18 +21,22 @@ $row-padding: 1.25rem;
 
 	.forty {
 		width: 40%;
+		padding: 0px 75px 0px 75px;
 	}
 
 	.third {
 		width: 33.333333333%;
+		padding: 0px 50px 0px 50px;
 	}
 
 	.quarter {
 		width: 25%;
+		padding: 0px 25px 0px 25px;
 	}
 
 	.sixth {
-		width: 20%; /* temp increase */
+		width: 20%;
+		padding: 0px 25px 0px 25px; /* temp increase */
 	}
 
 	&.with-divider:before {
