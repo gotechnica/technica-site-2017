@@ -102,7 +102,7 @@ h6, .h6 {
 .row {
   display: block;
   position: relative;
-  margin: 0 -1.25rem; }
+  margin: 0 -2.5rem; }
   .row:after {
     content: " ";
     /* Older browser do not support empty content */
@@ -111,7 +111,7 @@ h6, .h6 {
     height: 0;
     clear: both; }
   .row .half, .row .forty, .row .third, .row .quarter, .row .sixth {
-    padding: 0 1.25rem;
+    padding: 0 2.5rem;
     display: inline-block;
     float: left;
     position: relative;
@@ -431,7 +431,8 @@ table {
     table thead tr td, table thead tr th, table tbody tr td, table tbody tr th {
       font-size: 1.5rem;
       line-height: 2.25rem;
-      padding: 0.625rem 0; }
+      padding: 0.625rem 0;
+      vertical-align: top; }
     table thead tr:last-child td, table tbody tr:last-child td {
       padding-bottom: 1.25rem; }
   table tbody tr:first-child td {
@@ -442,6 +443,16 @@ table {
 @media screen and (max-width: 768px) {
   table {
     padding: 0 2rem; } }
+
+.schedule .highlighted {
+  color: #00ffff; }
+
+.schedule .location {
+  color: #999999;
+  font-size: 0.8em; }
+
+.schedule tr td:first-child {
+  width: 10rem; }
 
 img {
   display: block; }
@@ -508,7 +519,7 @@ nav ul {
   position: relative; }
 
 .box {
-  border: 2px solid rgba(0, 0, 0, 0.1); }
+  border: 2px solid #e5e5e5; }
   .box + .box {
     margin-top: 3.75rem !important; }
 
@@ -612,7 +623,7 @@ nav ul {
 
 .faq h4 {
   padding-bottom: 1rem;
-  border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 2px solid #e5e5e5;
   margin-bottom: 1rem; }
 
 .faq p {

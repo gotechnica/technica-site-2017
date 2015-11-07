@@ -1,0 +1,14 @@
+.schedule {
+    .highlighted {
+        color: $blue;
+    }
+
+    .location {
+        color: $medium-gray;
+        font-size: 0.8em;
+    }
+
+    tr td:first-child {
+        width: 10rem;
+    }
+}
