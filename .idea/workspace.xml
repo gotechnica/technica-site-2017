@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9d9e707f-7312-4e60-a958-fb420ce2230f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="gotechnica.github.io.iws" />
@@ -26,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="711" column="142" selection-start-line="711" selection-start-column="142" selection-end-line="711" selection-end-column="142" />
+            <state relative-caret-position="243">
+              <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -38,12 +39,9 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/gen/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-9579">
-              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-              <folding>
-                <marker date="1464221859000" expanded="true" signature="4874:4929" placeholder="{...}" />
-                <marker date="1464221859000" expanded="true" signature="20642:20644" placeholder="{...}" />
-              </folding>
+            <state relative-caret-position="174">
+              <caret line="535" column="0" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -61,8 +59,8 @@
       <file leaf-file-name="style.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="546">
-              <caret line="336" column="1" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+            <state relative-caret-position="-317">
+              <caret line="264" column="14" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -131,7 +129,7 @@
     </gulpfiles>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-73" />
+    <option name="x" value="240" />
     <option name="y" value="23" />
     <option name="width" value="1097" />
     <option name="height" value="822" />
@@ -257,15 +255,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1464217520538</updated>
-      <workItem from="1464217522589" duration="6115000" />
+      <workItem from="1464217522589" duration="8658000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6115000" />
+    <option name="totallyTimeSpent" value="8658000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-73" y="23" width="1097" height="822" extended-state="0" />
+    <frame x="240" y="23" width="1097" height="822" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32999283" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -346,29 +344,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/gen/style.css">
+    <entry file="file://$PROJECT_DIR$/scss/style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9579">
-          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
-          <folding>
-            <marker date="1464221859000" expanded="true" signature="4874:4929" placeholder="{...}" />
-            <marker date="1464221859000" expanded="true" signature="20642:20644" placeholder="{...}" />
-          </folding>
+        <state relative-caret-position="-317">
+          <caret line="264" column="14" selection-start-line="264" selection-start-column="9" selection-end-line="264" selection-end-column="14" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/style.scss">
+    <entry file="file://$PROJECT_DIR$/css/gen/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="546">
-          <caret line="336" column="1" selection-start-line="336" selection-start-column="1" selection-end-line="336" selection-end-column="1" />
+        <state relative-caret-position="174">
+          <caret line="535" column="0" selection-start-line="535" selection-start-column="0" selection-end-line="535" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="711" column="142" selection-start-line="711" selection-start-column="142" selection-end-line="711" selection-end-column="142" />
+        <state relative-caret-position="243">
+          <caret line="100" column="25" selection-start-line="100" selection-start-column="25" selection-end-line="100" selection-end-column="25" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#form#0;n#div#1;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
