@@ -703,6 +703,80 @@ nav ul {
         border-image-slice: 1; }
         .team .person-wrapper:hover .person .name, .team .person-wrapper:hover .person .title {
           display: block; }
+/* made to center directors above team */
+.execteam {
+  display: block;
+  position: relative;
+  /*margin-left: -1.5rem;*/
+  margin: 0, auto; }
+  .team:after {
+    content: " ";
+    /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both; }
+  .team a {
+    color: #111111; }
+  .team .person-wrapper {
+    width: 16.666666667%;
+    padding-bottom: 16.666666667%;
+    display: inline-block;
+    position: relative;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.15s 0s ease transform;
+    -moz-transition: 0.15s 0s ease transform;
+    -o-transition: 0.15s 0s ease transform;
+    transition: 0.15s 0s ease transform; }
+    .team .person-wrapper .person {
+      padding: 1.5rem;
+      position: absolute;
+      background-color: #ffffff;
+      border: 2px solid transparent;
+      left: 4px;
+      right: 4px;
+      top: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      text-align: center;
+      z-index: 1;
+      border: 2px solid transparent;
+      -moz-border-image: -moz-linear-gradient(left, #ffffff 0%, #ffffff 100%);
+      -webkit-border-image: -webkit-linear-gradient(left, #ffffff 0%, #ffffff 100%);
+      border-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+      border-image-slice: 1; }
+      .team .person-wrapper .person:after, .team .person-wrapper .person:before {
+        background-color: #ffffff; }
+      .team .person-wrapper .person .name, .team .person-wrapper .person .title {
+        display: none; }
+      .team .person-wrapper .person img {
+        border-radius: 50%;
+        z-index: 1;
+        position: relative;
+        margin-bottom: .375rem; }
+    .team .person-wrapper:hover {
+      transform: scale(1);
+      overflow: visible;
+      z-index: 2; }
+      .team .person-wrapper:hover .person {
+        -webkit-box-shadow: 0 0 0.5rem 0 rgba(17, 17, 17, 0.2);
+        box-shadow: 0 0 1rem 0 rgba(17, 17, 17, 0.2);
+        border: 2px solid transparent;
+        -moz-border-image: -moz-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
+        -webkit-border-image: -webkit-linear-gradient(left, #00ffff 0%, #ff7bac 100%);
+        border-image: linear-gradient(to right, #00ffff 0%, #ff7bac 100%);
+        border-image-slice: 1; }
+        .team .person-wrapper:hover .person .name, .team .person-wrapper:hover .person .title {
+          display: block; }
 
 footer {
   background-color: #111111;
