@@ -446,6 +446,8 @@ table {
 
 .schedule .highlighted {
   color: #00ffff; }
+.schedule .pink {
+  color: #ff7bac; }
 
 .schedule .location {
   color: #999999;
