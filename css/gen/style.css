@@ -110,7 +110,7 @@ h6, .h6 {
     display: block;
     height: 0;
     clear: both; }
-  .row .bigger .half, .row .forty, .row .third, .row .quarter, .row .sixth {
+  .row .half, .row .forty, .row .third, .row .quarter, .row .sixth {
     padding: 0 2.5rem;
     display: inline-block;
     float: left;
@@ -119,8 +119,6 @@ h6, .h6 {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     vertical-align: top; }
-  .row .bigger {
-    width: 75%; }
   .row .half {
     width: 50%; }
   .row .forty {
@@ -156,17 +154,17 @@ h6, .h6 {
   .row.centered {
     text-align: center;
     font-size: 0; }
-    .row.centered .bigger .half, .row.centered .third, .row.centered .forty, .row.centered .quarter, .row.centered .sixth {
+    .row.centered .half, .row.centered .third, .row.centered .forty, .row.centered .quarter, .row.centered .sixth {
       float: none; }
 
 @media screen and (max-width: 768px) {
   .row {
     margin: 0; }
-    .row .bigger .half, .row .third, .row .forty {
+    .row .half, .row .third, .row .forty {
       padding: 0;
       display: block;
       width: 100%; }
-      .row .bigger:not(:first-child), .half:not(:first-child), .row .third:not(:first-child), .row .forty:not(:first-child) {
+      .row .half:not(:first-child), .row .third:not(:first-child), .row .forty:not(:first-child) {
         margin-top: 3.125rem; }
     .row .quarter, .row .sixth {
       width: 50%; }
