@@ -833,3 +833,4 @@ footer {
     width: 33.333333333%;
     padding-bottom: 33.333333333%; } }
 
+dd { margin: 0; padding: 0; display: none }
