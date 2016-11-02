@@ -393,7 +393,11 @@
     </section>
  
     <hr>
-
+<script>
+$("#expand dt a").click(function () {
+   $(this).parent().siblings("dd").slideToggle(); 
+});
+</script> 
 <br>
       <section id="schedule" class="dark">
         <div id="expand">
