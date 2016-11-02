@@ -1067,6 +1067,9 @@
         }
         return false;
       };
+    $("#expand dt a").click(function () {
+   $(this).parent().siblings("dd").slideToggle(); 
+});
     </script>
   </body>
   </html>
