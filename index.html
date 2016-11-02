@@ -57,6 +57,9 @@
 
     ga('create', 'UA-57203187-5', 'auto');
     ga('send', 'pageview');
+     $("#expand dt a").click(function () {
+   $(this).parent().siblings("dd").slideToggle(); 
+});
   </script>
 
 </head>
@@ -417,7 +420,7 @@
                 </tr>
                 <tr>
                   <td>10:00 AM</td>
-                  <td class="highlighted"><dt>Meeting for Mentors</dt><dd>please work</dd></td>
+                  <td class="highlighted"><dt><a href="#">Meeting for Mentors</a></dt><dd>please work</dd></td>
                 </tr>
                 <tr>
                   <td>11:00 AM</td>
