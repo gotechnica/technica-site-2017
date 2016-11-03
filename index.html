@@ -436,13 +436,11 @@ function expandCollapse(showHide) {
                 </tr>
                 <tr>
                   <td>10:00 AM</td>
-				  <td class="highlighted" onclick="expandCollapse('showHide0');" id="expand"><u>Meeting for Mentors</u></td>	
+				  <td class="highlighted" onclick="expandCollapse('showHide0');expandCollapse('showHide1');" id="expand"><u>Meeting for Mentors</u></td>	
                 </tr>
-				<tr>
-									<div id="showHide0" style="display:none;">
-					<td class="pink">Room</td>
-					<td class="description">This is a time for all mentors and sponsors to listen to rules and important information about helping out for Technica!</td>
-				</div>
+				<tr>			
+					<td class="pink"><div id="showHide0" style="display:none;">Room</div></td>
+					<td class="description"><div id="showHide1" style="display:none;">This is a time for all mentors and sponsors to listen to rules and important information about helping out for Technica!</div></td>
 				</tr>	
 					
                 <tr>
