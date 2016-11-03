@@ -449,6 +449,9 @@ table {
 .schedule .description {
   color: #ffffff;
   font-size: 1em;}
+.schedule .room {
+  color: #ff7bac;
+  font-size: 1em;}
 .schedule .pink {
   color: #ff7bac; }
 
