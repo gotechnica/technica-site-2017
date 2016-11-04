@@ -540,7 +540,7 @@ nav ul {
   padding: 2.25rem;
   margin: 0 3.125rem; }
   .gradient-box.for-text p:not(:first-child), .box.for-text p:not(:first-child) {
-    margin-top: 2rem; }
+    margin-top: 1rem; }
 
 .gradient-box.centered, .box.centered {
   text-align: center; }
