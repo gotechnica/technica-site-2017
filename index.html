@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-  <html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Technica | All-Women Hackathon</title>
-    <!--
+<html lang="en">
 
-  ████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
-  ╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
-     ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
-     ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
-     ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
-     ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
+<head>
+   <!--
 
-   -->
+    ████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
+    ╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
+       ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
+       ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
+       ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
+       ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
+
+     -->
 
     <!--
     /**
@@ -39,1272 +38,612 @@
      * © 2017 MyFonts Inc
     */
     -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-   <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="All-women hackathon at University of Maryland." />
-   <meta name="robots" content="NOODP, index, follow" />
-   <meta itemprop="name" content="Technica">
-   <meta itemprop="description" content="All-women hackathon at University of Maryland.">
-   <meta itemprop="image" content="/img/logo-black.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
-   <!-- Twitter Card data -->
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:site" content="@gotechnica">
-   <meta name="twitter:title" content="Technica">
-   <meta name="twitter:description" content="All-women hackathon at University of Maryland.">
-   <meta name="twitter:creator" content="@gotechnica">
-   <meta name="twitter:image:src" content="http://gotechnica.org/img/logo-black.png">
-   <meta name="twitter:domain" content="http://gotechnica.org">
+    <meta name="author" content="Technica Hacks">
+    <meta name="description" content="All-women hackathon at University of Maryland." />
+    <meta name="robots" content="NOODP, index, follow" />
+    <meta itemprop="name" content="Technica">
+    <!-- <meta itemprop="description" content="All-women hackathon at University of Maryland.">
+    <meta itemprop="image" content="/img/logo-black.png"> -->
 
-   <!-- Open Graph data (Facebook) -->
-   <meta property="og:title" content="Technica" />
-   <meta property="og:type" content="website" />
-   <meta property="og:url" content="http://gotechnica.org" />
-   <meta property="og:image" content="http://gotechnica.org/img/logo-black.png" />
-   <meta property="og:description" content="All-women hackathon at University of Maryland." />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@gotechnica">
+    <meta name="twitter:title" content="Technica">
+    <meta name="twitter:description" content="All-women hackathon at University of Maryland.">
+    <meta name="twitter:creator" content="@gotechnica">
+    <meta name="twitter:image:src" content="img/logos/logo-black.png">
+    <meta name="twitter:domain" content="https://gotechnica.org">
 
-   <!-- Theme Color -->
+    <!-- Open Graph data (Facebook) -->
+    <meta property="og:title" content="Technica" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://gotechnica.org" />
+    <meta property="og:image" content="img/logos/logo-black.png" />
+    <meta property="og:description" content="All-women hackathon at University of Maryland." />
 
-   <meta name="theme-color" content="#00ffff">
+    <!-- To be merged with the official Technica website */ -->
+    <!-- <meta name="description" content="">
+    <meta name="author" content=""> -->
 
-   <!-- Favicon -->
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-   <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>Technica | The All-Women Hackathon</title>
 
-   <!-- CSS -->
-   <link rel="stylesheet" href="css/reset.css">
-   <link rel="stylesheet" href="css/gen/style.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Google Analytics -->
-   <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    ga('create', 'UA-57203187-5', 'auto');
-    ga('send', 'pageview');
-  </script>
+    <!-- Theme CSS -->
+    <link href="css/main.css" rel="stylesheet" >
+    <link href="css/sponsors.css" rel="stylesheet">
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
 
 </head>
-<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
-<body>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:10px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+<body id="page-top" class="index">
 
-  <header>
-    <div class="content">
-      <a href="/">
-        <img src="img/technica-logo-white.svg">
-      </a>
-    </div>
-  </header>
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">Technica</a> -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                </button>
 
-  <nav>
-    <div class="content">
-      <ul>
-        <li class="no-mobile"><a href="https://technica2016.devpost.com/">Submit</a></li>
-        <!--<li class="no-mobile"><a href="https://technicaumd.typeform.com/to/iMuSu7">Register</a></li>-->
-        <li><a data-scroll href="#about">About</a></li>
-        <li><a data-scroll href="#sponsors">Sponsors</a></li>
-        <!--<li><a data-scroll href="#schedule">Schedule</a></li>-->
-        <li><a data-scroll href="#faq">FAQ</a></li>
-        <!--<li><a data-scroll href="#maps">Maps</a></li>
-        <li><a data-scroll href="#buses">Buses</a></li>-->
-        <li><a data-scroll href="#theteam">Team</a></li>
-      </ul>
-    </div>
-  </nav>
+            </div>
 
-  <section id="register">
-    <div class="content hero">
-      <div class="section-header">
-        <h1 class="no-mobile">The all-women hackathon.</h1>
-      </div>
-      <h3>November 5-6, 2016. <br class="only-mobile"> College Park, MD.</h3>
-<!--       <button onclick="location.href = 'https://technica2016.devpost.com/'" class="register-button">Submit your hack!</button> -->
-      <!-- Begin MailChimp Signup Form
-      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-      <style type="text/css">
-        #mc_embed_signup{clear:left; font:14px; width:100%;}
-        #mc_embed_signup .button{background-color: #3ae1ec; padding: 2.1rem 3rem; line-height: 0px;
-          transition: 1.3s 0s cubic-bezier(0.25, 0.1, 0.07, 1.13) all; border-radius: 0px;}
-        #mc_embed_signup .button:hover{background-color: #ff7bac;}
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="home-link" class="page-scroll" href="#page-top">Home</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#sponsors">Sponsors</a>  </li>
+                    <li><a class="page-scroll" href="#faq">FAQ</a> </li>
+                    <li><a class="page-scroll" href="#milestones">Milestones</a></li>
+                    <!-- <li><a class="page-scroll" href="#team">Team</a></li> -->
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
 
-        #mc_embed_signup input.email{border-color: #3ae1ec; padding: 2rem 3rem; line-height: 0px; border-radius: 0px;}
-        /* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-           We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-      </style>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
 
-      <div id="mc_embed_signup">
-        <form action="//gotechnica.us11.list-manage.com/subscribe/post?u=e58335728f7c42bc541a9d0b2&amp;id=d38f060f04" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div id="mc_embed_signup_scroll">
-            <label for="mce-EMAIL"></label>
-            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Start with your email address" required>
-            <!- real people should not fill this in and expect good things - do not remove this or risk form bot signups
-            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e58335728f7c42bc541a9d0b2_d38f060f04" tabindex="-1" value=""></div>
-            <div class="clear"><input type="submit" value="Stay Updated" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-          </div>
-        </form>
-      </div>-->
+    <!-- Header -->
+    <header class="animate" style="height:100vh;">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-heading">TECHNICA</div>
+                <div class="intro-lead-in">Encouraging Diversity in Technology and Beyond</div>
+                <br />
+                <br />
+                <div class="row">
+                  <div class="col-xs-12">
+                    <!-- <a href="#services" class="page-scroll btn btn-xl">Register</a> -->
+                    <a href="mailto:sponsorship.technica@gmail.com" class="page-scroll btn btn-xl">Become a Sponsor</a>
+                    <!-- <a target="_blank" href="https://technicaumd.typeform.com/to/xUo859" class="page-scroll btn btn-xl">Be A Mentor</a> -->
+                  </div>
+                </div>
 
-      <!--End mc_embed_signup-->
-    </div>
-  </section>
+            </div>
+        </div>
+    </header>
 
-  <section id="about">
-    <div class="content">
-      <div class="gradient-box for-image">
-        <img src="img/technica-background.jpg">
-        <div class="over-image">
-          <h2>Tech culture beyond hello world.</h2>
-        </div>
-      </div>
-      <p>Technica is the University of Maryland's all-women hackathon. Over the duration of 24 hours, women are immersed in tech culture and encouraged to exercise their imagination to create interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification, and ask sponsors to hack alongside students in order to build stronger connections between students, sponsors, and the tech world.</p>
-    </div>
-  </section>
+    <!-- About section -->
+    <section class="bg-light-gray" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">What is Technica?</h3>
 
-  <section id="joinus">
-    <div class="content">
-      <!--<div class="section-header">
-        <h3>Get Involved</h3>
-      </div>-->
-        <div class="gradient-box for-text contact centered">
-        <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact us</a>, we take sponsors all year round!</p>
-      </div>
-      <!--<div class="row">
-        <div class="half">
-          <div class="gradient-box for-text centered">
-            <p>Our people are awesome. You’re awesome, too. </br class="no-mobile"><a target="_blank" href="https://www.ter.ps/organize16">Join the team</a>.</p>
-          </div>
-        </div>
-        <div class="half">
-          <div class="gradient-box for-text centered">
-            <p>Available to help out the day of the main event? </br class="no-mobile"><a target="_blank" href="https://goo.gl/forms/7cBYbF45pDIgXgDF2">Become a volunteer</a>.</p>
-          </div>
-        </div>
-      </div>-->
-    </div>
-</section>
-  <hr>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
 
-  <section id="sponsors">
-    <div class="content">
-      <div class="section-header">
-        <h3>Technica 2016 Sponsors</h3>
-      </div>
+                    <!-- <h4 class="service-heading text-center">What is Technica?</h4> -->
+                    <p class="large">Technica is the University of Maryland's all-women hackathon. Over the duration of 24 hours, women are immersed in tech culture and encouraged to exercise their imagination to create
+                      interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification and ask sponsors to hack alongside students in order to build stronger connections
+                      between students and the tech world.</p>
+                      <br>
+                      <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
 
-      <!-- 20,000 -->
-      <div class="row sponsors centered">
-        <div class="half">
-          <a target="_blank" href="http://www.eng.umd.edu/"><img src="img/sponsors/clark.png" name="A. James Clark School of Engineering"></a>
+                    <!-- <h4 class="service-heading text-center">What is Technica?</h4> -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/190486563"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="half">
-          <a target="_blank" href="https://www.cmns.umd.edu/"><img src="img/sponsors/cmns.png" name="College of Mathematical and Natural Sceinces"></a>
-        </div>
-        <div class="half">
-          <a target="_blank" href="https://www.cs.umd.edu/"><img src="img/sponsors/cs.png" name="Computer Science @UMD"></a>
-        </div>
-      </div>
 
-      <!-- 10,000 -->
-      <div class="row sponsors centered">
-        <div class="forty">
-          <a target="_blank" href="http://www.jpmorganchase.com"><img src="img/sponsors/jpmorgan.png" name="JP Morgan Chase"></a>
-        </div>
-      </div>
 
-      <!-- 5,000 -->
-      <div class="row sponsors centered">
-        <!--<div class= "third">
-            <a target="_blank" href="http://www.raytheon.com/"><img src="img/sponsors/raytheon.png" name="Raytheon"></a>
-       </div>-->
-        <div class= "third">
-          <a target="_blank" href="https://www.facebook.com"><img src="img/sponsors/fb.png" name="Facebook"></a>
-        </div>
-        <div class= "third">
-          <a target="_blank" href="https://www.target.com"><img src="img/sponsors/target.png" name="Target"></a>
-        </div>
-      </div>
-
-      <!-- 5,000 -->
-      <div class="row sponsors centered">
-        <div class= "third">
-          <a target="_blank" href="http://www.nytimes.com/"><img src="img/sponsors/nyt.png" name="The New York Times"></a>
-        </div>
-        <div class= "third">
-          <a target="_blank" href="https://www.fbi.gov/"><img src="img/sponsors/fbi.png" name="FBI"></a>
-        </div>
-        <div class= "third">
-          <a target="_blank" href="https://www.oculus.com/"><img src="img/sponsors/oculus.png" name="Oculus"></a>
-        </div>
-      </div>
-
-      <!-- 5,000 -->
-      <div class="row sponsors centered">
-        <div class= "third">
-          <a target="_blank" href="http://www.leidos.com/"><img src="img/sponsors/leidos.png" name="Leidos"></a>
-        </div>
-        <div class= "third">
-          <a target="_blank" href="https://www.cat.com"><img src="img/sponsors/cat.png" name="Caterpillar"></a>
-        </div>
-        <div class= "third">
-            <a target="_blank" href="https://www.capitalone.com"><img src="img/sponsors/capitalone.png" name="Capital One"></a>
-        </div>
-      </div>
-
-       <!-- 5,000 -->
-      <div class="row sponsors centered">
-        <div class= "third">
-          <a target="_blank" href="http://www.jhuapl.edu/"><img src="img/sponsors/apl.png" name="Johns Hopkins Applied Physics Labratory"></a>
-        </div>
-        <!--<div class= "third">
-          <a target="_blank" href="https://www.cat.com"><img src="img/sponsors/cat.png" name="Caterpillar"></a>
-        </div>
-        <div class= "third">
-            <a target="_blank" href="https://www.capitalone.com"><img src="img/sponsors/capitalone.png" name="Capital One"></a>
-        </div>-->
-      </div>
-
-     <!-- 3,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-         <a target="_blank" href="https://www.appian.com"><img src="img/sponsors/appian.png" name="Appian"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="http://www.ltsnet.net/"><img src="img/sponsors/lts.png" name="LTS"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="https://www.accenture.com"><img src="img/accenture.png" name="Accenture"></a>
-        </div>
-      </div>
-
-     <!-- 3,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://www.bloomberg.com/"><img src="img/sponsors/bloomberg.png" name="Bloomberg"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="http://ischool.umd.edu/"><img src="img/sponsors/ischool.png" name="UMD iSchool"></a>
-        </div>
-        <div class="quarter">
-           <a target="_blank" href="http://www.lockheedmartin.com/us.html"><img src="img/sponsors/lockheed.png" name="Lockheed Martin"></a>
-        </div>
-      </div>
-
-     <!-- 3,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://www.splunk.com/"><img src="img/sponsors/splunk.png" name="Splunk"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="http://att.com/"><img src="img/sponsors/att.png" name="AT&T"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="www.maxgigapop.net"><img src="img/sponsors/max.png" name="Max"></a>
-        </div>
-      </div>
-
-     <!-- 2,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://merrill.umd.edu/"><img src="img/sponsors/jour.png" name="Philip Merrill College of Journalism"></a>
-        </div>
-      </div>
-
-     <!-- 1,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://math.umd.edu/"><img src="img/sponsors/math.png" name="UMD Math Department"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="https://www.carlyle.com/"><img src="img/sponsors/carlyle.png" name="The Carlyle Group"></a>
-        </div>
-        <div class="quarter">
-           <a target="_blank" href="http://www.metaswitch.com/"><img src="img/sponsors/metaswitch.png" name="Metaswitch"></a>
-        </div>
-      </div>
-
-     <!-- 1,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://bsos.umd.edu/"><img src="img/sponsors/bsos.png" name="UMD BSOS"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="http://www.pepsi.com/"><img src="img/sponsors/pepsi.png" name="Pepsi"></a>
-        </div>
-        <div class="quarter">
-           <a target="_blank" href="http://www.rockwellcollins.com/"><img src="img/sponsors/rockwell.png" name="Rockwell Collins"></a>
-        </div>
-      </div>
-
-     <!-- 1,000 -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://www.rhsmith.umd.edu/centers-excellence/dingman-center-entrepreneurship"><img src="img/sponsors/dingman.png" name="Dingman Center"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="http://www.aol.com/"><img src="img/sponsors/aol.png" name="AOL"></a>
-        </div>
-        <div class= "quarter">
-          <a target="_blank" href="https://hacker.fund/"><img src="img/sponsors/hackerfund.png" name="Hacker Fund"></a>
-        </div>
-      </div>
-
-      <!-- food -->
-      <div class="row sponsors centered">
-        <div class="quarter">
-          <a target="_blank" href="http://twarestshirts.storenvy.com/"><img src="img/sponsors/tommy.png" name="Tommy"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="http://www.ricosfood.com/"><img src="img/sponsors/ricos.png" name="Ricos"></a>
-        </div>
-        <div class="quarter">
-          <a target="_blank" href="http://www.makemeposh.com/"><img src="img/sponsors/posh.png" name="Posh"></a>
-        </div>
-      </div>
-
-      <!-- less than $1,000 -->
-      <div class="row sponsors centered">
-        <div class="sixth">
-          <a target="_blank" href="http://www.mtech.umd.edu/index.html"><img src="img/sponsors/mtech.png" name="Maryland Technology Enterprise Institute"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://www.themarsreel.com/"><img src="img/marsreel.svg" name="The Mars Reel"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://neelbauerlaw.com/"><img src="img/neelbauer.png" name="Bgoti"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="https://freshprints.com/"><img src="img/sponsors/freshprints.png" name="Fresh Prints"></a>
-        </div>
-      </div>
-
-      <!-- less than $1,000 -->
-      <div class="row sponsors centered">
-        <div class="sixth">
-          <a target="_blank" href="http://www.yelp.com"><img src="img/sponsors/yelp.png" name="Yelp"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://upchannel.com/"><img src="img/sponsors/up.png" name="UpChannel"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://zeplin.io/"><img src="img/sponsors/zeplin.png" name="Zeplin"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://goavitae.com/"><img src="img/sponsors/avitae.png" name="Avitae"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://www.getgreenmustache.com/"><img src="img/sponsors/greenmustache.png" name="Green Mustache"></a>
-        </div>
-      </div>
-
-        <!-- Student organizations -->
-      <div class="row sponsors centered">
-        <div class="sixth">
-          <a target="_blank" href="http://bitca.mp/"><img src="img/orgs/bitcamp-logo.svg" name="Bitcamp"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="https://awc-umcp.squarespace.com/"><img src="img/orgs/awc-logo.svg" name="AWC"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://startupshell.org/"><img src="img/orgs/startupshell-logo.svg" name="Startup Shell"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="https://mlh.io/"><img src="img/orgs/mlh-logo.svg" name="MLH"></a>
-        </div>
-        <div class="sixth">
-          <a target="_blank" href="http://www.umdvr.com/"><img src="img/sponsors/vr.png" name="UMD VR Club"></a>
-        </div>
-      </div>
-
-        <div class="gradient-box for-text contact centered">
-        <p>Interested in sponsoring? <a href="mailto:hello@gotechnica.org">Contact us</a>.</p>
-      </div>
-    </div>
     </section>
 
-    <hr>
-<!-- <script ></script>-->
-
-<script type="text/javascript">
-function expandCollapse(showHide) {
-
-		var hideShowDiv = document.getElementById(showHide);
-		var label = document.getElementById("expand");
-
-		if (hideShowDiv.style.display == 'none') {
-			label.innerHTML = label.innerHTML.replace("[+]", "[-]");
-			hideShowDiv.style.display = 'block';
-		} else {
-			label.innerHTML = label.innerHTML.replace("[-]", "[+]");
-			hideShowDiv.style.display = 'none';
-
-		}
-	}
-</script>
-	<!--
-<br>
-      <section id="schedule" class="dark">
-        <div class="content">
-          <div class="section-header">
-            <h3>Event Schedule</h3>
-          </div>
-          <div class="row">
-           <div class="half">
-              <table class="schedule">
-                <thead>
-                <tr>
-                  <td colspan="2">Saturday, November 5</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td>08:00 AM</td>
-                  <td class="pink">Check-In</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td class="pink">Sponsorship Fair and Breakfast</td>
-                </tr>
-                <tr>
-                  <td>10:00 AM</td>
-				  <td class="highlighted" onclick="expandCollapse('showHide0');expandCollapse('showHide1');" id="expand"><u>Meeting for Mentors</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide0" style="display:none;">Anita Borg<br/>10:00-10:30</div></td>
-					<td class="description"><div id="showHide1" style="display:none;">This will be an information session and general event overview. Mentor responsibilities will be outlined as well as other relevant information. </div></td>
-				</tr>
-                <tr>
-                  <td>11:00 AM</td>
-                  <td class="pink">Opening Ceremony</td>
-                </tr>
-                <tr>
-                  <td></td>
-                  <td class="highlighted" onclick="expandCollapse('showHide2');expandCollapse('showHide3');" id="expand"><u>Team Formation</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide2" style="display:none;">Center stage</div></td>
-					<td class="description"><div id="showHide3" style="display:none;">Don’t have a team yet? Don’t worry! Come to the center stage area and meet other hackers to talk about projects you want to work on or technologies you’re interested in. </div></td>
-				</tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td class="pink">Hacking Begins</td>
-                </tr>
-                <tr>
-                   <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide4');expandCollapse('showHide5');" id="expand"><u>Hack-a-tips with JP Morgan</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide4" style="display:none;">Frances Allen<br />12:00-1:00</div></td>
-					<td class="description"><div id="showHide5" style="display:none;">JPMorgan Chase has participated in over 60 hackathon events totaling over 10,000 students and 3,000 JPMC Tech Experts in the past 3 years. Our engineers will share their competitive technical insights and tips on how to be successful at a hackathon. <br/>Key topics will include: (1) How to prioritize your effort and make sure you are getting the best value for time spent. (2) How to sell your solution to the judges (3) Useful frameworks to get you going. These mentors will share their experiences as technologists and their journey from recent graduates to full stack developers.</div></td>
-				</tr>
-                <tr>
-                   <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide6');expandCollapse('showHide7');" id="expand"><u>Git+Teamwork Workshop</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide6" style="display:none;">Anita Borg <br />12:00-1:30</div></td>
-					<td class="description"><div id="showHide7" style="display:none;">Ever wondered what tools successful teams use to collaborate on software? Learn the basics of git in this workshop and find out how to use it with your team to get a head-start on your hack! <br /> If you are on Windows please <a href="https://git-scm.com/download/win">set-up git</a> before the workshop. This is the <a href="https://github.com/FuadBalashov/GitHackathon">repo</a> we will be using for the workshop.</div></td>
-				</tr>
-                <tr>
-                  <td>01:00 PM</td>
-                  <td class="pink">Lunch</td>
-                </tr>
-                <tr>
-                   <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide8');expandCollapse('showHide9');" id="expand"><u>Design Workshop I</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide8" style="display:none;">Ada Lovelace<br />1:00-2:00</div></td>
-					<td class="description"><div id="showHide9" style="display:none;">Join us as we blast through the fundamentals of product design. In part 1 (1pm), we’ll cover design thinking, and numerous principles you can use at Technica to build software and hardware your users will love. <br />You can download sketchup <a href = "http://www.sketchup.com/download">here</a>.  Make sure to click downloading for educational purposes.</div></td>
-				</tr>
-                <tr>
-                  <td>02:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide12');expandCollapse('showHide13');" id="expand"><u>Web Workshop I</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide12" style="display:none;">Anita Borg<br/>2:00-3:00</div></td>
-					<td class="description"><div id="showHide13" style="display:none;">Join us and learn the basics of web development during this 3 part workshop. We’ll be going over the end to end process of building and hosting a website and even integrating a third party API. No experience necessary! These workshops build off each other, so plan to attend all 3 in order to gain the most out of them. <br/>Please download a text editor (such as <a href="https://www.sublimetext.com/download">Sublime</a> or <a href="https://atom.io/">Atom</a>) prior to the workshop. https://floobits.com/helloworld/Technica-Workshop/file/index.html:10 </div></td>
-				</tr>
-                <tr>
-                   <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide10');expandCollapse('showHide11');" id="expand"><u>Hardware Workshop I</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide10" style="display:none;">Ada Lovelace<br/>2:00-3:00</div></td>
-					<td class="description"><div id="showHide11" style="display:none;">Join us on a guided walkthrough of sample code for an adafruit board, with step by step directions to get a demo working.  This demo code will allow you to explore each of the sensors available on the adafruit boards so you can learn how to use every component of the board. Jenny Mandl, Gurpreet Singh, and other hardware mentors will be around before the workshop to help those who had trouble with the setup process.
-						<br/>Please go to this <a href="https://learn.adafruit.com/introducing-circuit-playground/overview">link</a> and follow all the steps from the "Overview" tab up to the 'Run the Demo' section of the "Libraries" tab. We aim to start the workshop following the 'Run the Demo' point in the adafruit tutorial.</div></td>
-				</tr>
 
 
-		<tr>
-                  <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide14');expandCollapse('showHide15');" id="expand"><u>React.js Workshop</u></td>
-                </tr>
+    <!-- Sponsors section -->
+    <section id="sponsors">
 
-
-				<tr>
-					<td class="room"><div id="showHide14" style="display:none;">Frances Allen <br/>2:00-4:00</div></td>
-					<td class="description"><div id="showHide15" style="display:none;">Learn how to build modern and clean UI’s using React js. In the first hour we will walk through the concepts of React and set up our computers to run a React project. In the second hour we will use React and Firebase to build a live chat application. If you are new to web development, we recommend checking out Web Workshop 1.</div></td>
-				</tr>
-		<tr>
-                    <td>03:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide16');expandCollapse('showHide17');" id="expand"><u>Design Workshop II</u></td>
-                <tr>
-				<tr>
-					<td class="room"><div id="showHide16" style="display:none;">Ada Lovelace<br/>3:00-4:00</div></td>
-					<td class="description"><div id="showHide17" style="display:none;"> If you’ve always wanted to invent something, stick around for part 2 of the design workshop where we’ll get those ideas out on paper. We’ll cover the basics of sketching and by the end of the night, you’ll all be pros!
-						You can download sketchup <a href = "http://www.sketchup.com/download">here</a>. Make sure to click downloading for educational purposes.
-</div></td>
-				</tr>
-                <tr>
-                  <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide18');expandCollapse('showHide19');" id="expand"><u>Android Workshop</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide18" style="display:none;">Anita Borg <br/>3:00-6:00</div></td>
-					<td class="description"><div id="showHide19" style="display:none;">Never built an Android app before? Don’t know how to set up an emulator on your computer? Join us for the first hour of our Android workshop to get studio and an emulator set up on your machine. If you already have android studio and an emulator installed and running then you can skip this segment. In the second hour we will learn about views, activities, layouts and intents. We will build and run a basic Android app in this segment. In the last hour we will cover how to fetch and display data from the internet.</div></td>
-				</tr>
-                <tr>
-                  <td>04:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide22');expandCollapse('showHide23');" id="expand"><u>Hardware Workshop II</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide22" style="display:none;">Ada Lovelace <br/> 4:00-5:00</div></td>
-					<td class="description"><div id="showHide23" style="display:none;">Join us on a guided walkthrough of sample code for an adafruit board, with step by step directions to get a demo working.  This demo code will allow you to explore each of the sensors available on the adafruit boards so you can learn how to use every component of the board. Jenny Mandl, Gurpreet Singh, and other hardware mentors will be around before the workshop to help those who had trouble with the setup process.
-						<br/>Please go to this <a href="https://learn.adafruit.com/introducing-circuit-playground/overview">link</a> and follow all the steps from the "Overview" tab up to the 'Run the Demo' section of the "Libraries" tab. We aim to start the workshop following the 'Run the Demo' point in the adafruit tutorial.</div></td>
-					</tr>
-                <tr>
-                  <td>05:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide24');expandCollapse('showHide25');" id="expand"><u>Design Thinking with Capital One</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide24" style="display:none;">Ada Lovelace <br/> 5:00-6:00</div></td>
-					<td class="description"><div id="showHide25" style="display:none;">Have you ever had a great idea, started building your product, but then had a hard time making it all come together?  We can help with that!  Come to our workshop to learn how to discover user pain points, validate your hypothesis-driven development decisions, and refine your product.</div></td>
-				</tr>
-                <tr>
-                    <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide30');expandCollapse('showHide31');" id="expand"><u>High School Talk by the Clark School</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide30" style="display:none;">Frances Allen <br/>5:00-6:00</div></td>
-					<td class="description"><div id="showHide31" style="display:none;">Are you a high school student interested in engineering? Join a panel of students and learn more about what it’s like to be an engineering major at the University of Maryland’s Clark School of Engineering </div></td>
-				</tr>
-                <tr>
-                <tr>
-                    <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide50');expandCollapse('showHide51');" id="expand"><u>Resume Editing</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide50" style="display:none;">Carol Shaw <br/>5:00-10:00</div></td>
-					<td class="description"><div id="showHide51" style="display:none;">Come get your resume edited by our great mentors!</div></td>
-				</tr>
-                <tr>
-                  <td>06:00 PM</td>
-                  <td class="pink">Dinner</td>
-                </tr>
-
-
-		<tr>
-                    <td></td>
-			<td class="highlighted" onclick="expandCollapse('showHide99');expandCollapse('showHide100');" id="expand"><u>Interview Prep I</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide99" style="display:none;">Katherine Johnson <br/> 6:00-7:00</div></td>
-					<td class="description"><div id="showHide100" style="display:none;">(Interprep 1-3 are all the same version of each other) Learn how to ace a Google interview with UMD's best coaches from Interprep: UMD's free technical interviewing preparatory service. We will be teaching what to expect from a coding interview, as well as running through our favorite tips. Afterwards, we will be facilitating practice mock interviews so you can get live practice! All skill levels welcome.</div></td>
-				</tr>
-                <tr>
-                    <td></td>
-			<td class="highlighted" onclick="expandCollapse('showHide20');expandCollapse('showHide21');" id="expand"><u>UX Workshop</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide20" style="display:none;">Ada Lovelace <br/> 6:00-7:00</div></td>
-					<td class="description"><div id="showHide21" style="display:none;">Join us in an exercise going through the full cycle of the design process. Participants will come out of the workshop with a design thinking mindset, and learn how to apply this to UX design. Led by Graphic Design student and Technica designer Gabby Abella.</div></td>
-				</tr>
-					<tr>
-		<td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide26');expandCollapse('showHide27');" id="expand"><u>Virtual Reality Workshop</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide26" style="display:none;">Frances Allen<br/>6:00-7:00</div></td>
-					<td class="description"><div id="showHide27" style="display:none;">The VR workshop will get you hands on with the latest technology that exists in virtual reality. You will find out how to setup a virtual reality environment with either free game engines: Unity or Unreal, and create a very basic game that can be built in this environment. At the end of this workshop, you should be familiar with how to use a virtual reality headset, and should have something that you can continue to adapt throughout the rest of the hackathon.
-					Before you come to the workshop, make sure you have <a href="https://unity3d.com/get-unity/download">Unity</a> and <a href="http://www.techspot.com/downloads/6697-unreal-engine.html">Unreal engine</a> downloaded on your PC so that you can follow along!</div></td>
-				</tr>
-                <tr>
-                <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide28');expandCollapse('showHide29');" id="expand"><u>Web Workshop II</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide28" style="display:none;">Anita Borg<br/>6:00-7:00</div></td>
-					<td class="description"><div id="showHide29" style="display:none;">Join us and learn the basics of web development during this 3 part workshop. We’ll be going over the end to end process of building and hosting a website and even integrating a third party API. No experience necessary! These workshops build off each other, so plan to attend all 3 in order to gain the most out of them. <br/>Please download a text editor (such as <a href="https://www.sublimetext.com/download">Sublime</a> or <a href="https://atom.io/">Atom</a>) prior to the workshop. </div></td>
-				</tr>
-                <tr>
-                  <td>07:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide32');expandCollapse('showHide33');" id="expand"><u>Careers in Tech Panel</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide32" style="display:none;">Frances Allen <br/>7:00-8:00</div></td>
-					<td class="description"><div id="showHide33" style="display:none;">This panel encompasses a group of people from multiple industries to show the intersection of technology and other fields. This panel plays on our tech+x theme for our 2016 event. Come check out how tech can help progress different industries!
-</div></td>
-				</tr>
-                <tr>
-                    <td></td>
-			<td class="highlighted" onclick="expandCollapse('showHide80');expandCollapse('showHide81');" id="expand"><u>Interview Prep II</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide80" style="display:none;">Katherine Johnson <br/> 7:00-8:00</div></td>
-					<td class="description"><div id="showHide81" style="display:none;">(Interprep 1-3 are all the same version of each other) Learn how to ace a Google interview with UMD's best coaches from Interprep: UMD's free technical interviewing preparatory service. We will be teaching what to expect from a coding interview, as well as running through our favorite tips. Afterwards, we will be facilitating practice mock interviews so you can get live practice! All skill levels welcome.</div></td>
-				</tr>
-
-		<tr>
-                    <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide34');expandCollapse('showHide35');" id="expand"><u>Design Workshop III</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide34" style="display:none;">Ada Lovelace<br/>7:00-8:00</div></td>
-					<td class="description"><div id="showHide35" style="display:none;">In part 3, we’ll work together to turn those ideas and sketches into a reality. We’ll cover the basics of 3D modeling in Sketchup, and transform your sketches into 3D models. At the end, you’ll be able to 3D print them and even take them home.
-						You can download sketchup <a href="http://www.sketchup.com/download">here</a>. Make sure to click downloading for educational purposes.</div></td>
-				</tr>
-                <tr>
-                  <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide36');expandCollapse('showHide37');" id="expand"><u>Data Science Workshop</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide36" style="display:none;">Anita Borg <br/>7:00-8:00</div></td>
-					<td class="description"><div id="showHide37" style="display:none;">In this workshop, you can use data science to analyze your own tweets (or somebody else’s) and figure out what makes you unique on Twitter. We will cover how to download, preprocess, and apply machine learning algorithms to Twitter data. Learn how artificial intelligence can tell you and your friends’ tweets apart, or even analyze the Twitter accounts of the presidential candidates!
-						<br/>
-Before the workshop: Make sure to install <a href="www.python.org/downloads/">Python 3</a> and the following packages: numpy, scipy, scikit-learn, matplotlib, pillow, wordcloud (search for them on Google). <a href="www.continuum.io/downloads">Anaconda</a> is an easy way to install most of the packages.</div></td>
-				</tr>
-                <tr>
-                  <td>08:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide38');expandCollapse('showHide39');" id="expand"><u>Web Workshop III</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide38" style="display:none;">Anita Borg <br/>8:00-9:00</div></td>
-					<td class="description"><div id="showHide39" style="display:none;">Join us and learn the basics of web development during this 3 part workshop. We’ll be going over the end to end process of building and hosting a website and even integrating a third party API. No experience necessary! These workshops build off each other, so plan to attend all 3 in order to gain the most out of them. <br/>Please download a text editor (such as <a href="https://www.sublimetext.com/download">Sublime</a> or <a href="https://atom.io/">Atom</a>) prior to the workshop. </div></td>
-				</tr>
-				<tr>
-
-		<tr>
-                    <td></td>
-			<td class="highlighted" onclick="expandCollapse('showHide83');expandCollapse('showHide84');" id="expand"><u>Interview Prep III</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide83" style="display:none;">Katherine Johnson <br/> 8:00-9:00</div></td>
-					<td class="description"><div id="showHide84" style="display:none;">(Interprep 1-3 are all the same version of each other) Learn how to ace a Google interview with UMD's best coaches from Interprep: UMD's free technical interviewing preparatory service. We will be teaching what to expect from a coding interview, as well as running through our favorite tips. Afterwards, we will be facilitating practice mock interviews so you can get live practice! All skill levels welcome.</div></td>
-				</tr>
-					<tr>
-                    <td></td>
-
-                   <td class="highlighted" onclick="expandCollapse('showHide40');expandCollapse('showHide41');" id="expand"><u>Hardware Workshop III</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide40" style="display:none;">Ada Lovelace <br/> 8:00-9:00</div></td>
-					<td class="description"><div id="showHide41" style="display:none;">Join us on a guided walkthrough of sample code for an adafruit board, with step by step directions to get a demo working.  This demo code will allow you to explore each of the sensors available on the adafruit boards so you can learn how to use every component of the board. Jenny Mandl, Gurpreet Singh, and other hardware mentors will be around before the workshop to help those who had trouble with the setup process.
-						<br/>Please go to this <a href="https://learn.adafruit.com/introducing-circuit-playground/overview">link</a> and follow all the steps from the "Overview" tab up to the 'Run the Demo' section of the "Libraries" tab. We aim to start the workshop following the 'Run the Demo' point in the adafruit tutorial.</div></td>
-				</tr>
-              <tr>
-                  <td>09:00 PM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide100');expandCollapse('showHide101');" id="expand"><u>Capture the Flag</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide100" style="display:none;">Anita Borg <br/>9:00-10:00</div></td>
-					<td class="description"><div id="showHide101" style="display:none;">Join MLH in learning about some security </div></td>
-				</tr>
-		<tr>
-                    <td></td>
-			<td class="highlighted" onclick="expandCollapse('showHide83');expandCollapse('showHide84');" id="expand"><u>Interview Prep III</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide83" style="display:none;">Katherine Johnson <br/> 8:00-9:00</div></td>
-					<td class="description"><div id="showHide84" style="display:none;">(Interprep 1-3 are all the same version of each other) Learn how to ace a Google interview with UMD's best coaches from Interprep: UMD's free technical interviewing preparatory service. We will be teaching what to expect from a coding interview, as well as running through our favorite tips. Afterwards, we will be facilitating practice mock interviews so you can get live practice! All skill levels welcome.</div></td>
-				</tr>
-					<tr>
-                    <td></td>
-
-                   <td class="highlighted" onclick="expandCollapse('showHide40');expandCollapse('showHide41');" id="expand"><u>Hardware Workshop III</u></td>
-                </tr>
-		<tr>
-                  <td>10:00 PM</td>
-                  <td class="pink">Cotton Candy</td>
-                </tr>
-                <tr>
-                    <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide42');expandCollapse('showHide43');" id="expand"><u>Smash Bros</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide42" style="display:none;">Center stage</div></td>
-					<td class="description"><div id="showHide43" style="display:none;">Take a break from hacking and play some Super Smash Brothers!</div></td>
-				</tr>
-               </tbody>
-              </table>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sponsors</h2>
+                    <h3 class="section-subheading text-muted">Want to be on this page? Email us at sponsorship.technica@gmail.com!</h3>
+                </div>
             </div>
-            <div class="half">
-              <table class="schedule">
-                <thead>
-                <tr>
-                  <td colspan="2">Sunday, November 6</td>
-                </tr>
-                </thead>
-                <tbody>
-		<tr>
-                  <td>12:00 AM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide102');expandCollapse('showHide103');" id="expand"><u>Cupstacking</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide102" style="display:none;">Center Stage<br/>12:00-1:00am</div></td>
-					<td class="description"><div id="showHide103" style="display:none;">Take a break from hacking with a fun game of cup stacking alongside MLH!</div></td>
-				</tr>
-                <tr>
-                  <td>01:00 AM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide48');expandCollapse('showHide49');" id="expand"><u>Cookie Decorating</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide48" style="display:none;">Center stage<br/>Two hours</div></td>
-					<td class="description"><div id="showHide49" style="display:none;">Take a break from hacking and enjoy some yoga!</div></td>
-				</tr>
-                <tr>
-                  <td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide44');expandCollapse('showHide45');" id="expand"><u>Yoga I</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide44" style="display:none;">Carol Shaw<br/>1:00-2:00</div></td>
-					<td class="description"><div id="showHide45" style="display:none;">Take a break from hacking and enjoy some yoga!</div></td>
-				</tr>
-                <tr>
-                  <td>02:00 AM</td>
-			<td class="pink">Daylight Savings Time</td>
-			</tr>
-		<tr>
-			<td></td>
-                   <td class="highlighted" onclick="expandCollapse('showHide46');expandCollapse('showHide47');" id="expand"><u>Yoga II</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide46" style="display:none;">Carol Shaw<br/>2:00-3:00</div></td>
-					<td class="description"><div id="showHide47" style="display:none;">Take a break from hacking and enjoy some yoga!</div></td>
-				</tr>
-                <tr>
-                  <td>08:00 AM</td>
-                  <td class="pink">Breakfast</td>
-                </tr>
-                <tr>
-                  <td>09:30 AM</td>
-                   <td class="highlighted" onclick="expandCollapse('showHide97');expandCollapse('showHide96');" id="expand"><u>Demo Training</u></td>
-                </tr>
-				<tr>
-					<td class="room"><div id="showHide97" style="display:none;">Center stage</div></td>
-					<td class="description"><div id="showHide96" style="display:none;">Get familiar with the basic tools you need to have a successful demo session once hacking officially ends. </div></td>
-				</tr>
-                <tr>
-                  <td>11:30 AM</td>
-                  <td class="pink">Lunch</td>
-                </tr>
-                <tr>
-                  <td>12:00 PM</td>
-                  <td class="pink">Hacking Ends</td>
-                </tr>
-                <tr>
-                  <td>01:00 PM</td>
-                  <td class="pink">Demos</td>
-                </tr>
-                <tr>
-                  <td>02:00 PM</td>
-                  <td class="pink">Ending Ceremonies</td>
-                </tr>
-                <tr>
-                  <td>03:00 PM</td>
-                  <td class="pink">Goodbyes/Buses leave</td>
-                </tr>
-                </tbody>
-              </table>
+
+            <div class="row">
+              <div class="col-md-offset-4 col-md-4">
+                  <a target="_blank" href="https://www.rockwellcollins.com/"><img class="rounded float-left" src="img/sponsors/rockwell-min.png" name="Rockwell Collins"></a>
+              </div>
+            </div>
+        </div>
+
+            <!-- <div class="row-custom sponsors centered">
+                <div class="half">
+                  <a target="_blank" href="https://www.eng.umd.edu/"><img src="img/sponsors/clark-min.png" name="A. James Clark School of Engineering"></a>
+                </div>
+                <div class="half">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img  src="img/sponsors/cmns-min.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+                <div class="half">
+                  <a target="_blank" href="https://www.cs.umd.edu/"><img  src="img/sponsors/cs-min.png" name="Computer Science @UMD"></a>
+                </div>
+            </div>-->
+
+
+    </section>
+
+    <!-- FAQ section -->
+    <section id="faq" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- FAQ COLLAPSIBLE PANELS! -->
+            <div class = "container">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <!-- FAQ 1 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-pink">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse1">
+                          <h3 class="service-heading text-center">Why make an all-women hackathon?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <p>
+                            Women are underrepresented in the tech world, but it’s up to us women to change that!
+                            We are creating a welcoming environment to show that there is a place in tech for every
+                            lady out there while building cool projects and sharing stories at Technica.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ 2 -->
+                   <div class="panel panel-default">
+                     <div class="panel-heading panel-heading">
+                       <h4 class="panel-title">
+                         <a class="faq-panel" data-toggle="collapse" href="#collapse2">
+                           <h3 class="service-heading text-center">Do I need to know how to code?</h3>
+                         </a>
+                       </h4>
+                     </div>
+
+                     <div id="collapse2" class="panel-collapse collapse">
+                       <div class="panel-body">
+                         <p>
+                           Students of all skill levels are encouraged to attend, even if you’ve never written a line of code.
+                            We’re prepared to teach you everything you need to learn right
+                            here while also supporting the most experienced hackers.
+                         </p>
+                     </div>
+                   </div>
+                  </div>
+
+                  <!-- FAQ 3 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-blue">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse3">
+                          <h3 class="service-heading text-center">How do I register?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>
+                          Come back to register on this website in late August.
+                          Technica admission will be granted on a first-come-first-serve basis, so sign up early to reserve your spot!
+                        </p>
+                    </div>
+                  </div>
+                 </div>
+
+                 <!-- FAQ 4 -->
+                 <div class="panel panel-default">
+                   <div class="panel-heading panel-heading">
+                     <h4 class="panel-title">
+                       <a class="faq-panel" data-toggle="collapse" href="#collapse4">
+                         <h3 class="service-heading text-center">How do I get to the event?</h3>
+                       </a>
+                     </h4>
+                   </div>
+
+                   <div id="collapse4" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       <p>
+                         Take this interest <a class="in-text" target="_blank" href="https://technicaumd.typeform.com/to/PYl2pY">survey</a> to request
+                         transportation for your university or high school!
+                       </p>
+                   </div>
+                 </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading panel-heading-pink">
+                    <h4 class="panel-title">
+                      <a class="faq-panel" data-toggle="collapse" href="#collapse5">
+                        <h3 class="service-heading text-center">How do I become a mentor?</h3>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>
+                      We'd love to have you! Mentors make the hackathon experience impactful by guiding participants through technical challenges
+                      and sharing stories along the way. Sign up to be a mentor <a class="in-text" target="_blank" href="https://technicaumd.typeform.com/to/xUo859">here</a>.
+                      </p>
+                  </div>
+                </div>
+               </div>
+              </div>
+
+              <!-- FAQ 6 -->
+              <div class="col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h4 class="panel-title">
+                          <a class="faq-panel" data-toggle="collapse" href="#collapse6">
+                            <h3 class="service-heading text-center">Is the event free to attend?</h3>
+                          </a>
+                        </h4>
+                      </div>
+
+                      <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>
+                          Technica is free for all participants thanks to our amazing sponsors!
+                          The event includes admission, food, overnight stay, and a lot of free gear and swag!
+                          </p>
+                      </div>
+                    </div>
+                   </div>
+
+                   <!-- FAQ 7 -->
+                   <div class="panel panel-default">
+                     <div class="panel-heading panel-heading-blue">
+                       <h4 class="panel-title">
+                         <a class="faq-panel" data-toggle="collapse" href="#collapse7">
+                           <h3 class="service-heading text-center">Who can attend Technica?</h3>
+                         </a>
+                       </h4>
+                     </div>
+
+                     <div id="collapse7" class="panel-collapse collapse">
+                       <div class="panel-body">
+                         <p>
+                           Anyone who identifies as a woman or non-binary may register as a hacker! All ages are welcome.
+                         </p>
+                     </div>
+                   </div>
+                  </div>
+
+                  <!-- FAQ 8 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse8">
+                          <h3 class="service-heading text-center">Where is the event?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse8" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>
+                          Come back and visit this website by mid-July for more details!
+                        </p>
+                    </div>
+                  </div>
+                 </div>
+
+                 <!-- FAQ 9 -->
+                 <div class="panel panel-default">
+                   <div class="panel-heading panel-heading-pink">
+                     <h4 class="panel-title">
+                       <a class="faq-panel" data-toggle="collapse" href="#collapse9">
+                         <h3 class="service-heading text-center">How do teams work?</h3>
+                       </a>
+                     </h4>
+                   </div>
+
+                   <div id="collapse9" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       <p>
+                         This is totally up to you! You can work on a team or work solo. If you do wish to work on a team,
+                         teams can be constructed prior to arrival with friends or they can be formed during the time allocated for team formation
+                         before the official hacking begins.
+                       </p>
+                   </div>
+                 </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a class="faq-panel" data-toggle="collapse" href="#collapse10">
+                        <h3 class="service-heading text-center">What should I bring?</h3>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapse10" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>
+                      You must bring a valid student or government issued ID card for admission.
+                      Bring your laptop and charging cables and any other specific materials you’ll need for your hacking project.
+                      If you are planning on renting hardware for your hack, please make sure to bring a government issued ID!
+                      Bring a sleeping bag and pillow if that makes you more comfortable for the night. Everything else will be provided!
+                      </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
+    </section>
+
+
+
+    <!-- Timeline/Milestones Section -->
+    <section id="milestones">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Milestones</h2>
+                    <h3 class="section-subheading text-muted">We've made it a long way</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/sprout.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/1.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>August 2015</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Technica was founded in 2015 at the University of Maryland, College Park.
+                                      Its main goal is to introduce people who identify as women or non-binary from diverse backgrounds to tech.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/thumbs.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/2.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>October 2016</h4>
+                                    <h4 class="subheading">Growing Strong</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Our Facebook page reached 1000 likes!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/globe.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/3.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>November 2016</h4>
+                                    <h4 class="subheading">A World Record</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Technica became the largest all-women hackathon with over 850 participants
+                                      who came from Pennsylvania, New York,
+                                      New Jersey, North Carolina, Georgia, Florida, and even Toronto, Canada!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/cake.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/4.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>November 2017</h4>
+                                    <h4 class="subheading">Three Year Anniversary</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">We are looking forward to our third year hosting Technica.
+                                      Our organizing team is the largest it has ever been;
+                                      we hope to make it a great experience for our hackers, mentors, and sponsors.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image static-gradient"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h4>Be A Part of Our Story</h4>
+                                <h4 class="subheading">Join us at Technica 2017!</h4>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                </div>
+            </div>
         </div>
-      </section>-->
-  <br>
-  <section id="faq">
-    <div class="content">
-      <div class="section-header">
-        <h3>Frequently Asked Questions</h3>
-      </div>
-      <div class="row with-divider faq">
-        <div class="half">
-          <div class="box for-text">
-            <h4>Why make an all-women hackathon?</h4>
-            <p>Women are underrepresented in the tech world, but it’s up to us women to change that! We are creating a welcoming environment to show that there is a place in tech for every lady out there while building cool projects and sharing stories at Technica.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do I register?</h4>
-              <p>You can register <a href="https://technicaumd.typeform.com/to/iMuSu7">here</a>! Technica admission will be granted on a first-come-first-serve basis, so sign up early to reserve your spot.</p>
-          </div>
-          <div class="box for-text">
-            <h4>Who can attend Technica?</h4>
-              <p>Anyone that identifies as a woman or non-binary may register as a hacker! All ages are welcome.</p>
-          </div>
-          <div class="box for-text">
-            <h4>Is the event free to attend?</h4>
-            <p>Technica is free for all participants thanks to our amazing sponsors! The event includes admission, food, overnight stay, and a lot of free gear and swag!</p>
-          </div>
-          <div class="box for-text">
-            <h4>Will food be served?</h4>
-            <p>We will provide free meals throughout the event including breakfast, lunch, and dinner on Saturday, breakfast and lunch on Sunday, and tons of healthy snacks in between. Accommodations will be made for vegetarian, vegan, gluten-free, kosher, and other dietary restrictions.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do I become a mentor?</h4>
-            <p>We'd love to have you! Mentors make the hackathon experience impactful by guiding participants through technical challenges and sharing stories along the way. <a target="_blank" href="https://goo.gl/forms/4lSvN2SA0itD63lC3">Sign up to be a mentor here</a>.</p>
-          </div>
-          <div class="box for-text">
-            <h4>Don't see your question?</h4>
-            <p>Tweet to <a href="http://twitter.com/gotechnica" target="_blank">@gotechnica</a> or <a href="mailto:hello@gotechnica.org" target="_blank">email us</a>.</p>
-          </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Pictures coming soon!</h3>
+                </div>
+            </div>
+    </section> -->
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 style="color:white;" class="section-subheading">Reach out to us at hello@gotechnica.org!</h3>
+                </div>
+            </div>
+            <!-- SOCIAL BUTTONS -->
+            <div class="row">
+              <div class="col-md-12 text-center text-nowrap">
+                  <ul class="list-inline social-buttons">
+                    <li><a class="animate-button social-twitter" href="https://twitter.com/gotechnica?lang=en"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a class="animate-button social-facebook" href="https://www.facebook.com/gotechnica/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a class="animate-button social-instagram" href="https://www.instagram.com/gotechnica/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a class="animate-button social-mail" href="mailto:hello@gotechnica.org"><i class="fa fa-envelope fa-lg"></i></a></li>
+                  </ul>
+              </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                  <p class="copyright">&copy; 2017 Technica</p>
+                </div>
+                <!-- <div class="col-md 4 col-md-offset-4">
+                  <img src="img/logos/technica-logo-white-colorstripe.svg" />
+                </div> -->
+            </div>
         </div>
-        <div class="half">
-          <div class="box for-text">
-            <h4>Do I need to know how to code?</h4>
-            <p>Students of all skill levels are encouraged to attend, even if you’ve never written a line of code. We’re prepared to teach you everything you need to learn right here while also supporting the most experienced hackers.</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do I get to the event?</h4>
-            <p> We will be providing bus routes to Toronto, New York, New Jersey, Georgia, Florida, North Carolina, Pennsylvania, Virginia, and Maryland. RSVP for a bus <a href="http://ter.ps/tbus">here</a>! Unfortunately we will not be able to reimburse hackers individually for their travel. </p>
-          </div>
-          <div class="box for-text">
-            <h4>Where is the event?</h4>
-            <p>Technica 2016 will take place at the Reckord Armory at the Univeristy of Maryland. Directions are located <a href="https://www.google.com/maps/place/Reckord+Armory/@38.9834819,-76.9470219,13z/data=!4m5!3m4!1s0x89b7c6bd1a30dbc7:0xdc34c200a805a685!8m2!3d38.985995!4d-76.938837">here</a>!</p>
-          </div>
-          <div class="box for-text">
-            <h4>What should I bring?</h4>
-            <p>You must bring a valid student or government issued ID card for admission. Bring your laptop and charging cables and any other specific materials you’ll need for your hacking project. If you are planning on renting hardware for your hack, please make sure to bring a government issued ID! You may also bring a sleeping bag and pillow if that makes you more comfortable, though air mattresses will be provided. Everything else will be provided!</p>
-          </div>
-          <div class="box for-text">
-            <h4>How do teams work? Can I go solo?</h4>
-            <p>This is totally up to you! You can work on a team or work solo. If you do wish to work on a team, teams can be constructed prior to arrival with friends or they can be formed during the time allocated for team formation before the official hacking begins.</p>
-          </div>
-          <div class="box for-text">
-            <h4>What is acceptable behavior at Technica?</h4>
-            <p>We use the Major League Hacking <a target="_blank" href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>, and we take this very seriously.  Technica is an event intended to be welcoming to all attendees.</p>
-          </div>
+    </footer>
+
+    <!-- Portfolio Modals: We may use them for showcasing the best projects! -->
+    <!-- Use the modals below to showcase details about your portfolio projects! -->
+
+    <!-- Portfolio Modal 1 -->
+    <!-- <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <h2>Project Name</h2>
+                                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                                <img class="img-responsive img-centered" src="img/portfolio/roundicons-free-min.png" alt="">
+                                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
+                                <p>
+                                    <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
+                                <ul class="list-inline">
+                                    <li>Date: July 2014</li>
+                                    <li>Client: Round Icons</li>
+                                    <li>Category: Graphic Design</li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
-<br> <!--
-      <section id="buses" class="dark">
-        <div class="content">
-          <div class="section-header">
-            <h3>Buses</h3>
-          </div>
-          <div class="row">
-            <div class="half">
-              <table class="schedule">
-                <thead>
-                <tr>
-                  <td colspan="2">Friday, November 4</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td colspan="2" class="highlighted">Canada</td>
-                </tr>
-                <tr>
-                  <td>09:45 AM</td>
-                  <td class="pink">University of Waterloo: <div class="highlighted"> South Campus Hall, 200 University Ave West</div></td>
-                </tr>
-                <tr>
-                    <td>10:45 AM</td>
-                    <td class="pink">Western University:<div class="highlighted"> Elgin Dropoff Behind Western Social Science Centre</div></td>
-                </tr>
-                <tr>
-                    <td>10:00 PM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">North Carolina/Virginia</td>
-                </tr>
-                <tr>
-                  <td>02:45 PM</td>
-                  <td class="pink">University of North Carolina, Chapel Hill:<div class="highlighted"> Venable Lot, South Road</div></td>
-                </tr>
-                <tr>
-                  <td>07:00 PM</td>
-                  <td class="pink">University of Virginia: <div class="highlighted">Scott Stadium, 1815 Stadium Road</div></td>
-                </tr>
-                <tr>
-                <td>09:30 PM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">Pennsylvania</td>
-                </tr>
-                <tr>
-                  <td>06:00 PM</td>
-                  <td class="pink">University of Pennsylvania: <div class="highlighted"> David Rittenhouse Labs on 33rd and Walnut</div></td>
-                </tr>
-                <tr>
-                  <td>06:15 PM</td>
-                  <td class="pink">Temple University:<div class="highlighted"> Pearson and McGonigle Halls, 1800 N. Broad Street</div></td>
-                </tr>
-                <tr>
-                <td>09:30 PM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">New York/New Jersey</td>
-                </tr>
-                <tr>
-                  <td>04:15 PM</td>
-                  <td class="pink">New York University: <div class="highlighted">60 Washington Square S</div></td>
-                </tr>
-                <tr>
-                  <td>05:15 PM</td>
-                  <td class="pink">Rutgers University:<div class="highlighted">Busch Campus Center, 604 Bartholomew Road</div></td>
-                </tr>
-                <tr>
-                <td>09:30 PM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">Florida/Georgia</td>
-                </tr>
-                <tr>
-                  <td>07:00 AM</td>
-                  <td class="pink">University of Florida: <div class="highlighted">Commuter Lot, 966 Gale Lemerand Drive</div></td>
-                </tr>
-                <tr>
-                  <td>12:15 PM</td>
-                  <td class="pink">Georgia Tech: <div class="highlighted">266 4th Street NW </div></td>
-                </tr>
-                <tr>
-                <td>09:45 PM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-               </tbody>
-              </table>
-            </div>
-            <div class="half">
-              <table class="schedule">
-                <thead>
-                <tr>
-                  <td colspan="2">Saturday, November 5</td>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                  <td colspan="2" class="highlighted">Baltimore</td>
-                </tr>
-                <tr>
-                  <td>06:30 AM</td>
-                  <td class="pink">Johns Hopkins University:<div class="highlighted">Mason Hall, 3101 Wyman Park Drive </div></td>
-                </tr>
-                <tr>
-                  <td>06:45 AM</td>
-                  <td class="pink">University of Maryland, Baltimore County: <div class="highlighted">Commons Circle, 1000 Hilltop Circle</div></td>
-                </tr>
-                <tr>
-                <td>07:30 AM</td>
-                    <td class="pink">Arrive at UMD</td>
-                </tr>
-               <thead>
-                <tr>
-                  <td colspan="2">Sunday, November 6</td>
-                </tr>
-                </thead>
-                <tr>
-                  <td colspan="2" class="highlighted">Baltimore</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>04:00 PM</td>
-                  <td class="pink">University of Maryland, Baltimore County</td>
-                </tr>
-                <tr>
-                  <td>04:15 AM</td>
-                  <td class="pink">Johns Hopkins University</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">Florida/Georgia</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>01:00 AM</td>
-                  <td class="pink">Georgia Tech</td>
-                </tr>
-                <tr>
-                  <td>06:00 AM</td>
-                  <td class="pink">University of Florida</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">Canada</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>02:00 AM</td>
-                  <td class="pink">University of Waterloo</td>
-                </tr>
-                <tr>
-                  <td>03:30 AM</td>
-                  <td class="pink">Western University</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">North Carolina/Virginia</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>06:00 PM</td>
-                  <td class="pink">University of Virginia</td>
-                </tr>
-                <tr>
-                  <td>10:00 PM</td>
-                  <td class="pink">University of North Carolina, Chapel Hill</td>
-                </tr>
-                <tr>
-                  <td colspan="2" class="highlighted">Pennsylvania</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>05:15 PM</td>
-                  <td class="pink">University of Pennsylvania</td>
-                </tr>
-                <tr>
-                  <td>05:30 PM</td>
-                  <td class="pink">Temple University</td>
-                </tr>
-               <tr>
-                  <td colspan="2" class="highlighted">New York/New Jersey</td>
-                </tr>
-                <tr>
-                 <td>03:30 PM</td>
-                    <td class="pink">Leave UMD</td>
-                </tr>
-                <tr>
-                  <td>07:30 PM</td>
-                  <td class="pink">Rutgers University</td>
-                </tr>
-                <tr>
-                  <td>08:30 PM</td>
-                  <td class="pink">New York University</td>
-                </tr>
+    </div> -->
 
-                </tbody>
-               </table>
-            </div>
-          </div>
-        </div>
-      </section>
-<br>
-  <hr>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
 
-      <section id="maps">
-        <div class="content">
-          <div class="section-header">
-            <h3>Maps</h3>
-		 <table>
-			  <tr>
-				  <td><a target="_blank" href="http://www.gotechnica.org/floor.pdf"><img src="img/maps/upstairs.png" name="Upstairs"></a></td>
-			  </tr>
-			  <tr>
-				  <td><a target="_blank" href="http://www.gotechnica.org/rooms.pdf"><img src="img/maps/downstairs.png" name="Downstairs"></a>
-</td>
-			  </tr>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
-		  </table>
-          </div>
-	</div>
-</section>
--->
-  <hr>
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
-   <section id="theteam">
+    <!-- Contact Form JavaScript -->
+    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="js/contact_me.js"></script> -->
 
-      <div class="section-header">
-        <h3>The Team</h3>
-      </div>
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
 
-      <ul class="team">
-          <li class="person-wrapper"></li> <!-- to center the directors -->
-          <li class="person-wrapper"></li>
-       <a href="https://twitter.com/amrithajayanti" target="_blank">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Amritha.jpg">
-              <h4 class="name">Amritha</h4>
-              <h6 class="title">Co-Executive Director</h6>
-            </div>
-          </li>
-        </a>
+</body>
 
-        <a href="https://twitter.com/ambermirza_" target="_blank">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Amber.png">
-              <h4 class="name">Amber</h4>
-              <h6 class="title">Co-Executive Director</h6>
-            </div>
-          </li>
-        </a>
-          <li class="person-wrapper"></li>
-          <li class="person-wrapper"></li>
-       </ul>
-
-      <ul class="team">
-        <a href="https://twitter.com/narmadanv" target="_blank">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Narmada.jpg">
-              <h4 class="name">Narmada</h4>
-              <h6 class="title">Event Details Co-Director</h6>
-            </div>
-          </li>
-        </a>
-
-        <a href="https://twitter.com/_rosegaray" target="_blank">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Rose.png">
-              <h4 class="name">Rose</h4>
-              <h6 class="title">Event Details Co-Director</h6>
-            </div>
-          </li>
-        </a>
-
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Alayna.png">
-              <h4 class="name">Alayna</h4>
-              <h6 class="title">Finance Director</h6>
-            </div>
-          </li>
-
-          <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Natalie.png">
-            <h4 class="name">Natalie</h4>
-            <h6 class="title">Sponsorship Director</h6>
-          </div>
-        </li>
-       <a href="https://twitter.com/jayqubed" target="_blank">
-          <li class="person-wrapper">
-            <div class="person">
-              <img src="img/team/Jacqueline.jpg">
-              <h4 class="name">Jacqueline</h4>
-              <h6 class="title">Design Director</h6>
-            </div>
-          </li>
-        </a>
-
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Courtney.png">
-            <h4 class="name">Courtney</h4>
-            <h6 class="title">Mentorship Director</h6>
-          </div>
-        </li>
-
-       <a href="https://twitter.com/tara_rams" target="_blank">
-        <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Tara.png">
-            <h4 class="name">Tara</h4>
-            <h6 class="title">Food Director</h6>
-          </div>
-        </li>
-          </a>
-      <a href="https://twitter.com/aamanster" target="_blank">
-          <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Aaman.png">
-            <h4 class="name">Aaman</h4>
-            <h6 class="title">Facilities Director</h6>
-          </div>
-        </li>
-          </a>
-
-          <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Dania.png">
-            <h4 class="name">Dania</h4>
-            <h6 class="title">Travel Director</h6>
-          </div>
-        </li>
-         <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/namitha.png">
-            <h4 class="name">Namitha</h4>
-            <h6 class="title">Sponsorship Director</h6>
-          </div>
-        </li>
-          <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/Aastha.png">
-            <h4 class="name">Aastha</h4>
-            <h6 class="title">Marketing Director</h6>
-          </div>
-        </li>
-
-          <li class="person-wrapper">
-          <div class="person">
-            <img src="img/team/meredith.png">
-            <h4 class="name">Meredith</h4>
-            <h6 class="title">Outreach Director</h6>
-          </div>
-        </li>
-         </ul>
-</section>
-
-  <footer>
-    <div class="content">
-      <img src="img/technica-logo-white-colorstripe.svg">
-      <ul>
-        <li><a href="https://twitter.com/gotechnica" target="_blank">Twitter</a></li>
-        <li><a href="https://www.facebook.com/gotechnica" target="_blank">Facebook</a></li>
-        <li><a href="mailto:hello@gotechnica.org">Email</a></li>
-        <li>&copy; Technica 2016</li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src = "js/scroll.js"></script>
-
- <!-- <script type="text/javascript" src="js/smooth-scroll.min.js"></script>
-  <script type="text/javascript">
-    smoothScroll.init();
-
-    function validateEmail(email) {
-      var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
-      return re.test(email);
-    }
-    var form = document.getElementById('signup-form');
-
-    form.onsubmit = function() {
-      var email = document.getElementById('entry_118037203').value;
-      if (validateEmail(email)) {
-        if (form.className.indexOf("success") == -1) {
-          this.submit();
-          document.getElementById('their-email').innerHTML = email;
-          form.className = form.className.replace(' invalid', '')
-          form.className += ' success';
-          return true;
-        }
-          // submitting a duplicate form
-        } else {
-          form.className += ' invalid';
-        }
-        return false;
-      };
-    </script>-->
-  </body>
-  </html>
+</html>
