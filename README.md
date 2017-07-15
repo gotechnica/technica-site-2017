@@ -1,13 +1,15 @@
 Technica
 ========
 
-All-ladies hackathon. November 7-8, 2015. College Park, MD.
+Website repository for Technica, UMD's all female hackaton. College Park, MD.
 
 ### Developing
 
 ```
 npm install
-gulp watch
+gulp dev
 open index.html
 ```
+
+Please note than npm install only needs to be run once. Gulp enables live editing by dynamically reload the page every time you save a file.
 
