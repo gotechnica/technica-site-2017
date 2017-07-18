@@ -1,0 +1,24 @@
+.sponsors{margin-bottom:5rem;}
+.sponsors img{margin:0 auto;-webkit-transform:scale(0.9);-moz-transform:scale(0.9);-o-transform:scale(0.9);transform:scale(0.9);-webkit-transition:0.15s 0s ease all;-moz-transition:0.15s 0s ease all;-o-transition:0.15s 0s ease all;transition:0.15s 0s ease all;}
+.sponsors img:hover{-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1);transform:scale(1);}
+.sponsors + .sponsors{margin-top:-5rem;}
+.sponsors .minimill{margin-top:35%;}
+.row-custom{display:block;position:relative;margin:0 -2.5rem;}
+.row-custom:after{content:" ";visibility:hidden;display:block;height:0;clear:both;}
+.row-custom .half, .row-custom .forty, .row-custom .third, .row-custom .quarter, .row-custom .sixth{padding:0 2.5rem;display:inline-block;float:left;position:relative;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;vertical-align:top;}
+.row-custom .half{width:50%;}
+.row-custom .forty{width:40%;padding:0px 75px 0px 75px;}
+.row-custom .third{width:33.333333333%;padding:0px 50px 0px 50px;}
+.row-custom .quarter{width:25%;padding:0px 25px 0px 25px;}
+.row-custom .sixth{width:20%;padding:0px 25px 0px 25px;}
+.row-custom.with-divider:before{display:block;width:0;position:absolute;left:50%;top:0;bottom:0;width:2px;content:" ";-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%);background-color:#00ffff;background-image:-webkit-linear-gradient(top, #00ffff, #ff7bac);background-image:linear-gradient(to bottom, #00ffff, #ff7bac);}
+.row-custom.centered{text-align:center;font-size:0;}
+.row-custom.centered .half, .row-custom.centered .third, .row-custom.centered .forty, .row-custom.centered .quarter, .row-custom.centered .sixth{float:none;}
+@media screen and (max-width:768px){.row-custom{margin:0;}
+.row-custom .half, .row-custom .third, .row-custom .forty{padding:0;display:block;width:100%;}
+.row-custom .half:not(:first-child), .row-custom .third:not(:first-child), .row-custom .forty:not(:first-child){margin-top:3.125rem;}
+.row-custom .quarter, .row-custom .sixth{width:50%;}
+.row-custom .quarter:nth-child(n+3), .row-custom .sixth:nth-child(n+3){margin-top:2rem;}
+.row-custom.with-divider:before{display:none;}
+}
+img{max-width:100%;max-height:100%;display:block;}
