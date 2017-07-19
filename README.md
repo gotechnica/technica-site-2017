@@ -1,7 +1,7 @@
 Technica
 ========
 
-Website repository for Technica, UMD's all female hackaton. College Park, MD.
+Website repository for Technica, UMD's all female hackathon. College Park, MD.
 
 ### Developing
 
