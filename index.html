@@ -94,6 +94,15 @@
         ga('create', 'UA-102902564-1', 'auto');
         ga('send', 'pageview');
 
+        // Tracks user page scrolls and sends info to analytics
+        var runned = false;
+        $( window ).scroll( function() {
+          if ( $( document ).scrollTop() >= 500 && runned == false ) {
+            ga('send', 'event', { eventCategory: 'Scrolled 250px', eventAction: 'Scroll' });
+            runned = true;
+          }
+        });
+
    </script>
 
 
