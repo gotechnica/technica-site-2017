@@ -931,8 +931,8 @@ body {
 
 }
 
-.panel-default > .panel-heading-gray {
-    background: #464343; color: white;
+.panel-default > .panel-heading-white {
+    background: white; color: black;
 }
 
 .form-control{
