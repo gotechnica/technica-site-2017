@@ -80,7 +80,7 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
-    <link href="css/main.min.css" rel="stylesheet" >
+    <link href="css/main.css" rel="stylesheet" >
     <link href="css/sponsors.min.css" rel="stylesheet">
 
 
@@ -459,7 +459,7 @@
 
                   <!-- FAQ 2 -->
                    <div class="panel panel-default">
-                     <div class="panel-heading panel-heading">
+                     <div class="panel-heading">
                        <h4 class="panel-title">
                          <a class="faq-panel" data-toggle="collapse" href="#collapse2">
                            <h3 class="service-heading text-center">Do I need to know how to code?</h3>
@@ -849,6 +849,15 @@
             runned = true;
           }
         });
+
+        // Calculates time user spend on page, sends an event to google analytics
+        if (window.performance) {
+          // Gets the number of milliseconds since page load
+          // (and rounds the result since the value must be an integer).
+          var timeSincePageLoad = Math.round(performance.now());
+          // Sends the timing hit to Google Analytics.
+          ga('send', 'timing', 'pageViewLength', 'length', timeSincePageLoad);
+        }
 
     </script>
 
