@@ -59,7 +59,7 @@
     <meta name="twitter:description" content="All-women hackathon at University of Maryland.">
     <meta name="twitter:creator" content="@gotechnica">
     <meta name="twitter:image:src" content="img/logos/logo-black.png">
-    <meta name="twitter:domain" content="https://gotechnica.org">
+    <meta name="twitter:domain" content="http://gotechnica.org">
 
     <!-- Open Graph data (Facebook) -->
     <meta property="og:title" content="Technica" />
@@ -802,15 +802,6 @@
 
         ga('create', 'UA-102902564-1', 'auto');
         ga('send', 'pageview');
-
-        // Tracks user page scrolls and sends info to analytics
-        var runned = false;
-        $( window ).scroll( function() {
-          if ( $( document ).scrollTop() >= 500 && runned == false ) {
-            ga('send', 'event', { eventCategory: 'Scrolled 500px', eventAction: 'Scroll' });
-            runned = true;
-          }
-        });
     </script>
 
     <!-- Riveted Plugin, which provides accurate data on user engagement -->
