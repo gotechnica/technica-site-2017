@@ -594,6 +594,7 @@ section h3.section-subheading {
     /*left: 50%;*/
     height:1550px;
   }
+}
 
 @media (min-width: 768px) {
   .timeline:before {
