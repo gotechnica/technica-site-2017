@@ -360,15 +360,14 @@ header .intro-text {
 header .intro-text .intro-lead-in {
   font-family: 'DINPro', 'Helvetica', 'sans-serif';
   font-style: italic;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 15px;
   margin-bottom: 25px;
 }
 header .intro-text .intro-heading {
   font-family: 'DINPro-Bold', 'Helvetica', 'sans-serif' ;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 4.5em;
+  font-size: 3.5em;
   line-height: 1em;
   margin-bottom: 15px;
 }
@@ -595,7 +594,6 @@ section h3.section-subheading {
     /*left: 50%;*/
     height:1550px;
   }
-}
 
 @media (min-width: 768px) {
   .timeline:before {
