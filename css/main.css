@@ -91,7 +91,9 @@ p {
 p.large {
   font-size: 20px;
 }
-
+b {
+  font-weight: 900;
+}
 /* in text links */
 a.in-text{
   text-decoration: underline;
@@ -366,6 +368,8 @@ header .intro-text .intro-lead-in {
 header .intro-text .intro-heading {
   font-family: 'DINPro-Bold', 'Helvetica', 'sans-serif' ;
   text-transform: uppercase;
+  text-decoration: underline;
+  /*text-underline-position: under; */
   font-weight: 700;
   font-size: 3.5em;
   line-height: 1em;
