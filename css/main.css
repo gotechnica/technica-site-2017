@@ -375,6 +375,12 @@ header .intro-text .intro-heading {
   line-height: 1em;
   margin-bottom: 15px;
 }
+
+header .intro-text .header-img {
+  margin:auto;
+  max-width: 80%;
+  margin-bottom:10px;
+}
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 300px;
@@ -394,6 +400,11 @@ header .intro-text .intro-heading {
     font-size: 8em;
     line-height: 1em;
     margin-bottom: 15px;
+  }
+  header .intro-text .header-img {
+    margin:auto;
+    max-width: 50%;
+    margin-bottom:10px;
   }
 }
 section {
