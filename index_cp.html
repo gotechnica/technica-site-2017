@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+
+    ████████╗ ███████╗  ██████╗ ██╗  ██╗ ███╗   ██╗ ██╗  ██████╗  █████╗
+    ╚══██╔══╝ ██╔════╝ ██╔════╝ ██║  ██║ ████╗  ██║ ██║ ██╔════╝ ██╔══██╗
+       ██║    █████╗   ██║      ███████║ ██╔██╗ ██║ ██║ ██║      ███████║
+       ██║    ██╔══╝   ██║      ██╔══██║ ██║╚██╗██║ ██║ ██║      ██╔══██║
+       ██║    ███████╗ ╚██████╗ ██║  ██║ ██║ ╚████║ ██║ ╚██████╗ ██║  ██║
+       ╚═╝    ╚══════╝  ╚═════╝ ╚═╝  ╚═╝ ╚═╝  ╚═══╝ ╚═╝  ╚═════╝ ╚═╝  ╚═╝
+
+     -->
+
+    <!--
+    /**
+     * @license
+     * MyFonts Webfont Build ID 3356385, 2017-03-08T21:49:12-0500
+     *
+     * The fonts listed in this notice are subject to the End User License
+     * Agreement(s) entered into by the website owner. All other parties are
+     * explicitly restricted from using the Licensed Webfonts(s).
+     *
+     * You may obtain a valid license at the URLs below.
+     *
+     * Webfont: FF DIN Web Pro Bold by FontFont
+     * URL: http://www.myfonts.com/fonts/fontfont/ff-din/pro-bold/
+     *
+     * Webfont: FF DIN Web Pro by FontFont
+     * URL: http://www.myfonts.com/fonts/fontfont/ff-din/pro-regular/
+     *
+     *
+     * License: http://www.myfonts.com/viewlicense?type=web&buildid=3356385
+     * Licensed pageviews: 50,000
+     * Webfonts copyright: 2009 Albert-Jan Pool published by FSI FontShop International GmbH
+     *
+     * © 2017 MyFonts Inc
+    */
+    -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+
+    <meta name="author" content="Technica Hacks">
+    <meta name="description" content="All-women hackathon at University of Maryland." />
+    <meta name="robots" content="NOODP, index, follow" />
+    <meta itemprop="name" content="Technica">
+    <!-- <meta itemprop="description" content="All-women hackathon at University of Maryland.">
+    <meta itemprop="image" content="/img/logo-black.png"> -->
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@gotechnica">
+    <meta name="twitter:title" content="Technica">
+    <meta name="twitter:description" content="All-women hackathon at University of Maryland.">
+    <meta name="twitter:creator" content="@gotechnica">
+    <meta name="twitter:image:src" content="https://raw.githubusercontent.com/gotechnica/gotechnica.github.io/master/img/logos/logo-black.png">
+    <meta name="twitter:domain" content="http://gotechnica.org">
+
+    <!-- Open Graph data (Facebook) -->
+    <meta property="og:title" content="Technica" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://gotechnica.org" />
+    <meta property="og:image" content="img/logos/logo-black.png" />
+    <meta property="og:description" content="All-women hackathon at University of Maryland." />
+
+    <!-- Google Analytics Ownership Verification -->
+    <meta name="google-site-verification" content="y5ru1odhUD16eWNZFcpWK_cx9r7q-mPO4Y2QrAnQMpg" />
+
+    <title>Technica | The All-Women Hackathon</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Theme CSS -->
+    <link href="css/sponsors.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet" >
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+
+</head>
+<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;left:10px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2018/events?utm_source=na-2018&utm_medium=TrustBadge&utm_campaign=na-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+<body id="page-top" class="index">
+
+    <!-- Navigation -->
+    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <!-- <a class="navbar-brand page-scroll" href="#page-top">Technica</a> -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                  <span style="background-color:white;" class="icon-bar"></span>
+                </button>
+
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a id="home-link" class="page-scroll" href="#page-top">Home</a></li>
+                    <li><a class="page-scroll" href="#about">About</a></li>
+                    <li><a class="page-scroll" href="#sponsors">Sponsors</a>  </li>
+                    <li><a class="page-scroll" href="#faq">FAQ</a> </li>
+                    <li><a class="page-scroll" href="#milestones">Milestones</a></li>
+                    <li><a class="page-scroll" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- Header -->
+    <header class="animate">
+        <div class="container">
+            <div class="intro-text">
+                <!-- <div class="intro-heading">TECHNICA</div> -->
+                <img src = "./img/logos/technica-logo-white.svg" class="header-img" />
+                <div class="intro-lead-in" >Encouraging Diversity in Technology and Beyond</div>
+                <a target="_blank" href="http://ter.ps/technica17" class="btn btn-xl">Register</a>
+                <div class="intro-lead-in" style="font-style:normal;font-size:25px;" >November 4th - 5th, 2017</div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About section -->
+    <section class="bg-light-gray" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">About</h2>
+                    <h3 class="section-subheading text-muted">What is Technica?</h3>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- <h4 class="service-heading text-center">What is Technica?</h4> -->
+                    <p class="large">Technica is the University of Maryland's all-women hackathon. Over the duration of 24 hours, women are immersed in tech culture and encouraged to exercise their imagination to create
+                      interesting and innovative hacks. Technica is diverging from the typical hackathon as we encourage gender diversification and ask sponsors to hack alongside students in order to build stronger connections
+                      between students and the tech world.</p>
+                      <br>
+                      <br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- <h4 class="service-heading text-center">What is Technica?</h4> -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/190486563"  webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    <section id="sponsors">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">2017 Sponsors</h2>
+                    <h3 class="section-subheading text-muted">Interested in sponsoring? Email us at sponsorship.technica@gmail.com!</h3>
+                </div>
+            </div>
+
+            <div class="row-custom sponsors centered">
+                  <div class="half">
+                    <a target="_blank" href="https://www.eng.umd.edu/"><img class="sponsors-img" src="img/sponsors-2018/appian.png" name="A. James Clark School of Engineering"></a>
+                  </div>
+            </div>
+
+            </br>
+            <div class="row-custom sponsors centered">
+                  <div class="half">
+                    <a target="_blank" href="https://www.eng.umd.edu/"><img class="sponsors-img" src="img/sponsors-2018/apl.png" name="A. James Clark School of Engineering"></a>
+                  </div>
+
+                  <div class="half">
+                    <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/asymmetrik.svg" name="College of Mathematical and Natural Sceinces"></a>
+                  </div>
+            </div>
+          <br />
+
+          <div class="row-custom sponsors centered">
+                <div class="half">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/ge.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+          </div>
+          <br />
+          <div class="row-custom sponsors centered">
+                <div class="quarter">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/qualcomm.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+                <div class="quarter">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/lts.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+          </div>
+          <br />
+          <div class="row-custom sponsors centered">
+                <div class="half">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/aws.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+                <div class="half">
+                  <a target="_blank" href="https://www.cmns.umd.edu/"><img class="sponsors-img"  src="img/sponsors-2018/splunk.png" name="College of Mathematical and Natural Sceinces"></a>
+                </div>
+          </div>
+        <br />
+      </div>
+    </section>
+
+
+    <!-- FAQ section -->
+    <section id="faq" class="bg-light-gray">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Frequently Asked Questions</h2>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- FAQ COLLAPSIBLE PANELS! -->
+            <div class = "container">
+              <div class="row">
+                <div class="col-md-6">
+
+                  <!-- FAQ 1 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-pink">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse1">
+                          <h3 class="service-heading text-center">Why make an all-women hackathon?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse1" class="panel-collapse collapse">
+                      <div class="panel-body">
+                          <p>
+                            Women are underrepresented in the tech world, but it’s up to us women to change that!
+                            We are creating a welcoming environment to show that there is a place in tech for every
+                            lady out there while building cool projects and sharing stories at Technica.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ 2 -->
+                   <div class="panel panel-default">
+                     <div class="panel-heading panel-heading-white">
+                       <h4 class="panel-title">
+                         <a class="faq-panel" data-toggle="collapse" href="#collapse2">
+                           <h3 class="service-heading text-center">Do I need to know how to code?</h3>
+                         </a>
+                       </h4>
+                     </div>
+
+                     <div id="collapse2" class="panel-collapse collapse">
+                       <div class="panel-body">
+                         <p>
+                           Students of all skill levels are encouraged to attend, even if you’ve never written a line of code.
+                            We’re prepared to teach you everything you need to learn right
+                            here while also supporting the most experienced hackers.
+                         </p>
+                     </div>
+                   </div>
+                  </div>
+
+                  <!-- FAQ 3 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-blue">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse3">
+                          <h3 class="service-heading text-center">How do I become a volunteer?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse3" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>
+                          Please register to be a volunteer <a class="in-text" target="_blank" href="https://technicaumd.typeform.com/to/EXqwX1">here</a>, we'd love to have you!
+                          <b>Volunteers can be any gender</b>, and are critical to ensure that Technica operates smoothly. This year, we expect around 900 hackers, so we need all the help
+                          that we can get!
+                        </p>
+                    </div>
+                  </div>
+                 </div>
+
+                 <!-- FAQ 4 -->
+                 <div class="panel panel-default">
+                   <div class="panel-heading panel-heading-white">
+                     <h4 class="panel-title">
+                       <a class="faq-panel" data-toggle="collapse" href="#collapse4">
+                         <h3 class="service-heading text-center">How do I get to the event?</h3>
+                       </a>
+                     </h4>
+                   </div>
+
+                   <div id="collapse4" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       <p>
+                         Take this interest <a class="in-text" target="_blank" href="https://technicaumd.typeform.com/to/PYl2pY">survey</a> to request
+                         transportation for your university or high school!
+                       </p>
+                   </div>
+                 </div>
+                </div>
+
+                <!-- FAQ 5 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading panel-heading-pink">
+                    <h4 class="panel-title">
+                      <a class="faq-panel" data-toggle="collapse" href="#collapse5">
+
+                        <h3 class="service-heading text-center">Where is the event?</h3>
+                      </a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>
+                        Technica 2017 will be held in the <a class="in-text" target="_blank" href="https://www.google.com/maps/place/Reckord+Armory/@38.985995,-76.9410257,17z/data=!3m1!4b1!4m5!3m4!1s0x89b7c6bd1a30dbc7:0xdc34c200a805a685!8m2!3d38.985995!4d-76.938837">Reckord Armory</a>
+                        at the University of Maryland, College Park from November 4th-5th, 2017.
+                      </p>
+                  </div>
+                </div>
+               </div>
+              </div>
+
+              <!-- FAQ 6 -->
+              <div class="col-md-6">
+                    <div class="panel panel-default">
+                      <div class="panel-heading panel-heading-white">
+                        <h4 class="panel-title">
+                          <a class="faq-panel" data-toggle="collapse" href="#collapse6">
+                            <h3 class="service-heading text-center">Is the event free to attend?</h3>
+                          </a>
+                        </h4>
+                      </div>
+
+                      <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body">
+                          <p>
+                          Technica is free for all participants thanks to our amazing sponsors!
+                          The event includes admission, food, overnight stay, and a lot of free gear and swag!
+                          </p>
+                      </div>
+                    </div>
+                   </div>
+
+                   <!-- FAQ 7 -->
+                   <div class="panel panel-default">
+                     <div class="panel-heading panel-heading-blue">
+                       <h4 class="panel-title">
+                         <a class="faq-panel" data-toggle="collapse" href="#collapse7">
+                           <h3 class="service-heading text-center">Who can attend Technica?</h3>
+                         </a>
+                       </h4>
+                     </div>
+
+                     <div id="collapse7" class="panel-collapse collapse">
+                       <div class="panel-body">
+                         <p>
+                           Anyone who identifies as a woman or non-binary may register as a hacker! All ages are welcome.
+                           Additionally, all participants must follow the
+                           <a class="in-text" target="_blank" href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH code of conduct</a>.
+                         </p>
+                     </div>
+                   </div>
+                  </div>
+
+                  <!-- FAQ 8 -->
+                  <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-white">
+                      <h4 class="panel-title">
+                        <a class="faq-panel" data-toggle="collapse" href="#collapse8">
+                          <h3 class="service-heading text-center">How do I become a mentor?</h3>
+                        </a>
+                      </h4>
+                    </div>
+
+                    <div id="collapse8" class="panel-collapse collapse">
+                      <div class="panel-body">
+                        <p>
+                        Please register to be a mentor <a class="in-text" target="_blank" href="https://technicaumd.typeform.com/to/xUo859">here</a>, we'd love to have you!
+                        <b>Mentors can be any gender</b>, and make the hackathon experience impactful by guiding participants through technical challenges
+                        and sharing stories along the way.
+                        </p>
+                    </div>
+                  </div>
+                 </div>
+
+                 <!-- FAQ 9 -->
+                 <div class="panel panel-default">
+                   <div class="panel-heading panel-heading-pink">
+                     <h4 class="panel-title">
+                       <a class="faq-panel" data-toggle="collapse" href="#collapse9">
+                         <h3 class="service-heading text-center">How do teams work?</h3>
+                       </a>
+                     </h4>
+                   </div>
+
+                   <div id="collapse9" class="panel-collapse collapse">
+                     <div class="panel-body">
+                       <p>
+                        You can work on a team or work solo.
+                         Teams can be constructed prior to arrival with friends, or can be formed during the time allocated for team formation
+                         before the official hacking begins. Team size must not exceed four members, according to MLH rules.
+                       </p>
+                   </div>
+                 </div>
+                </div>
+
+                <!-- FAQ 10 -->
+                <div class="panel panel-default">
+                  <div class="panel-heading panel-heading-white">
+                    <h4 class="panel-title">
+                      <a class="faq-panel" data-toggle="collapse" href="#collapse10">
+                        <h3 class="service-heading text-center">What should I bring?</h3>
+                      </a>
+                    </h4>
+                  </div>
+
+                  <div id="collapse10" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      <p>
+                      You must bring a valid student or government issued ID card for admission.
+                      Bring your laptop and charging cables and any other specific materials you’ll need for your hacking project.
+                      If you are planning on renting hardware for your hack, please make sure to bring a government issued ID!
+                      Bring a sleeping bag and pillow if that makes you more comfortable for the night. Everything else will be provided!
+                      </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <!-- Timeline/Milestones Section -->
+    <section id="milestones">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Milestones</h2>
+                    <h3 class="section-subheading text-muted">We've made it a long way</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/sprout.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/1.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>August 2015</h4>
+                                    <h4 class="subheading">Our Humble Beginnings</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Technica was founded in 2015 at the University of Maryland, College Park.
+                                      Its main goal is to introduce people who identify as women or non-binary from diverse backgrounds to tech.
+
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/thumbs.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/2.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>October 2016</h4>
+                                    <h4 class="subheading">Growing Strong</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Our Facebook page reached 1000 likes!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/globe.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/3.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>November 2016</h4>
+                                    <h4 class="subheading">A World Record</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">Technica became the largest all-women hackathon with over 850 participants
+                                      who came from Pennsylvania, New York,
+                                      New Jersey, North Carolina, Georgia, Florida, and even Toronto, Canada!</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <!-- <img class="img-circle img-responsive" src="img/timeline/cake.png" alt=""> -->
+                                <img class="img-circle img-responsive" src="img/timeline/4.png" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>November 2017</h4>
+                                    <h4 class="subheading">Three Year Anniversary</h4>
+                                </div>
+                                <div class="timeline-body">
+                                    <p class="text-muted timeline-text">We are looking forward to our third year hosting Technica.
+                                      Our organizing team is the largest it has ever been;
+                                      we hope to make it a great experience for our hackers, mentors, and sponsors.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image static-gradient"></div>
+                            <div class="timeline-panel">
+                              <div class="timeline-heading">
+                                <h4>Be A Part of Our Story</h4>
+                                <h4 class="subheading">Join us at Technica 2017!</h4>
+                              </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <!-- <section class="bg-light-gray" id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Our Amazing Team</h2>
+                    <h3 class="section-subheading text-muted">Pictures coming soon!</h3>
+                </div>
+            </div>
+    </section> -->
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Contact Us</h2>
+                    <h3 style="color:white;" class="section-subheading">Reach out to us at hello@gotechnica.org!</h3>
+                </div>
+            </div>
+            <!-- SOCIAL BUTTONS -->
+            <div class="row">
+              <div class="col-md-12 text-center text-nowrap">
+                  <ul class="list-inline social-buttons">
+                    <li><a class="animate-button social-twitter" href="https://twitter.com/gotechnica?lang=en"><i class="fa fa-twitter fa-lg"></i></a></li>
+                    <li><a class="animate-button social-facebook" href="https://www.facebook.com/gotechnica/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                    <li><a class="animate-button social-instagram" href="https://www.instagram.com/gotechnica/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                    <li><a class="animate-button social-mail" href="mailto:hello@gotechnica.org"><i class="fa fa-envelope fa-lg"></i></a></li>
+                  </ul>
+              </div>
+            </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-offset-4">
+                  <p class="copyright">&copy; 2017 Technica</p>
+                </div>
+                <!-- <div class="col-md 4 col-md-offset-4">
+                  <img src="img/logos/technica-logo-white-colorstripe.svg" />
+                </div> -->
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Google Analytics Tracking -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-102902564-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Riveted Plugin, which provides accurate data on user engagement -->
+    <script src="js/riveted.min.js"></script>
+    <script>riveted.init();</script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
+
+    <!-- Contact Form JavaScript -->
+    <!-- <script src="js/jqBootstrapValidation.js"></script> -->
+    <!-- <script src="js/contact_me.js"></script> -->
+
+    <!-- Theme JavaScript -->
+    <script src="js/agency.min.js"></script>
+
+</body>
+
+</html>
