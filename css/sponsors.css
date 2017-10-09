@@ -47,7 +47,7 @@ the bootstrap row class */
     box-sizing: border-box;
     vertical-align: top; }
   .row-custom .half {
-    width: 50%; 
+    width: 45%; 
     padding: 0px 15px 0px 15px; }
   .row-custom .forty {
     width: 40%;
