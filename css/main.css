@@ -954,7 +954,10 @@ body {
 
 }
 
+.section-subheading:link, .section-subheading:visited, .section-subheading:hover, .section-subheading:active {
+     background-color: #ff7bac;
 
+}
 
 .form-control{
   font-size: 16px;
