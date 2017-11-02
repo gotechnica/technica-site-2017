@@ -420,7 +420,7 @@ header .intro-text .header-img {
   }
 }
 section {
-  padding: 100px 0;
+  padding: 50px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -432,11 +432,11 @@ section h3.section-subheading {
   font-family: 'DINPro-Bold', 'Helvetica', 'sans-serif' ;
   text-transform: none;
   font-weight: 400;
-  margin-bottom: 75px;
+  margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   section {
-    padding: 150px 0;
+    padding: 50px 0;
   }
 }
 .service-heading {
@@ -718,9 +718,13 @@ section#contact {
   background-color: #00FFFF;
   background-position: center;
   background-repeat: no-repeat;
+  padding: 30px 0;
 }
 section#contact .section-heading {
   color: white;
+}
+section#contact h3.section-subheading {
+  margin-bottom: 15px;
 }
 section#contact .form-group {
   margin-bottom: 25px;
@@ -765,7 +769,7 @@ section#contact .text-danger {
   color: #e74c3c;
 }
 footer {
-  padding: 50px 0;
+  padding: 15px 0;
   text-align: center;
   background-color: black;
   color:white;
@@ -789,16 +793,19 @@ ul.social-buttons {
 ul.social-buttons li a {
   display: block;
   background-color: #222222;
-  height: 2.8em;
-  width: 2.8em;
+  height: 2em;
+  width: 2em;
   border-radius: 100%;
   font-size: 1.5em;
-  line-height: 2.9em;
+  line-height: 1.9em;
   color: white;
   outline: none;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   transition: all 0.3s;
+}
+ul.social-buttons li a i {
+  font-size: 1em;
 }
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
