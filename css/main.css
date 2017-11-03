@@ -219,7 +219,7 @@ fieldset[disabled] .btn-primary.active {
   border-radius: 3px;
   font-size: 18px;
   padding: 20px 40px;
-  margin:5px 5px 20px;
+  margin:5px 5px 10px;
 }
 .btn-xl:hover,
 .btn-xl:focus,
