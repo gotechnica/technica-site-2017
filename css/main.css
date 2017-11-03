@@ -420,7 +420,7 @@ header .intro-text .header-img {
   }
 }
 section {
-  padding: 50px 0;
+  padding: 100px 0;
 }
 section h2.section-heading {
   font-size: 40px;
@@ -432,11 +432,11 @@ section h3.section-subheading {
   font-family: 'DINPro-Bold', 'Helvetica', 'sans-serif' ;
   text-transform: none;
   font-weight: 400;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 @media (min-width: 768px) {
   section {
-    padding: 50px 0;
+    padding: 150px 0;
   }
 }
 .service-heading {
